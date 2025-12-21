@@ -183,7 +183,7 @@ GOLDEN_S0:
   nonlinearity: 4
   differential_uniformity: 10
   source: "https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Golden_S0.txt"
-  cipher: true  # Used in cryptographic cipher
+  cipher: false  # Not used in cryptographic cipher
 
 GOLDEN_S1:
   lut: [0, 3, 5, 8, 6, 12, 11, 7, 9, 14, 10, 13, 15, 2, 1, 4]
@@ -191,7 +191,7 @@ GOLDEN_S1:
   nonlinearity: 4
   differential_uniformity: 10
   source: "https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Golden_S1.txt"
-  cipher: true  # Used in cryptographic cipher
+  cipher: false  # Not used in cryptographic cipher
 
 GOLDEN_S2:
   lut: [0, 3, 5, 8, 6, 10, 15, 4, 14, 13, 9, 2, 1, 7, 12, 11]
@@ -199,7 +199,7 @@ GOLDEN_S2:
   nonlinearity: 4
   differential_uniformity: 10
   source: "https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Golden_S2.txt"
-  cipher: true  # Used in cryptographic cipher
+  cipher: false  # Not used in cryptographic cipher
 
 GOLDEN_S3:
   lut: [0, 3, 5, 8, 6, 12, 11, 7, 10, 4, 9, 14, 15, 1, 2, 13]
@@ -207,7 +207,7 @@ GOLDEN_S3:
   nonlinearity: 4
   differential_uniformity: 10
   source: "https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Golden_S3.txt"
-  cipher: true  # Used in cryptographic cipher
+  cipher: false  # Not used in cryptographic cipher
 
 GOST2_1:
   lut: [6, 10, 15, 4, 3, 8, 5, 0, 13, 14, 7, 1, 2, 11, 12, 9]
@@ -750,7 +750,7 @@ NUM1_DL_04_0:
   nonlinearity: 4
   differential_uniformity: 16
   source: "https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Num1_DL_04_0.txt"
-  cipher: true  # Used in cryptographic cipher
+  cipher: false  # Not used in cryptographic cipher
 
 NUM1_DL_04_1:
   lut: [0, 12, 13, 10, 5, 11, 14, 7, 15, 6, 2, 1, 3, 8, 9, 4]
@@ -758,7 +758,7 @@ NUM1_DL_04_1:
   nonlinearity: 4
   differential_uniformity: 16
   source: "https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Num1_DL_04_1.txt"
-  cipher: true  # Used in cryptographic cipher
+  cipher: false  # Not used in cryptographic cipher
 
 NUM1_DL_13_0:
   lut: [0, 12, 9, 7, 6, 1, 15, 2, 3, 11, 4, 14, 13, 8, 10, 5]
@@ -766,7 +766,7 @@ NUM1_DL_13_0:
   nonlinearity: 4
   differential_uniformity: 16
   source: "https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Num1_DL_13_0.txt"
-  cipher: true  # Used in cryptographic cipher
+  cipher: false  # Not used in cryptographic cipher
 
 NUM1_DL_13_1:
   lut: [0, 12, 9, 7, 15, 2, 6, 1, 3, 11, 4, 14, 10, 5, 13, 8]
@@ -774,7 +774,7 @@ NUM1_DL_13_1:
   nonlinearity: 4
   differential_uniformity: 16
   source: "https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Num1_DL_13_1.txt"
-  cipher: true  # Used in cryptographic cipher
+  cipher: false  # Not used in cryptographic cipher
 
 NUM1_DL_13_2:
   lut: [0, 11, 8, 5, 15, 12, 3, 6, 14, 4, 7, 9, 2, 1, 13, 10]
@@ -782,7 +782,7 @@ NUM1_DL_13_2:
   nonlinearity: 4
   differential_uniformity: 16
   source: "https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Num1_DL_13_2.txt"
-  cipher: true  # Used in cryptographic cipher
+  cipher: false  # Not used in cryptographic cipher
 
 NUM1_DL_13_3:
   lut: [0, 13, 4, 11, 7, 14, 9, 2, 6, 10, 3, 5, 8, 1, 15, 12]
@@ -790,7 +790,7 @@ NUM1_DL_13_3:
   nonlinearity: 4
   differential_uniformity: 16
   source: "https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Num1_DL_13_3.txt"
-  cipher: true  # Used in cryptographic cipher
+  cipher: false  # Not used in cryptographic cipher
 
 NUM1_DL_22_0:
   lut: [0, 13, 8, 2, 14, 11, 7, 5, 15, 6, 3, 12, 4, 1, 9, 10]
@@ -798,7 +798,7 @@ NUM1_DL_22_0:
   nonlinearity: 4
   differential_uniformity: 16
   source: "https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Num1_DL_22_0.txt"
-  cipher: true  # Used in cryptographic cipher
+  cipher: false  # Not used in cryptographic cipher
 
 NUM1_DL_22_1:
   lut: [0, 11, 14, 1, 10, 7, 13, 4, 6, 12, 9, 15, 5, 8, 3, 2]
@@ -806,7 +806,7 @@ NUM1_DL_22_1:
   nonlinearity: 4
   differential_uniformity: 16
   source: "https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Num1_DL_22_1.txt"
-  cipher: true  # Used in cryptographic cipher
+  cipher: false  # Not used in cryptographic cipher
 
 NUM1_DL_22_2:
   lut: [0, 11, 6, 9, 12, 5, 3, 14, 13, 7, 8, 4, 2, 10, 15, 1]
@@ -814,7 +814,7 @@ NUM1_DL_22_2:
   nonlinearity: 4
   differential_uniformity: 16
   source: "https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Num1_DL_22_2.txt"
-  cipher: true  # Used in cryptographic cipher
+  cipher: false  # Not used in cryptographic cipher
 
 NUM1_DL_22_3:
   lut: [0, 14, 9, 5, 15, 8, 10, 7, 3, 11, 6, 12, 4, 1, 13, 2]
@@ -822,7 +822,7 @@ NUM1_DL_22_3:
   nonlinearity: 4
   differential_uniformity: 16
   source: "https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Num1_DL_22_3.txt"
-  cipher: true  # Used in cryptographic cipher
+  cipher: false  # Not used in cryptographic cipher
 
 OPTIMAL_S0:
   lut: [0, 1, 2, 13, 4, 7, 15, 6, 8, 11, 12, 9, 3, 14, 10, 5]
@@ -830,7 +830,7 @@ OPTIMAL_S0:
   nonlinearity: 4
   differential_uniformity: 16
   source: "https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Optimal_S0.txt"
-  cipher: true  # Used in cryptographic cipher
+  cipher: false  # Not used in cryptographic cipher
 
 OPTIMAL_S1:
   lut: [0, 1, 2, 13, 4, 7, 15, 6, 8, 11, 14, 3, 5, 9, 10, 12]
@@ -838,7 +838,7 @@ OPTIMAL_S1:
   nonlinearity: 4
   differential_uniformity: 16
   source: "https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Optimal_S1.txt"
-  cipher: true  # Used in cryptographic cipher
+  cipher: false  # Not used in cryptographic cipher
 
 OPTIMAL_S10:
   lut: [0, 1, 2, 13, 4, 7, 15, 6, 8, 14, 11, 5, 10, 9, 3, 12]
@@ -846,7 +846,7 @@ OPTIMAL_S10:
   nonlinearity: 4
   differential_uniformity: 10
   source: "https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Optimal_S10.txt"
-  cipher: true  # Used in cryptographic cipher
+  cipher: false  # Not used in cryptographic cipher
 
 OPTIMAL_S11:
   lut: [0, 1, 2, 13, 4, 7, 15, 6, 8, 14, 11, 10, 5, 9, 12, 3]
@@ -854,7 +854,7 @@ OPTIMAL_S11:
   nonlinearity: 4
   differential_uniformity: 8
   source: "https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Optimal_S11.txt"
-  cipher: true  # Used in cryptographic cipher
+  cipher: false  # Not used in cryptographic cipher
 
 OPTIMAL_S12:
   lut: [0, 1, 2, 13, 4, 7, 15, 6, 8, 14, 11, 10, 9, 3, 12, 5]
@@ -862,7 +862,7 @@ OPTIMAL_S12:
   nonlinearity: 4
   differential_uniformity: 10
   source: "https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Optimal_S12.txt"
-  cipher: true  # Used in cryptographic cipher
+  cipher: false  # Not used in cryptographic cipher
 
 OPTIMAL_S13:
   lut: [0, 1, 2, 13, 4, 7, 15, 6, 8, 14, 12, 9, 5, 11, 10, 3]
@@ -870,7 +870,7 @@ OPTIMAL_S13:
   nonlinearity: 4
   differential_uniformity: 10
   source: "https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Optimal_S13.txt"
-  cipher: true  # Used in cryptographic cipher
+  cipher: false  # Not used in cryptographic cipher
 
 OPTIMAL_S14:
   lut: [0, 1, 2, 13, 4, 7, 15, 6, 8, 14, 12, 11, 3, 9, 5, 10]
@@ -878,7 +878,7 @@ OPTIMAL_S14:
   nonlinearity: 4
   differential_uniformity: 10
   source: "https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Optimal_S14.txt"
-  cipher: true  # Used in cryptographic cipher
+  cipher: false  # Not used in cryptographic cipher
 
 OPTIMAL_S15:
   lut: [0, 1, 2, 13, 4, 7, 15, 6, 8, 14, 12, 11, 9, 3, 10, 5]
@@ -886,7 +886,7 @@ OPTIMAL_S15:
   nonlinearity: 4
   differential_uniformity: 10
   source: "https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Optimal_S15.txt"
-  cipher: true  # Used in cryptographic cipher
+  cipher: false  # Not used in cryptographic cipher
 
 OPTIMAL_S2:
   lut: [0, 1, 2, 13, 4, 7, 15, 6, 8, 11, 14, 3, 10, 12, 5, 9]
@@ -894,7 +894,7 @@ OPTIMAL_S2:
   nonlinearity: 4
   differential_uniformity: 16
   source: "https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Optimal_S2.txt"
-  cipher: true  # Used in cryptographic cipher
+  cipher: false  # Not used in cryptographic cipher
 
 OPTIMAL_S3:
   lut: [0, 1, 2, 13, 4, 7, 15, 6, 8, 12, 5, 3, 10, 14, 11, 9]
@@ -902,7 +902,7 @@ OPTIMAL_S3:
   nonlinearity: 4
   differential_uniformity: 6
   source: "https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Optimal_S3.txt"
-  cipher: true  # Used in cryptographic cipher
+  cipher: false  # Not used in cryptographic cipher
 
 OPTIMAL_S4:
   lut: [0, 1, 2, 13, 4, 7, 15, 6, 8, 12, 9, 11, 10, 14, 5, 3]
@@ -910,7 +910,7 @@ OPTIMAL_S4:
   nonlinearity: 4
   differential_uniformity: 10
   source: "https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Optimal_S4.txt"
-  cipher: true  # Used in cryptographic cipher
+  cipher: false  # Not used in cryptographic cipher
 
 OPTIMAL_S5:
   lut: [0, 1, 2, 13, 4, 7, 15, 6, 8, 12, 11, 9, 10, 14, 3, 5]
@@ -918,7 +918,7 @@ OPTIMAL_S5:
   nonlinearity: 4
   differential_uniformity: 6
   source: "https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Optimal_S5.txt"
-  cipher: true  # Used in cryptographic cipher
+  cipher: false  # Not used in cryptographic cipher
 
 OPTIMAL_S6:
   lut: [0, 1, 2, 13, 4, 7, 15, 6, 8, 12, 11, 9, 10, 14, 5, 3]
@@ -926,7 +926,7 @@ OPTIMAL_S6:
   nonlinearity: 4
   differential_uniformity: 8
   source: "https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Optimal_S6.txt"
-  cipher: true  # Used in cryptographic cipher
+  cipher: false  # Not used in cryptographic cipher
 
 OPTIMAL_S7:
   lut: [0, 1, 2, 13, 4, 7, 15, 6, 8, 12, 14, 11, 10, 9, 3, 5]
@@ -934,7 +934,7 @@ OPTIMAL_S7:
   nonlinearity: 4
   differential_uniformity: 10
   source: "https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Optimal_S7.txt"
-  cipher: true  # Used in cryptographic cipher
+  cipher: false  # Not used in cryptographic cipher
 
 OPTIMAL_S8:
   lut: [0, 1, 2, 13, 4, 7, 15, 6, 8, 14, 9, 5, 10, 11, 3, 12]
@@ -942,7 +942,7 @@ OPTIMAL_S8:
   nonlinearity: 4
   differential_uniformity: 16
   source: "https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Optimal_S8.txt"
-  cipher: true  # Used in cryptographic cipher
+  cipher: false  # Not used in cryptographic cipher
 
 OPTIMAL_S9:
   lut: [0, 1, 2, 13, 4, 7, 15, 6, 8, 14, 11, 3, 5, 9, 10, 12]
@@ -950,7 +950,7 @@ OPTIMAL_S9:
   nonlinearity: 4
   differential_uniformity: 10
   source: "https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Optimal_S9.txt"
-  cipher: true  # Used in cryptographic cipher
+  cipher: false  # Not used in cryptographic cipher
 
 PANDA:
   lut: [0, 1, 3, 2, 15, 12, 9, 11, 10, 6, 8, 7, 5, 14, 13, 4]
