@@ -1,0 +1,16 @@
+# Non-bijective 4-bit input SBoxes
+# Total: 1 SBox
+# Format: key, lut, input_bits, output_bits, algebraic_degree, nonlinearity, differential_uniformity, cipher, origin, [note]
+# Note: File name indicates input width (4-bit). `output_bits` must be explicitly present per entry.
+
+GAGE_Q:
+  lut: [1, 0, 3, 2, 0, 2, 1, 3, 2, 3, 0, 1, 3, 1, 2, 0]
+  input_bits: 4
+  output_bits: 2
+  algebraic_degree: 2
+  nonlinearity: 0
+  differential_uniformity: 16
+  year: [2019]
+  cipher: true
+  origin: "Gligoroski, Mihajloska, Otte; GAGE and InGAGE; NIST LWC Round 1 (2019); URL: https://csrc.nist.gov/projects/lightweight-cryptography/round-1-candidates"
+  note: "Quasigroup Nr. 173 (order 4), 4-to-2 bit, applied as chained d-transformation; did not advance to Round 2 (Norway/Germany)"
