@@ -200,8 +200,6 @@ from bigfatsbox import b8
 print(b8.aes)                        # SBoxEntry('AES')
 ```
 
-> **Note:** Python identifiers cannot start with a digit. Use `bigfatsbox.b3.sea` instead of `bigfatsbox.3bit.sea`. The bit-size namespace identifiers are `b3`, `b4`, `b5`, `b6`, `b7`, `b8`, `b9`.
-
 Accessing `sb.input_size` and `sb.output_size` works on any loaded entry:
 
 ```python
@@ -209,9 +207,6 @@ print(bigfatsbox.aes.input_size)    # 8
 print(bigfatsbox.aes.output_size)   # 8
 print(bigfatsbox.cmea.output_size)  # 8  (non-bijective; from output_bits field)
 ```
-
-**Duplicate key handling:** if the same YAML key appears in more than one file, accessing it raises a `ValueError` listing the conflicting files. Resolve the ambiguity by using the `bN` namespace, e.g. `bigfatsbox.b4.key`.
-
 
 ### Wildcard Search
 
@@ -235,11 +230,9 @@ for name, sb in bigfatsbox.find('pre*').items():
 sb = bigfatsbox['PRESENT']            # same as bigfatsbox.present
 ```
 
-Wildcards are case-insensitive. `*` matches any sequence of characters; `?` matches a single character.
 
 
-
-### Sage: Automatic Detection
+### Sage (Automatic Detection)
 
 When `import bigfatsbox` is evaluated inside a SageMath session, attribute access automatically returns a [`sage.crypto.sbox.SBox`](https://doc.sagemath.org/html/en/reference/cryptography/sage/crypto/sbox.html#sage.crypto.sbox.SBox) object directly. Additional metadata fields (`note`, `fun_fact`, `year`, `origin`, etc.) are not exposed via the SBox object itself but remain accessible via `bigfatsbox.yaml`:
 
@@ -307,3 +300,5 @@ all_dicts = bigfatsbox.yaml.all_entries()  # full dict: key → raw dict
 3. Python identifiers cannot start with a digit, so use `bigfatsbox.b3.sea` instead of `bigfatsbox.3bit.sea`. The `b` prefix is used throughout: `b3`, `b4`, `b5`, `b6`, `b7`, `b8`, `b9`.
 
 4. `find('pattern')` and `bigfatsbox['pattern']` support `*` and `?` wildcards (case-insensitive) and always return a `dict`. For an exact lookup, `bigfatsbox['KEY']` behaves identically to `bigfatsbox.key`.
+
+5. Wildcards are case-insensitive. `*` matches any sequence of characters; `?` matches a single character.
