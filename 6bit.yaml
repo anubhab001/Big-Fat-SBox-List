@@ -2,70 +2,92 @@
 # Total: 5 S-boxes
 # Format: key (our all-uppercase-Latin-underscore name), canonical_name, lut, algebraic_degree, nonlinearity, differential_uniformity, involution, fixed_point, absolute_linear_uniformity, year, cipher, origin, [aliases], [reuse], [note], [fun_fact]
 
-FIDES_6:
+FIDES6:
   canonical_name: ["FIDES"]
-  lut: [54, 0, 48, 13, 15, 18, 35, 53, 63, 25, 45, 52, 3, 20, 33, 41, 8, 10, 57, 37, 59, 36, 34, 2, 26, 50, 58, 24, 60, 19, 14, 42, 46, 61, 5, 49, 31, 11, 28, 4, 12, 30, 55, 22, 9, 6, 32, 23, 27, 39, 21, 17, 16, 29, 62, 1, 40, 47, 51, 56, 7, 43, 38, 44]
-  algebraic_degree: 4
+  lookup_table: [54, 0, 48, 13, 15, 18, 35, 53, 63, 25, 45, 52, 3, 20, 33, 41, 8, 10, 57, 37, 59, 36, 34, 2, 26, 50, 58, 24, 60, 19, 14, 42, 46, 61, 5, 49, 31, 11, 28, 4, 12, 30, 55, 22, 9, 6, 32, 23, 27, 39, 21, 17, 16, 29, 62, 1, 40, 47, 51, 56, 7, 43, 38, 44]
+  algebraic_degree: [4, 4, 3, 4, 3, 4]
   nonlinearity: 24
   differential_uniformity: 2
   absolute_linear_uniformity: 8
+  boomerang_uniformity: 2
   involution: false
   fixed_point: []
   year: [2013]
   cipher: true  # Used in a cipher
-  source: "https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes6/properties_Fides_6.txt"
+  differential_branch_number: 2
+  linear_branch_number: 2
+  univariate_polynomial: "36x⁶⁰ + 30x⁵⁸ + 43x⁵⁷ + 39x⁵⁶ + 21x⁵⁴ + 20x⁵³ + 57x⁵² + 34x⁵¹ + 50x⁵⁰ + 20x⁴⁹ + 36x⁴⁶ + 36x⁴⁵ + 10x⁴⁴ + 53x⁴³ + 35x⁴² + 35x⁴¹ + 23x⁴⁰ + x³⁹ + x³⁸ + 29x³⁷ + 5x³⁶ + 62x³⁵ + 4x³⁴ + 35x³³ + 22x³² + 49x³⁰ + 45x²⁹ + 35x²⁸ + 16x²⁷ + 5x²⁶ + 30x²⁵ + 13x²⁴ + 60x²³ + 49x²² + 37x²¹ + 26x²⁰ + 58x¹⁹ + 46x¹⁸ + 32x¹⁷ + 5x¹⁶ + 28x¹⁵ + 4x¹⁴ + 50x¹³ + 55x¹² + 46x¹¹ + 55x⁹ + 59x⁸ + 26x⁷ + 57x⁶ + 8x⁵ + 33x⁴ + 39x³ + 26x² + 49x + 54"
+  source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes6/properties_Fides_6.txt"
   origin: "Bilgin et al.; FIDES: Lightweight Authenticated Cipher with Side-Channel Resistance for Constrained Hardware; CHES 2013; URL: https://doi.org/10.1007/978-3-642-40349-1_8"
   note: "APN (Almost Perfect Nonlinear) permutation"
 
 DILLON:
-  lut: [0, 54, 48, 13, 15, 18, 53, 35, 25, 63, 45, 52, 3, 20, 41, 33, 59, 36, 2, 34, 10, 8, 57, 37, 60, 19, 42, 14, 50, 26, 58, 24, 31, 11, 4, 28, 61, 46, 5, 49, 9, 6, 23, 32, 30, 12, 55, 22, 39, 27, 21, 17, 16, 29, 1, 62, 47, 40, 51, 56, 7, 43, 44, 38]
-  algebraic_degree: 4
+  lookup_table: [0, 54, 48, 13, 15, 18, 53, 35, 25, 63, 45, 52, 3, 20, 41, 33, 59, 36, 2, 34, 10, 8, 57, 37, 60, 19, 42, 14, 50, 26, 58, 24, 31, 11, 4, 28, 61, 46, 5, 49, 9, 6, 23, 32, 30, 12, 55, 22, 39, 27, 21, 17, 16, 29, 1, 62, 47, 40, 51, 56, 7, 43, 44, 38]
+  algebraic_degree: [4, 4, 3, 4, 3, 4]
   nonlinearity: 24
   differential_uniformity: 2
   absolute_linear_uniformity: 8
+  boomerang_uniformity: 2
   involution: false
   fixed_point: [0]
   year: [2010]
   cipher: false  # Not used in a cipher
+  differential_branch_number: 2
+  linear_branch_number: 2
+  univariate_polynomial: "52x⁶⁰ + 15x⁵⁸ + 18x⁵⁷ + 48x⁵⁶ + 60x⁵⁴ + 61x⁵³ + 58x⁵² + 6x⁵¹ + 60x⁵⁰ + 28x⁴⁹ + 41x⁴⁸ + 46x⁴⁶ + 57x⁴⁵ + 7x⁴³ + 41x⁴² + 10x⁴¹ + 42x⁴⁰ + 49x³⁹ + 51x³⁸ + 46x³⁷ + 24x³⁶ + 33x³⁵ + 13x³⁴ + 7x³³ + 2x³² + 53x³⁰ + 8x²⁹ + 27x²⁸ + 4x²⁷ + 33x²⁶ + 56x²⁵ + 51x²³ + 58x²² + 38x²¹ + 44x²⁰ + 33x¹⁹ + 18x¹⁸ + 40x¹⁷ + 35x¹⁶ + 5x¹⁵ + 48x¹⁴ + 17x¹³ + 24x¹² + 32x¹¹ + 2x¹⁰ + 61x⁹ + 29x⁸ + 36x⁷ + 29x⁶ + 5x⁵ + 48x⁴ + 14x³ + 39x² + 4x"
   origin: "Browning, Dillon, McQuistan, Wolfe; An APN Permutation in Dimension 6; Finite Fields and Their Applications 16(7); pp. 482-500 (2010); DOI: 10.1016/j.ffa.2010.07.001"
-  aliases: [APN_6]
   note: "First (and so far only) known APN permutation in even dimension"
+  aliases: [APN_6]
 
 SC2000_6:
-  lut: [47, 59, 25, 42, 15, 23, 28, 39, 26, 38, 36, 19, 60, 24, 29, 56, 37, 63, 20, 61, 55, 2, 30, 44, 9, 10, 6, 22, 53, 48, 51, 11, 62, 52, 35, 18, 14, 46, 0, 54, 17, 40, 27, 4, 31, 8, 5, 12, 3, 16, 41, 34, 33, 7, 45, 49, 50, 58, 1, 21, 43, 57, 32, 13]
-  algebraic_degree: 5
+  canonical_name: ["SC2000"]
+  lookup_table: [47, 59, 25, 42, 15, 23, 28, 39, 26, 38, 36, 19, 60, 24, 29, 56, 37, 63, 20, 61, 55, 2, 30, 44, 9, 10, 6, 22, 53, 48, 51, 11, 62, 52, 35, 18, 14, 46, 0, 54, 17, 40, 27, 4, 31, 8, 5, 12, 3, 16, 41, 34, 33, 7, 45, 49, 50, 58, 1, 21, 43, 57, 32, 13]
+  algebraic_degree: [5, 5, 5, 5, 5, 5]
   nonlinearity: 24
   differential_uniformity: 4
   absolute_linear_uniformity: 8
+  boomerang_uniformity: 4
   involution: false
   fixed_point: []
   year: [2001]
   cipher: true  # Used in a cipher
+  differential_branch_number: 2
+  linear_branch_number: 2
+  univariate_polynomial: "24x⁶² + 19x⁶¹ + 21x⁵⁹ + 52x⁵⁵ + 60x⁴⁷ + 2x³¹ + 47"
   origin: "Shimoyama et al.; The Block Cipher SC2000; FSE 2001"
 
 BIPBIP:
   canonical_name: ["BipBip"]
-  lut: [0, 1, 2, 3, 4, 6, 62, 60, 8, 17, 14, 23, 43, 51, 53, 45, 25, 28, 9, 12, 21, 19, 61, 59, 49, 44, 37, 56, 58, 38, 54, 42, 52, 29, 55, 30, 48, 26, 11, 33, 46, 31, 41, 24, 15, 63, 16, 32, 40, 5, 57, 20, 36, 10, 13, 35, 18, 39, 7, 50, 27, 47, 22, 34]
-  algebraic_degree: 3
+  lookup_table: [0, 1, 2, 3, 4, 6, 62, 60, 8, 17, 14, 23, 43, 51, 53, 45, 25, 28, 9, 12, 21, 19, 61, 59, 49, 44, 37, 56, 58, 38, 54, 42, 52, 29, 55, 30, 48, 26, 11, 33, 46, 31, 41, 24, 15, 63, 16, 32, 40, 5, 57, 20, 36, 10, 13, 35, 18, 39, 7, 50, 27, 47, 22, 34]
+  algebraic_degree: [2, 3, 2, 2, 2, 3]
   nonlinearity: 24
   differential_uniformity: 4
   absolute_linear_uniformity: 8
+  boomerang_uniformity: 16
   involution: false
   fixed_point: [0, 1, 2, 3, 4, 8]
   year: [2023]
   cipher: true  # Used in a cipher
+  differential_branch_number: 2
+  linear_branch_number: 2
+  univariate_polynomial: "24x⁵⁶ + 33x⁵² + 40x⁵⁰ + 45x⁴⁹ + 48x⁴⁸ + 53x⁴⁴ + 21x⁴² + 11x⁴¹ + 55x⁴⁰ + 38x³⁸ + 28x³⁷ + 45x³⁶ + 12x³⁵ + 20x³⁴ + 26x³³ + 34x³² + 45x²⁸ + 10x²⁶ + 5x²⁵ + 53x²⁴ + 60x²² + 23x²¹ + 41x²⁰ + 2x¹⁹ + 4x¹⁸ + 47x¹⁷ + 24x¹⁶ + 22x¹⁴ + 36x¹³ + 62x¹² + 24x¹¹ + 33x¹⁰ + 20x⁹ + 50x⁸ + 2x⁷ + 12x⁶ + 15x⁵ + 45x⁴ + 38x³ + 8x² + 19x"
   origin: "Belkheyar, Daemen, Dobraunig, Ghosh, Rasoolzadeh; BipBip; TCHES 2023(1); DOI: 10.46586/tches.v2023.i1.326-368"
   note: "6-bit SBox (BipBipBox) applied 4 times to 24-bit state. Source: gitlab.science.ru.nl/shahramr/bipbip_tweakable_block_cipher"
 
 SPEEDY:
-  lut: [8, 0, 9, 3, 56, 16, 41, 19, 12, 13, 4, 7, 48, 1, 32, 35, 26, 18, 24, 50, 62, 22, 44, 54, 28, 29, 20, 55, 52, 5, 36, 39, 2, 6, 11, 15, 51, 23, 33, 21, 10, 27, 14, 31, 49, 17, 37, 53, 34, 38, 42, 46, 58, 30, 40, 60, 43, 59, 47, 63, 57, 25, 45, 61]
-  algebraic_degree: 5
+  canonical_name: ["SPEEDY"]
+  lookup_table: [8, 0, 9, 3, 56, 16, 41, 19, 12, 13, 4, 7, 48, 1, 32, 35, 26, 18, 24, 50, 62, 22, 44, 54, 28, 29, 20, 55, 52, 5, 36, 39, 2, 6, 11, 15, 51, 23, 33, 21, 10, 27, 14, 31, 49, 17, 37, 53, 34, 38, 42, 46, 58, 30, 40, 60, 43, 59, 47, 63, 57, 25, 45, 61]
+  algebraic_degree: [5, 4, 3, 3, 3, 5]
   nonlinearity: 20
   differential_uniformity: 8
   absolute_linear_uniformity: 12
+  boomerang_uniformity: 36
   involution: false
   fixed_point: [3]
   year: [2021]
   cipher: true  # Used in a cipher
+  differential_branch_number: 2
+  linear_branch_number: 2
+  univariate_polynomial: "63x⁶² + 14x⁶¹ + 43x⁶⁰ + 21x⁵⁹ + 9x⁵⁸ + 39x⁵⁷ + 33x⁵⁶ + 44x⁵⁵ + 43x⁵⁴ + 25x⁵³ + 22x⁵² + 35x⁵¹ + 35x⁵⁰ + 26x⁴⁹ + 47x⁴⁸ + 13x⁴⁷ + 53x⁴⁶ + 23x⁴⁵ + 12x⁴⁴ + 60x⁴³ + 48x⁴² + 7x⁴¹ + 18x⁴⁰ + 4x³⁹ + 17x³⁸ + 7x³⁷ + 52x³⁶ + 29x³⁵ + 37x³⁴ + 24x³³ + 2x³² + 37x³¹ + 36x³⁰ + 4x²⁹ + 33x²⁸ + 28x²⁷ + 24x²⁶ + 22x²⁵ + 46x²⁴ + 29x²³ + 62x²² + 33x²¹ + 57x²⁰ + 38x¹⁹ + 59x¹⁸ + 5x¹⁷ + 47x¹⁶ + 47x¹⁵ + 23x¹⁴ + 38x¹³ + 42x¹² + 24x¹¹ + 17x¹⁰ + 32x⁹ + 47x⁸ + 17x⁷ + 42x⁶ + 55x⁵ + 24x⁴ + 63x³ + 30x² + 24x + 8"
   origin: "Leander, Moos, Moradi, Rasoolzadeh; SPEEDY: A Family of Ultra-Lightweight Ciphers; TCHES 2021(4); DOI: 10.46586/tches.v2021.i4.510-545"
   note: "6-bit SBox for high-speed block cipher"
