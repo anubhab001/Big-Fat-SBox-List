@@ -19,4 +19,4 @@ DRYGASCON256:
   univariate_polynomial: "120x³⁸⁴ + 139x³²⁰ + 72x²⁸⁸ + 203x²⁷² + 496x²⁶⁴ + 197x²⁶⁰ + 195x²⁵⁸ + 404x²⁵⁷ + 262x²⁵⁶ + 199x¹⁹² + 283x¹⁶⁰ + 197x¹⁴⁴ + 51x¹³⁶ + 182x¹³² + 334x¹³⁰ + 454x¹²⁹ + 171x¹²⁸ + 53x⁹⁶ + 173x⁸⁰ + 208x⁷² + 476x⁶⁸ + 61x⁶⁶ + 113x⁶⁵ + 452x⁶⁴ + 510x⁴⁸ + 483x⁴⁰ + 256x³⁶ + 11x³⁴ + 441x³³ + 383x³² + 503x²⁴ + 185x²⁰ + 292x¹⁸ + 182x¹⁷ + 206x¹⁶ + 192x¹² + 45x⁹ + 272x⁸ + 234x⁶ + 166x⁵ + 433x⁴ + 430x³ + 301x² + 373x + 16"
   source: "URL: https://github.com/sagemath/sage/blob/develop/src/sage/crypto/sboxes.py"
   origin: "Sebastien Riou; DryGASCON; NIST Lightweight Cryptography Round 2 submission; 2019; URL: https://csrc.nist.gov/CSRC/media/Projects/lightweight-cryptography/documents/round-2/spec-doc-rnd2/drygascon-spec-round2.pdf"
-  note: "DryGASCON-256 (NIST LWC Round 2, Table 24 of the spec). Quadratic permutation."
+  note: "DryGASCON-256 (NIST LWC Round 2, Table 24 of specification). Quadratic permutation."
