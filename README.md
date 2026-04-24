@@ -62,8 +62,8 @@ Each YAML entry has the following fields in order (mandatory fields are marked w
 | `boomerang_uniformity`<sup>*</sup> | int | Boomerang Uniformity: Maximum entry of the boomerang connectivity table (BCT). The BCT entry for $\Delta_{in}, \Delta_{out}$ counts the number of $x$ such that $S^{-1}(S(x) \oplus \Delta_{out}) \oplus S^{-1}(S(x \oplus \Delta_{in}) \oplus \Delta_{out}) = \Delta_{in}$, maximised over all non-zero $\Delta_{in}, \Delta_{out}$; compulsory for bijective SBoxes; skipped for non-bijective SBoxes |
 | `differential_branch_number`<sup>*</sup> | int | Differential branch number: Minimum weight $\mathrm{wt}(\Delta_{in}) + \mathrm{wt}(\Delta_{out})$ over all non-trivial DDT entries |
 | `linear_branch_number`<sup>*</sup> | int | Linear branch number: Minimum weight $\mathrm{wt}(a) + \mathrm{wt}(b)$ over all non-trivial LAT entries |
-| `univariate_polynomial`<sup>*</sup> | str or null | Interpolation polynomial of the SBox over $\mathrm{GF}(2^n)$: the unique polynomial $p(x) = \sum_{k=0}^{2^n-2} c_k x^k$ over $\mathrm{GF}(2^n)$ satisfying $p(i) = S(i)$ for all $i$ |
-| `involution`<sup>*</sup> | bool | Involutory SBox: True iff $S(S(x)) = x$ for all $x$ |
+| `univariate_polynomial`<sup>*</sup> | str or null | Interpolation polynomial of the SBox over $\mathrm{GF}(2^n)$: the unique polynomial $p(x) = \sum_{k=0}^{2^n-2} c_k x^k$ over $\mathrm{GF}(2^n)$ satisfying $p(i) = S(i)$ $\forall i$ |
+| `involution`<sup>*</sup> | bool | Involutory SBox: True iff $S(S(x)) = x$  $\forall x$ |
 | `fixed_point`<sup>*</sup> | list | Fixed point:  Values where $S(x) = x$ (`[]` for no fixed point) |
 | `year`<sup>*</sup> | list | Collection of significant publication years (competition submission, journal publication, standard approval) etc. Compulsory for all entries including non-cipher research SBoxes (e.g. AE.1–302 use the year of De Cannière's PhD thesis, KU Leuven, 2007). |
 | `cipher`<sup>*</sup> | bool | True iff used in a cipher |
@@ -120,7 +120,7 @@ With all files (including YAML data files) available in the working directory (o
 
 ```python
 import bigfatsbox
-print(bigfatsbox.last_update)    # e.g. "25 April 2026 16:00 UTC" — confirms the import worked
+print(bigfatsbox.last_update)
 ```
 
 
@@ -181,7 +181,7 @@ print(clefia.s0.canonical_name)  # ['CLEFIA', 'S₀']
 ```
 
 
-### Lazy Loading and Bit-size Access
+### Lazy Loading and Access through Size
 
 The loader is lazy, meaning importing `bigfatsbox` does not load any YAML file immediately. To load all SBoxes of a given input bit size, use `load_bits(n)` or the `bN` namespace:
 
@@ -232,7 +232,7 @@ sb = bigfatsbox['PRESENT']            # same as bigfatsbox.present
 
 
 
-### Sage (Automatic Detection)
+### Sage (Automatic)
 
 When `import bigfatsbox` is evaluated inside a SageMath session, attribute access automatically returns a [`sage.crypto.sbox.SBox`](https://doc.sagemath.org/html/en/reference/cryptography/sage/crypto/sbox.html#sage.crypto.sbox.SBox) object directly. Additional metadata fields (`note`, `fun_fact`, `year`, `origin`, etc.) are not exposed via the SBox object itself but remain accessible via `bigfatsbox.yaml`:
 
