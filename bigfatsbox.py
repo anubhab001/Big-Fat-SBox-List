@@ -239,8 +239,11 @@ class SBoxEntry:
     # ── dunder ──────────────────────────────────────────────────────────────
 
     def __repr__(self) -> str:
-        name = object.__getattribute__(self, '_name')
-        return f"SBoxEntry({name!r})"
+        name   = object.__getattribute__(self, '_name')
+        data   = object.__getattribute__(self, '_data')
+        origin = data.get('origin', '')
+        short  = (origin[:57] + '...') if len(origin) > 60 else origin
+        return f"SBoxEntry({name!r}, origin={short!r})"
 
     def __str__(self) -> str:
         return self.__repr__()

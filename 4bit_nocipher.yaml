@@ -5525,6 +5525,7 @@ NUM1_DL_04.0:
   linear_branch_number: 2
   univariate_polynomial: "3x¹³ + 5x¹² + x¹¹ + 7x¹⁰ + 10x⁹ + 13x⁸ + 4x⁷ + 10x⁵ + 14x⁴ + 7x³ + 13x² + 6x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Num1_DL_04_0.txt"
+  origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN; TOSC 2019"
 
 NUM1_DL_04.1:
   lookup_table: [0, 12, 13, 10, 5, 11, 14, 7, 15, 6, 2, 1, 3, 8, 9, 4]
@@ -5540,6 +5541,7 @@ NUM1_DL_04.1:
   linear_branch_number: 2
   univariate_polynomial: "15x¹⁴ + 13x¹³ + 12x¹² + 12x¹¹ + 14x¹⁰ + 11x⁹ + 14x⁸ + 2x⁷ + 10x⁶ + 8x⁵ + 8x³ + 13x²"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Num1_DL_04_1.txt"
+  origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN; TOSC 2019"
 
 NUM1_DL_13.0:
   lookup_table: [0, 12, 9, 7, 6, 1, 15, 2, 3, 11, 4, 14, 13, 8, 10, 5]
@@ -5555,6 +5557,7 @@ NUM1_DL_13.0:
   linear_branch_number: 2
   univariate_polynomial: "x¹³ + 2x¹² + 11x¹¹ + 2x⁹ + 13x⁸ + 2x⁷ + 3x⁶ + 3x⁵ + 14x⁴ + 2x³ + 3x² + 6x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Num1_DL_13_0.txt"
+  origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN; TOSC 2019"
 
 NUM1_DL_13.1:
   lookup_table: [0, 12, 9, 7, 15, 2, 6, 1, 3, 11, 4, 14, 10, 5, 13, 8]
@@ -5570,6 +5573,7 @@ NUM1_DL_13.1:
   linear_branch_number: 2
   univariate_polynomial: "x¹³ + 11x¹² + 11x¹¹ + 7x¹⁰ + 8x⁹ + 13x⁸ + 2x⁷ + 10x⁶ + 14x⁵ + x⁴ + 2x³ + 4x² + 14x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Num1_DL_13_1.txt"
+  origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN; TOSC 2019"
 
 NUM1_DL_13.2:
   lookup_table: [0, 11, 8, 5, 15, 12, 3, 6, 14, 4, 7, 9, 2, 1, 13, 10]
@@ -5585,6 +5589,7 @@ NUM1_DL_13.2:
   linear_branch_number: 2
   univariate_polynomial: "8x¹⁴ + 5x¹² + 11x¹¹ + 10x¹⁰ + 6x⁹ + x⁸ + 3x⁷ + 11x⁶ + 8x⁴ + 6x³ + 2x² + 4x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Num1_DL_13_2.txt"
+  origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN; TOSC 2019"
 
 NUM1_DL_13.3:
   lookup_table: [0, 13, 4, 11, 7, 14, 9, 2, 6, 10, 3, 5, 8, 1, 15, 12]
@@ -5600,6 +5605,7 @@ NUM1_DL_13.3:
   linear_branch_number: 2
   univariate_polynomial: "12x¹⁴ + 7x¹³ + x¹² + 5x¹¹ + 7x¹⁰ + 7x⁹ + 8x⁸ + 14x⁷ + 7x⁶ + 11x⁵ + 12x⁴ + 7x³ + 10x² + 9x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Num1_DL_13_3.txt"
+  origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN; TOSC 2019"
 
 NUM1_DL_22.0:
   lookup_table: [0, 13, 8, 2, 14, 11, 7, 5, 15, 6, 3, 12, 4, 1, 9, 10]
@@ -5615,6 +5621,7 @@ NUM1_DL_22.0:
   linear_branch_number: 2
   univariate_polynomial: "12x¹⁴ + 4x¹² + 9x¹¹ + 6x¹⁰ + 10x⁹ + 13x⁸ + 5x⁷ + 3x⁶ + 9x⁵ + 14x⁴ + 2x³ + 5x² + 11x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Num1_DL_22_0.txt"
+  origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN; TOSC 2019"
 
 NUM1_DL_22.1:
   lookup_table: [0, 11, 14, 1, 10, 7, 13, 4, 6, 12, 9, 15, 5, 8, 3, 2]
@@ -5630,6 +5637,7 @@ NUM1_DL_22.1:
   linear_branch_number: 2
   univariate_polynomial: "4x¹⁴ + 15x¹³ + 13x¹¹ + 6x¹⁰ + 9x⁹ + 15x⁸ + 6x⁷ + 11x⁶ + 5x⁵ + 2x⁴ + 15x² + 8x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Num1_DL_22_1.txt"
+  origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN; TOSC 2019"
 
 NUM1_DL_22.2:
   lookup_table: [0, 11, 6, 9, 12, 5, 3, 14, 13, 7, 8, 4, 2, 10, 15, 1]
@@ -5645,6 +5653,7 @@ NUM1_DL_22.2:
   linear_branch_number: 2
   univariate_polynomial: "9x¹⁴ + 7x¹³ + 4x¹² + 11x¹¹ + 7x¹⁰ + 15x⁹ + 10x⁸ + 5x⁷ + 3x⁶ + 10x⁵ + 4x⁴ + 14x³ + 15x² + x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Num1_DL_22_2.txt"
+  origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN; TOSC 2019"
 
 NUM1_DL_22.3:
   lookup_table: [0, 14, 9, 5, 15, 8, 10, 7, 3, 11, 6, 12, 4, 1, 13, 2]
@@ -5660,6 +5669,7 @@ NUM1_DL_22.3:
   linear_branch_number: 2
   univariate_polynomial: "4x¹⁴ + 9x¹³ + 6x¹² + 13x¹¹ + 14x¹⁰ + 12x⁹ + 15x⁸ + 8x⁷ + 13x⁶ + 3x⁵ + 12x⁴ + 4x³ + 4x² + 15x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Num1_DL_22_3.txt"
+  origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN; TOSC 2019"
 
 OPTIMAL.S0:
   lookup_table: [0, 1, 2, 13, 4, 7, 15, 6, 8, 11, 12, 9, 3, 14, 10, 5]
@@ -5692,6 +5702,7 @@ OPTIMAL.S1:
   linear_branch_number: 2
   univariate_polynomial: "15x¹⁴ + 4x¹³ + 15x¹² + 13x¹¹ + x¹⁰ + 2x⁹ + 14x⁸ + 2x⁷ + 10x⁶ + 15x⁵ + 7x⁴ + 15x³ + 7x² + 13x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Optimal_S1.txt"
+  origin: "Leander, Poschmann; On the Classification of 4 Bit S-Boxes; WAIFI 2007"
   
 OPTIMAL.S2:
   lookup_table: [0, 1, 2, 13, 4, 7, 15, 6, 8, 11, 14, 3, 10, 12, 5, 9]
@@ -5707,6 +5718,7 @@ OPTIMAL.S2:
   linear_branch_number: 2
   univariate_polynomial: "8x¹⁴ + 10x¹³ + 2x¹² + 13x¹⁰ + 10x⁹ + 3x⁸ + 6x⁷ + 2x⁶ + 9x⁵ + 6x⁴ + 2x³ + 6x² + 10x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Optimal_S2.txt"
+  origin: "Leander, Poschmann; On the Classification of 4 Bit S-Boxes; WAIFI 2007"
 
 OPTIMAL.S3:
   lookup_table: [0, 1, 2, 13, 4, 7, 15, 6, 8, 12, 5, 3, 10, 14, 11, 9]
@@ -5722,6 +5734,7 @@ OPTIMAL.S3:
   linear_branch_number: 2
   univariate_polynomial: "2x¹⁴ + 15x¹³ + 4x¹² + 3x¹¹ + 12x⁹ + 5x⁸ + 10x⁷ + 6x⁶ + 15x⁵ + 8x⁴ + 6x³ + 15x²"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Optimal_S3.txt"
+  origin: "Leander, Poschmann; On the Classification of 4 Bit S-Boxes; WAIFI 2007"
 
 OPTIMAL.S4:
   lookup_table: [0, 1, 2, 13, 4, 7, 15, 6, 8, 12, 9, 11, 10, 14, 5, 3]
@@ -5737,6 +5750,7 @@ OPTIMAL.S4:
   linear_branch_number: 2
   univariate_polynomial: "3x¹⁴ + x¹³ + 14x¹² + 6x¹¹ + 15x¹⁰ + 4x⁹ + x⁸ + 12x⁶ + 6x⁵ + 12x⁴ + 14x³ + 6x² + 15x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Optimal_S4.txt"
+  origin: "Leander, Poschmann; On the Classification of 4 Bit S-Boxes; WAIFI 2007"
 
 OPTIMAL.S5:
   lookup_table: [0, 1, 2, 13, 4, 7, 15, 6, 8, 12, 11, 9, 10, 14, 3, 5]
@@ -5752,6 +5766,7 @@ OPTIMAL.S5:
   linear_branch_number: 2
   univariate_polynomial: "7x¹⁴ + 5x¹³ + 3x¹² + 2x¹¹ + 6x¹⁰ + 4x⁹ + 6x⁸ + 4x⁷ + 8x⁶ + 11x⁵ + 11x⁴ + 7x³ + 12x² + x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Optimal_S5.txt"
+  origin: "Leander, Poschmann; On the Classification of 4 Bit S-Boxes; WAIFI 2007"
 
 OPTIMAL.S6:
   lookup_table: [0, 1, 2, 13, 4, 7, 15, 6, 8, 12, 11, 9, 10, 14, 5, 3]
@@ -5767,6 +5782,7 @@ OPTIMAL.S6:
   linear_branch_number: 2
   univariate_polynomial: "x¹⁴ + 3x¹³ + 8x¹² + 4x¹¹ + x¹⁰ + 14x⁹ + 4x⁸ + 2x⁷ + 4x⁶ + 10x⁵ + 3x⁴ + 10x³ + 15x² + 14x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Optimal_S6.txt"
+  origin: "Leander, Poschmann; On the Classification of 4 Bit S-Boxes; WAIFI 2007"
 
 OPTIMAL.S7:
   lookup_table: [0, 1, 2, 13, 4, 7, 15, 6, 8, 12, 14, 11, 10, 9, 3, 5]
@@ -5782,6 +5798,7 @@ OPTIMAL.S7:
   linear_branch_number: 2
   univariate_polynomial: "3x¹⁴ + 6x¹³ + 13x¹² + 6x¹¹ + 14x¹⁰ + 7x⁷ + 9x⁶ + 6x⁵ + 15x⁴ + 12x³ + 7x² + 13x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Optimal_S7.txt"
+  origin: "Leander, Poschmann; On the Classification of 4 Bit S-Boxes; WAIFI 2007"
 
 OPTIMAL.S8:
   lookup_table: [0, 1, 2, 13, 4, 7, 15, 6, 8, 14, 9, 5, 10, 11, 3, 12]
@@ -5797,6 +5814,7 @@ OPTIMAL.S8:
   linear_branch_number: 2
   univariate_polynomial: "14x¹⁴ + 15x¹³ + 14x¹² + 12x⁹ + 7x⁸ + 5x⁷ + 6x⁵ + 3x⁴ + 10x³ + 11x² + 4x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Optimal_S8.txt"
+  origin: "Leander, Poschmann; On the Classification of 4 Bit S-Boxes; WAIFI 2007"
 
 OPTIMAL.S9:
   lookup_table: [0, 1, 2, 13, 4, 7, 15, 6, 8, 14, 11, 3, 5, 9, 10, 12]
@@ -5812,6 +5830,7 @@ OPTIMAL.S9:
   linear_branch_number: 2
   univariate_polynomial: "6x¹³ + 15x¹² + 7x¹¹ + 12x¹⁰ + 2x⁹ + 2x⁸ + 5x⁷ + 10x⁶ + 7x⁵ + 12x⁴ + 15x³ + 6x² + 14x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Optimal_S9.txt"
+  origin: "Leander, Poschmann; On the Classification of 4 Bit S-Boxes; WAIFI 2007"
 
 OPTIMAL.S10:
   lookup_table: [0, 1, 2, 13, 4, 7, 15, 6, 8, 14, 11, 5, 10, 9, 3, 12]
@@ -5827,6 +5846,7 @@ OPTIMAL.S10:
   linear_branch_number: 2
   univariate_polynomial: "3x¹³ + 4x¹² + 14x¹¹ + 14x¹⁰ + 8x⁹ + 9x⁷ + 6x⁶ + 10x⁵ + 14x⁴ + 2x³ + 7x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Optimal_S10.txt"
+  origin: "Leander, Poschmann; On the Classification of 4 Bit S-Boxes; WAIFI 2007"
 
 OPTIMAL.S11:
   lookup_table: [0, 1, 2, 13, 4, 7, 15, 6, 8, 14, 11, 10, 5, 9, 12, 3]
@@ -5842,6 +5862,7 @@ OPTIMAL.S11:
   linear_branch_number: 2
   univariate_polynomial: "4x¹⁴ + 8x¹³ + 4x¹² + 10x¹¹ + x¹⁰ + 8x⁹ + 13x⁸ + 2x⁷ + 6x⁶ + 5x⁵ + 8x⁴ + 2x³ + 2x² + 14x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Optimal_S11.txt"
+  origin: "Leander, Poschmann; On the Classification of 4 Bit S-Boxes; WAIFI 2007"
 
 OPTIMAL.S12:
   lookup_table: [0, 1, 2, 13, 4, 7, 15, 6, 8, 14, 11, 10, 9, 3, 12, 5]
@@ -5857,6 +5878,7 @@ OPTIMAL.S12:
   linear_branch_number: 2
   univariate_polynomial: "4x¹⁴ + 15x¹³ + 8x¹² + 12x¹¹ + 2x¹⁰ + 12x⁹ + 11x⁸ + 3x⁷ + 14x⁶ + 12x⁵ + 7x⁴ + 2x³ + 11x² + 4x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Optimal_S12.txt"
+  origin: "Leander, Poschmann; On the Classification of 4 Bit S-Boxes; WAIFI 2007"
 
 OPTIMAL.S13:
   lookup_table: [0, 1, 2, 13, 4, 7, 15, 6, 8, 14, 12, 9, 5, 11, 10, 3]
@@ -5872,6 +5894,7 @@ OPTIMAL.S13:
   linear_branch_number: 2
   univariate_polynomial: "2x¹⁴ + 13x¹³ + 10x¹² + 10x¹¹ + x¹⁰ + 4x⁹ + 10x⁸ + x⁷ + 11x⁶ + 2x⁵ + x⁴ + 13x³ + 4x² + x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Optimal_S13.txt"
+  origin: "Leander, Poschmann; On the Classification of 4 Bit S-Boxes; WAIFI 2007"
 
 OPTIMAL.S14:
   lookup_table: [0, 1, 2, 13, 4, 7, 15, 6, 8, 14, 12, 11, 3, 9, 5, 10]
@@ -5887,6 +5910,7 @@ OPTIMAL.S14:
   linear_branch_number: 2
   univariate_polynomial: "11x¹⁴ + x¹³ + 4x¹² + 5x¹¹ + 5x¹⁰ + 2x⁹ + 11x⁷ + 4x⁶ + 9x⁵ + 14x⁴ + 10x³ + 3x² + 12x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Optimal_S14.txt"
+  origin: "Leander, Poschmann; On the Classification of 4 Bit S-Boxes; WAIFI 2007"
 
 OPTIMAL.S15:
   lookup_table: [0, 1, 2, 13, 4, 7, 15, 6, 8, 14, 12, 11, 9, 3, 10, 5]
@@ -5902,6 +5926,7 @@ OPTIMAL.S15:
   linear_branch_number: 2
   univariate_polynomial: "14x¹⁴ + 4x¹³ + 10x¹² + 2x¹⁰ + 14x⁹ + 14x⁸ + 14x⁷ + 13x⁶ + 11x⁵ + 12x⁴ + x³ + 15x² + 9x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Optimal_S15.txt"
+  origin: "Leander, Poschmann; On the Classification of 4 Bit S-Boxes; WAIFI 2007"
 
 REC.0:
   lookup_table: [9, 4, 15, 10, 14, 1, 0, 6, 12, 7, 3, 8, 2, 11, 5, 13]
@@ -5917,6 +5942,7 @@ REC.0:
   linear_branch_number: 2
   univariate_polynomial: "14x¹⁴ + 7x¹³ + 15x¹² + x¹¹ + x¹⁰ + 8x⁹ + 7x⁸ + 9x⁷ + 10x⁶ + 12x⁵ + 9x⁴ + 6x³ + x² + 5x + 9"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_REC_0.txt"
+  origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN; TOSC 2019"
 
 SERPENTTYPE.S0:
   lookup_table: [0, 3, 5, 6, 7, 10, 11, 12, 13, 4, 14, 9, 8, 1, 2, 15]
@@ -5933,6 +5959,7 @@ SERPENTTYPE.S0:
   linear_branch_number: 2
   univariate_polynomial: "13x¹⁴ + 13x¹³ + 8x¹² + 14x¹¹ + 6x¹⁰ + 7x⁹ + 9x⁸ + 4x⁷ + 11x⁶ + x⁵ + 13x⁴ + 5x² + 11x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Serpent_type_S0.txt"
+  origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN; TOSC 2019"
   note: "4-bit S-box categorized as 'Serpent-type' in the PEIGEN S-box collection (Sasaki, Tiessen et al., CHES 2017); shares the optimal cryptographic properties (DU=4, NL=4) of the S-boxes in the Serpent block cipher (Anderson, Biham, Knudsen, 1998 AES finalist), but is a distinct representative of an affine equivalence class"
 
 SERPENTTYPE.S1:
@@ -5950,6 +5977,7 @@ SERPENTTYPE.S1:
   linear_branch_number: 2
   univariate_polynomial: "7x¹⁴ + 7x¹³ + 13x¹² + 5x¹¹ + 13x¹⁰ + 2x⁹ + 13x⁸ + 9x⁷ + 13x⁶ + 14x⁵ + 2x⁴ + 12x³ + 13x²"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Serpent_type_S1.txt"
+  origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN; TOSC 2019"
   note: "4-bit S-box categorized as 'Serpent-type' in the PEIGEN S-box collection (Sasaki, Tiessen et al., CHES 2017); shares the optimal cryptographic properties (DU=4, NL=4) of the S-boxes in the Serpent block cipher (Anderson, Biham, Knudsen, 1998 AES finalist), but is a distinct representative of an affine equivalence class"
 
 SERPENTTYPE.S2:
@@ -5967,6 +5995,7 @@ SERPENTTYPE.S2:
   linear_branch_number: 2
   univariate_polynomial: "12x¹⁴ + 7x¹³ + 4x¹² + 9x¹¹ + 6x¹⁰ + 3x⁹ + 4x⁸ + 10x⁷ + 10x⁶ + x⁴ + 7x³ + 3x² + x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Serpent_type_S2.txt"
+  origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN; TOSC 2019"
   note: "4-bit S-box categorized as 'Serpent-type' in the PEIGEN S-box collection (Sasaki, Tiessen et al., CHES 2017); shares the optimal cryptographic properties (DU=4, NL=4) of the S-boxes in the Serpent block cipher (Anderson, Biham, Knudsen, 1998 AES finalist), but is a distinct representative of an affine equivalence class"
 
 SERPENTTYPE.S3:
@@ -5984,6 +6013,7 @@ SERPENTTYPE.S3:
   linear_branch_number: 2
   univariate_polynomial: "14x¹⁴ + 4x¹³ + 9x¹² + 8x¹¹ + 14x¹⁰ + 2x⁹ + 2x⁸ + 11x⁷ + 11x⁶ + 12x⁴ + 8x³ + 12x² + 14x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Serpent_type_S3.txt"
+  origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN; TOSC 2019"
   note: "4-bit S-box categorized as 'Serpent-type' in the PEIGEN S-box collection (Sasaki, Tiessen et al., CHES 2017); shares the optimal cryptographic properties (DU=4, NL=4) of the S-boxes in the Serpent block cipher (Anderson, Biham, Knudsen, 1998 AES finalist), but is a distinct representative of an affine equivalence class"
 
 SERPENTTYPE.S4:
@@ -6001,6 +6031,7 @@ SERPENTTYPE.S4:
   linear_branch_number: 2
   univariate_polynomial: "2x¹⁴ + 2x¹³ + 11x¹² + 2x¹¹ + 10x¹⁰ + 4x⁹ + 4x⁸ + 10x⁷ + 8x⁶ + x⁵ + 8x⁴ + 8x³ + 15x² + 12x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Serpent_type_S4.txt"
+  origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN; TOSC 2019"
   note: "4-bit S-box categorized as 'Serpent-type' in the PEIGEN S-box collection (Sasaki, Tiessen et al., CHES 2017); shares the optimal cryptographic properties (DU=4, NL=4) of the S-boxes in the Serpent block cipher (Anderson, Biham, Knudsen, 1998 AES finalist), but is a distinct representative of an affine equivalence class"
 
 SERPENTTYPE.S5:
@@ -6018,6 +6049,7 @@ SERPENTTYPE.S5:
   linear_branch_number: 2
   univariate_polynomial: "4x¹⁴ + 7x¹³ + 15x¹² + 7x¹¹ + 9x¹⁰ + 10x⁹ + 6x⁸ + 12x⁷ + 12x⁶ + 11x⁵ + 8x⁴ + 6x³ + 4x² + 12x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Serpent_type_S5.txt"
+  origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN; TOSC 2019"
   note: "4-bit S-box categorized as 'Serpent-type' in the PEIGEN S-box collection (Sasaki, Tiessen et al., CHES 2017); shares the optimal cryptographic properties (DU=4, NL=4) of the S-boxes in the Serpent block cipher (Anderson, Biham, Knudsen, 1998 AES finalist), but is a distinct representative of an affine equivalence class"
 
 SERPENTTYPE.S6:
@@ -6035,6 +6067,7 @@ SERPENTTYPE.S6:
   linear_branch_number: 2
   univariate_polynomial: "7x¹⁴ + 13x¹³ + 7x¹² + 4x¹¹ + 10x¹⁰ + x⁹ + 8x⁸ + 6x⁷ + 14x⁶ + x⁵ + 14x⁴ + 7x³ + 9x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Serpent_type_S6.txt"
+  origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN; TOSC 2019"
   note: "4-bit S-box categorized as 'Serpent-type' in the PEIGEN S-box collection (Sasaki, Tiessen et al., CHES 2017); shares the optimal cryptographic properties (DU=4, NL=4) of the S-boxes in the Serpent block cipher (Anderson, Biham, Knudsen, 1998 AES finalist), but is a distinct representative of an affine equivalence class"
 
 SERPENTTYPE.S7:
@@ -6052,6 +6085,7 @@ SERPENTTYPE.S7:
   linear_branch_number: 2
   univariate_polynomial: "8x¹⁴ + 7x¹³ + 9x¹² + 6x¹¹ + 4x¹⁰ + 10x⁹ + 3x⁸ + x⁷ + 11x⁶ + 12x⁵ + 7x⁴ + 7x³ + 11x² + 3x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Serpent_type_S7.txt"
+  origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN; TOSC 2019"
   note: "4-bit S-box categorized as 'Serpent-type' in the PEIGEN S-box collection (Sasaki, Tiessen et al., CHES 2017); shares the optimal cryptographic properties (DU=4, NL=4) of the S-boxes in the Serpent block cipher (Anderson, Biham, Knudsen, 1998 AES finalist), but is a distinct representative of an affine equivalence class"
 
 SERPENTTYPE.S8:
@@ -6069,6 +6103,7 @@ SERPENTTYPE.S8:
   linear_branch_number: 2
   univariate_polynomial: "2x¹⁴ + 12x¹³ + 7x¹² + 7x¹¹ + 14x⁸ + 3x⁷ + 10x⁶ + 10x⁵ + 3x⁴ + x² + 2x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Serpent_type_S8.txt"
+  origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN; TOSC 2019"
   note: "4-bit S-box categorized as 'Serpent-type' in the PEIGEN S-box collection (Sasaki, Tiessen et al., CHES 2017); shares the optimal cryptographic properties (DU=4, NL=4) of the S-boxes in the Serpent block cipher (Anderson, Biham, Knudsen, 1998 AES finalist), but is a distinct representative of an affine equivalence class"
 
 SERPENTTYPE.S9:
@@ -6086,6 +6121,7 @@ SERPENTTYPE.S9:
   linear_branch_number: 2
   univariate_polynomial: "2x¹⁴ + 11x¹³ + 7x¹² + 4x¹¹ + 11x¹⁰ + 5x⁹ + 5x⁸ + 4x⁷ + 15x⁶ + x⁵ + 3x⁴ + 3x³ + 11x² + 3x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Serpent_type_S9.txt"
+  origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN; TOSC 2019"
   note: "4-bit S-box categorized as 'Serpent-type' in the PEIGEN S-box collection (Sasaki, Tiessen et al., CHES 2017); shares the optimal cryptographic properties (DU=4, NL=4) of the S-boxes in the Serpent block cipher (Anderson, Biham, Knudsen, 1998 AES finalist), but is a distinct representative of an affine equivalence class"
 
 SERPENTTYPE.S10:
@@ -6103,6 +6139,7 @@ SERPENTTYPE.S10:
   linear_branch_number: 2
   univariate_polynomial: "6x¹⁴ + 2x¹³ + 4x¹² + 14x¹⁰ + 15x⁸ + 15x⁷ + 8x⁶ + 2x⁵ + 2x⁴ + x³ + 11x² + 15x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Serpent_type_S10.txt"
+  origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN; TOSC 2019"
   note: "4-bit S-box categorized as 'Serpent-type' in the PEIGEN S-box collection (Sasaki, Tiessen et al., CHES 2017); shares the optimal cryptographic properties (DU=4, NL=4) of the S-boxes in the Serpent block cipher (Anderson, Biham, Knudsen, 1998 AES finalist), but is a distinct representative of an affine equivalence class"
 
 SERPENTTYPE.S11:
@@ -6120,6 +6157,7 @@ SERPENTTYPE.S11:
   linear_branch_number: 2
   univariate_polynomial: "12x¹⁴ + 7x¹³ + 8x¹² + 9x¹¹ + 11x¹⁰ + 15x⁹ + 12x⁸ + 10x⁷ + 7x⁶ + 7x⁵ + 2x⁴ + 14x³ + 7x²"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Serpent_type_S11.txt"
+  origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN; TOSC 2019"
   note: "4-bit S-box categorized as 'Serpent-type' in the PEIGEN S-box collection (Sasaki, Tiessen et al., CHES 2017); shares the optimal cryptographic properties (DU=4, NL=4) of the S-boxes in the Serpent block cipher (Anderson, Biham, Knudsen, 1998 AES finalist), but is a distinct representative of an affine equivalence class"
 
 SERPENTTYPE.S12:
@@ -6137,6 +6175,7 @@ SERPENTTYPE.S12:
   linear_branch_number: 2
   univariate_polynomial: "8x¹⁴ + 3x¹³ + 9x¹² + 8x¹¹ + 6x¹⁰ + 3x⁹ + 15x⁸ + 11x⁷ + 11x⁶ + 15x⁵ + 12x⁴ + 15x³ + 9x² + 6x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Serpent_type_S12.txt"
+  origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN; TOSC 2019"
   note: "4-bit S-box categorized as 'Serpent-type' in the PEIGEN S-box collection (Sasaki, Tiessen et al., CHES 2017); shares the optimal cryptographic properties (DU=4, NL=4) of the S-boxes in the Serpent block cipher (Anderson, Biham, Knudsen, 1998 AES finalist), but is a distinct representative of an affine equivalence class"
 
 SERPENTTYPE.S13:
@@ -6154,6 +6193,7 @@ SERPENTTYPE.S13:
   linear_branch_number: 2
   univariate_polynomial: "4x¹⁴ + 8x¹³ + 7x¹² + 15x¹¹ + 14x¹⁰ + 5x⁹ + 10x⁸ + 15x⁷ + 4x⁶ + 13x⁵ + 9x⁴ + 14x³ + x² + 6x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Serpent_type_S13.txt"
+  origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN; TOSC 2019"
   note: "4-bit S-box categorized as 'Serpent-type' in the PEIGEN S-box collection (Sasaki, Tiessen et al., CHES 2017); shares the optimal cryptographic properties (DU=4, NL=4) of the S-boxes in the Serpent block cipher (Anderson, Biham, Knudsen, 1998 AES finalist), but is a distinct representative of an affine equivalence class"
 
 SERPENTTYPE.S14:
@@ -6171,6 +6211,7 @@ SERPENTTYPE.S14:
   linear_branch_number: 2
   univariate_polynomial: "13x¹⁴ + 13x¹³ + 13x¹² + 14x¹¹ + 8x¹⁰ + 10x⁸ + 4x⁷ + 13x⁵ + 6x⁴ + 9x³ + 8x² + 12x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Serpent_type_S14.txt"
+  origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN; TOSC 2019"
   note: "4-bit S-box categorized as 'Serpent-type' in the PEIGEN S-box collection (Sasaki, Tiessen et al., CHES 2017); shares the optimal cryptographic properties (DU=4, NL=4) of the S-boxes in the Serpent block cipher (Anderson, Biham, Knudsen, 1998 AES finalist), but is a distinct representative of an affine equivalence class"
 
 SERPENTTYPE.S15:
@@ -6188,6 +6229,7 @@ SERPENTTYPE.S15:
   linear_branch_number: 2
   univariate_polynomial: "8x¹⁴ + 10x¹³ + 10x¹² + 6x¹¹ + 10x¹⁰ + 3x⁹ + 3x⁸ + x⁷ + 7x⁶ + x⁵ + 11x⁴ + 8x³ + 12x² + 15x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Serpent_type_S15.txt"
+  origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN; TOSC 2019"
   note: "4-bit S-box categorized as 'Serpent-type' in the PEIGEN S-box collection (Sasaki, Tiessen et al., CHES 2017); shares the optimal cryptographic properties (DU=4, NL=4) of the S-boxes in the Serpent block cipher (Anderson, Biham, Knudsen, 1998 AES finalist), but is a distinct representative of an affine equivalence class"
 
 SERPENTTYPE.S16:
@@ -6205,6 +6247,7 @@ SERPENTTYPE.S16:
   linear_branch_number: 2
   univariate_polynomial: "8x¹³ + 6x¹² + 9x¹⁰ + x⁹ + 15x⁸ + 10x⁷ + 10x⁶ + 11x⁵ + 2x⁴ + 7x³ + 3x² + 7x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Serpent_type_S16.txt"
+  origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN; TOSC 2019"
   note: "4-bit S-box categorized as 'Serpent-type' in the PEIGEN S-box collection (Sasaki, Tiessen et al., CHES 2017); shares the optimal cryptographic properties (DU=4, NL=4) of the S-boxes in the Serpent block cipher (Anderson, Biham, Knudsen, 1998 AES finalist), but is a distinct representative of an affine equivalence class"
 
 SERPENTTYPE.S17:
@@ -6222,6 +6265,7 @@ SERPENTTYPE.S17:
   linear_branch_number: 2
   univariate_polynomial: "2x¹⁴ + 7x¹³ + 3x¹² + 3x¹¹ + 13x¹⁰ + 9x⁹ + 2x⁸ + 2x⁷ + 7x⁶ + x⁵ + 4x⁴ + 3x³ + 13x² + 14x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Serpent_type_S17.txt"
+  origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN; TOSC 2019"
   note: "4-bit S-box categorized as 'Serpent-type' in the PEIGEN S-box collection (Sasaki, Tiessen et al., CHES 2017); shares the optimal cryptographic properties (DU=4, NL=4) of the S-boxes in the Serpent block cipher (Anderson, Biham, Knudsen, 1998 AES finalist), but is a distinct representative of an affine equivalence class"
 
 SERPENTTYPE.S18:
@@ -6239,6 +6283,7 @@ SERPENTTYPE.S18:
   linear_branch_number: 2
   univariate_polynomial: "x¹⁴ + 11x¹³ + 14x¹² + 6x¹⁰ + 3x⁹ + 4x⁸ + 10x⁷ + 15x⁶ + 12x⁵ + 5x⁴ + 8x³ + 6x² + 4x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Serpent_type_S18.txt"
+  origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN; TOSC 2019"
   note: "4-bit S-box categorized as 'Serpent-type' in the PEIGEN S-box collection (Sasaki, Tiessen et al., CHES 2017); shares the optimal cryptographic properties (DU=4, NL=4) of the S-boxes in the Serpent block cipher (Anderson, Biham, Knudsen, 1998 AES finalist), but is a distinct representative of an affine equivalence class"
 
 SERPENTTYPE.S19:
@@ -6256,6 +6301,7 @@ SERPENTTYPE.S19:
   linear_branch_number: 2
   univariate_polynomial: "13x¹⁴ + 13x¹³ + x¹² + 14x¹¹ + 9x¹⁰ + 7x⁹ + 11x⁸ + 4x⁷ + 4x⁶ + 4x⁵ + 2x⁴ + 12x³ + x² + 2x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Serpent_type_S19.txt"
+  origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN; TOSC 2019"
   note: "4-bit S-box categorized as 'Serpent-type' in the PEIGEN S-box collection (Sasaki, Tiessen et al., CHES 2017); shares the optimal cryptographic properties (DU=4, NL=4) of the S-boxes in the Serpent block cipher (Anderson, Biham, Knudsen, 1998 AES finalist), but is a distinct representative of an affine equivalence class"
   
 UDCIKMP11:
@@ -6273,4 +6319,5 @@ UDCIKMP11:
   linear_branch_number: 2
   univariate_polynomial: "5x¹⁴ + 13x¹² + 3x¹¹ + 13x¹⁰ + 11x⁹ + 10x⁸ + 4x⁷ + 7x⁶ + 13x⁴ + 2x³ + 7x² + 4x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_UDCIKMP11.txt"
+  origin: "Ullrich, De Cannière, Indesteege, Küçük, Mouha, Preneel; Finding Optimal Bitsliced Implementations of 4×4-Bit S-Boxes; SKEW 2011"
   note: "Ullrich, De Cannière, Indesteege, Küçük, Mouha, Preneel (SKEW 2011); from the study 'Finding optimal bitsliced implementations of 4×4-bit S-boxes' which searched exhaustively for efficient bitsliced hardware implementations of 4-bit S-boxes; listed in the PEIGEN S-box collection (Sasaki, Tiessen et al., CHES 2017) under this abbreviated author identifier"

@@ -15,6 +15,7 @@ APN.S0:
   linear_branch_number: 2
   univariate_polynomial: "16x³⁰ + 16x²⁹ + 23x²⁸ + 28x²⁷ + 12x²⁶ + 5x²⁵ + 15x²³ + 7x²² + 10x²¹ + 27x²⁰ + 22x¹⁹ + 29x¹⁸ + 15x¹⁷ + 17x¹⁵ + 23x¹⁴ + 17x¹³ + 24x¹² + 11x¹¹ + 15x¹⁰ + 19x⁸ + 11x⁷ + 12x⁶ + 25x⁴ + 31x³ + 24x² + 31x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes5/properties_APN_S0.txt"
+  origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN — a Tool for the Evaluation of S-boxes; TOSC 2019; URL: https://eprint.iacr.org/2019/209"
   note: "Exemplary APN permutation, not used in a cipher"
 
 APN.S1:
@@ -31,6 +32,7 @@ APN.S1:
   linear_branch_number: 2
   univariate_polynomial: "6x²⁸ + 12x²⁶ + 20x²⁵ + 10x²⁴ + 19x²² + 10x²¹ + 9x²⁰ + 23x¹⁹ + 27x¹⁸ + 2x¹⁷ + 18x¹⁶ + 11x¹⁴ + 24x¹³ + 22x¹² + 11x¹¹ + 15x¹⁰ + 12x⁹ + 27x⁸ + 16x⁷ + x⁶ + 8x⁵ + 19x⁴ + 18x³ + 17x² + 6x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes5/properties_APN_S1.txt"
+  origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN — a Tool for the Evaluation of S-boxes; TOSC 2019; URL: https://eprint.iacr.org/2019/209"
 
 APN.S2:
   lookup_table: [0, 1, 2, 4, 3, 8, 13, 16, 5, 17, 28, 27, 30, 14, 24, 10, 6, 19, 11, 20, 31, 29, 12, 21, 18, 26, 15, 25, 7, 22, 23, 9]
@@ -46,6 +48,7 @@ APN.S2:
   linear_branch_number: 2
   univariate_polynomial: "31x²⁸ + 28x²⁶ + 19x²⁵ + 20x²⁴ + 18x²² + 20x²¹ + 13x²⁰ + 25x¹⁹ + 4x¹⁸ + 29x¹⁷ + 26x¹⁶ + 8x¹⁴ + 27x¹³ + 9x¹² + 31x¹¹ + 2x¹⁰ + 16x⁹ + 5x⁸ + 28x⁷ + 5x⁶ + 6x⁵ + 31x⁴ + 22x³ + 22x² + 6x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes5/properties_APN_S2.txt"
+  origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN — a Tool for the Evaluation of S-boxes; TOSC 2019; URL: https://eprint.iacr.org/2019/209"
 
 APN.S3:
   lookup_table: [0, 1, 2, 4, 3, 8, 16, 28, 5, 10, 25, 17, 18, 23, 31, 29, 6, 20, 13, 24, 19, 11, 9, 22, 27, 7, 14, 21, 26, 12, 30, 15]
@@ -61,6 +64,7 @@ APN.S3:
   linear_branch_number: 2
   univariate_polynomial: "11x²⁴ + 3x²⁰ + 30x¹⁸ + 22x¹⁷ + 17x¹⁶ + 6x¹² + 2x¹⁰ + 19x⁹ + 4x⁸ + 4x⁶ + 8x⁵ + 7x⁴ + 30x³ + 3x² + 21x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes5/properties_APN_S3.txt"
+  origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN — a Tool for the Evaluation of S-boxes; TOSC 2019; URL: https://eprint.iacr.org/2019/209"
 
 APN.S4:
   lookup_table: [0, 1, 2, 4, 3, 8, 16, 28, 5, 10, 26, 18, 17, 20, 31, 29, 6, 21, 24, 12, 22, 15, 25, 7, 14, 19, 13, 23, 9, 30, 27, 11]
@@ -76,6 +80,7 @@ APN.S4:
   linear_branch_number: 2
   univariate_polynomial: "29x²⁴ + 2x²⁰ + 2x¹⁸ + 20x¹⁷ + 30x¹⁶ + 31x¹² + 15x¹⁰ + 3x⁹ + 13x⁸ + 17x⁶ + 26x⁵ + 21x³ + 19x² + 5x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes5/properties_APN_S4.txt"
+  origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN — a Tool for the Evaluation of S-boxes; TOSC 2019; URL: https://eprint.iacr.org/2019/209"
 
 ASCON:
   canonical_name: ["Ascon"]

@@ -68,7 +68,7 @@ Each YAML entry has the following fields in order (mandatory fields are marked w
 | `year`<sup>*</sup> | list | Collection of significant publication years (competition submission, journal publication, standard approval) etc. Compulsory for all entries including non-cipher research SBoxes (e.g. AE.1–302 use the year of De Cannière's PhD thesis, KU Leuven, 2007). |
 | `cipher`<sup>*</sup> | bool | True iff used in a cipher |
 | `source` | str | One or more URL(s) of code or related resources (mainly [PEIGEN SBox collection](https://github.com/peigen-sboxes/PEIGEN/tree/master/EvaluationResults/Sect5.1_CryptographicProperties), [Sage reference manual](https://github.com/sagemath/sage/blob/develop/src/sage/crypto/sboxes.py)) whence some information is mined |
-| `origin` | str | Citation of the original publication |
+| `origin`<sup>*</sup> | str | Citation of the original publication |
 | `aliases` | list | Ciphers that have rebranded this SBox under a new name |
 | `alias` | str | The cipher whose SBox this entry is an alias for |
 | `reuse` | list | Ciphers that reuse this SBox under its original name |
@@ -130,11 +130,10 @@ The following data types (case-insensitive) are accessible:
 - `SBoxEntry` is the Python class wrapping a single YAML entry.
 - `SBoxGroup` groups related entries under a common cipher prefix (e.g. all `ARIA.*` entries together).
 
-Attributes return `SBoxEntry` objects that provide attribute-style access to every YAML field.
-The `repr` of an `SBoxEntry` shows the key name, NL, and DU for quick identification in a REPL. These are informational only; NL and DU are not needed for lookup — access is always by name alone:
+The `repr` of an `SBoxEntry` shows the key name and (truncated) origin for quick identification in a REPL (though access is always by name alone):
 
 ```python
-sb = bigfatsbox.present          # SBoxEntry('PRESENT')
+sb = bigfatsbox.present          # SBoxEntry('PRESENT', origin='Bogdanov et al.; PRESENT: An Ultra-Lightweight Block Ciph...')
 print(sb.lookup_table)           # [12, 5, 6, 11, 9, 0, 10, 13, 3, 14, 15, 8, 4, 7, 1, 2]
 print(sb.nonlinearity)           # 4
 print(sb.differential_uniformity)  # 4
@@ -171,7 +170,7 @@ Ciphers with multiple SBoxes are accessible as `SBoxGroup` objects:
 
 ```python
 aria = bigfatsbox.aria            # SBoxGroup('ARIA', members=['inv', 's2', 's2_inv', 'sq', 'sq_inv'])
-print(aria.s2)                   # SBoxEntry('ARIA.S2', NL=112, DU=4)
+print(aria.s2)                   # SBoxEntry('ARIA.S2', origin='Kwon et al.; New Block Cipher: ARIA; ICISC 2003; URL: h...')
 print(aria.s2.lookup_table)      # [...]
 for sb in aria:                   # iterate all ARIA entries
     print(sb.name, sb.nonlinearity)
