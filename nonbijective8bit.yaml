@@ -11,6 +11,7 @@ CMEA:
   differential_uniformity: 12
   absolute_linear_uniformity: 32
   boomerang_uniformity:
+  absolute_autocorrelation_uniformity: 104
   involution: false
   fixed_point: []
   year: [1991]
@@ -31,6 +32,7 @@ IRAQI:
   differential_uniformity: 12
   absolute_linear_uniformity: 34
   boomerang_uniformity:
+  absolute_autocorrelation_uniformity: 96
   involution: false
   fixed_point: []
   year: [1999]
@@ -40,7 +42,7 @@ IRAQI:
   univariate_polynomial: "166x²⁵⁵ + 247x²⁵⁴ + 120x²⁵³ + 229x²⁵² + 110x²⁵¹ + 193x²⁵⁰ + 210x²⁴⁹ + 119x²⁴⁸ + 79x²⁴⁷ + 127x²⁴⁶ + 172x²⁴⁵ + 156x²⁴⁴ + 228x²⁴³ + 240x²⁴² + 239x²⁴¹ + 32x²⁴⁰ + 230x²³⁹ + 19x²³⁸ + 156x²³⁷ + 182x²³⁶ + 48x²³⁵ + 2x²³⁴ + 217x²³³ + 112x²³² + 78x²³¹ + 203x²³⁰ + 41x²²⁹ + 249x²²⁸ + 44x²²⁷ + 132x²²⁶ + 236x²²⁵ + 134x²²⁴ + 145x²²³ + 9x²²² + 31x²²¹ + 129x²²⁰ + 170x²¹⁹ + 208x²¹⁸ + 95x²¹⁷ + 204x²¹⁶ + 148x²¹⁵ + 50x²¹⁴ + 221x²¹³ + 205x²¹² + 20x²¹⁰ + 121x²⁰⁹ + 108x²⁰⁸ + 120x²⁰⁷ + 185x²⁰⁶ + 27x²⁰⁵ + 110x²⁰⁴ + 19x²⁰³ + 57x²⁰² + 174x²⁰¹ + 129x²⁰⁰ + 180x¹⁹⁹ + 11x¹⁹⁸ + 233x¹⁹⁷ + 134x¹⁹⁶ + 228x¹⁹⁵ + 99x¹⁹⁴ + 86x¹⁹³ + 191x¹⁹² + 88x¹⁹¹ + 128x¹⁹⁰ + 74x¹⁸⁹ + 203x¹⁸⁸ + 8x¹⁸⁷ + 51x¹⁸⁶ + 86x¹⁸⁵ + 88x¹⁸⁴ + 32x¹⁸³ + 199x¹⁸² + 65x¹⁸¹ + 90x¹⁸⁰ + 95x¹⁷⁹ + 76x¹⁷⁸ + 88x¹⁷⁷ + 156x¹⁷⁶ + 198x¹⁷⁵ + 4x¹⁷⁴ + 62x¹⁷³ + 64x¹⁷² + 176x¹⁷¹ + 113x¹⁷⁰ + 64x¹⁶⁹ + 85x¹⁶⁸ + 200x¹⁶⁷ + 26x¹⁶⁶ + 61x¹⁶⁵ + 119x¹⁶⁴ + 81x¹⁶³ + 78x¹⁶² + 209x¹⁶¹ + 131x¹⁶⁰ + 252x¹⁵⁹ + 223x¹⁵⁸ + 162x¹⁵⁷ + 142x¹⁵⁶ + 210x¹⁵⁵ + 171x¹⁵⁴ + 90x¹⁵³ + 118x¹⁵² + 16x¹⁵¹ + 125x¹⁵⁰ + 248x¹⁴⁹ + 113x¹⁴⁸ + 82x¹⁴⁷ + 60x¹⁴⁶ + 180x¹⁴⁵ + 108x¹⁴⁴ + 69x¹⁴³ + 192x¹⁴² + 86x¹⁴¹ + 227x¹⁴⁰ + 198x¹³⁹ + 49x¹³⁸ + 125x¹³⁷ + 255x¹³⁶ + 108x¹³⁵ + 223x¹³⁴ + 195x¹³³ + 83x¹³² + 116x¹³¹ + 90x¹³⁰ + 211x¹²⁹ + 66x¹²⁸ + 208x¹²⁷ + 36x¹²⁶ + 157x¹²⁵ + 135x¹²⁴ + 240x¹²³ + 34x¹²² + 19x¹²¹ + 152x¹²⁰ + 170x¹¹⁹ + 25x¹¹⁸ + 202x¹¹⁷ + 116x¹¹⁶ + 118x¹¹⁵ + 152x¹¹⁴ + 160x¹¹³ + 211x¹¹² + 110x¹¹¹ + 231x¹¹⁰ + 195x¹⁰⁹ + 145x¹⁰⁸ + 110x¹⁰⁷ + 34x¹⁰⁶ + 129x¹⁰⁵ + 104x¹⁰⁴ + 171x¹⁰³ + 167x¹⁰² + 126x¹⁰¹ + 42x¹⁰⁰ + 217x⁹⁹ + 26x⁹⁸ + 164x⁹⁷ + 61x⁹⁶ + 54x⁹⁵ + 202x⁹⁴ + 235x⁹³ + 163x⁹² + 69x⁹¹ + 183x⁹⁰ + 142x⁸⁹ + 147x⁸⁸ + 171x⁸⁷ + 21x⁸⁶ + 28x⁸⁵ + 152x⁸⁴ + 207x⁸³ + 163x⁸² + 85x⁸¹ + 226x⁸⁰ + 202x⁷⁹ + 46x⁷⁸ + 232x⁷⁷ + 6x⁷⁶ + 17x⁷⁵ + 155x⁷⁴ + 42x⁷³ + 135x⁷² + 69x⁷¹ + 82x⁷⁰ + 192x⁶⁹ + 147x⁶⁸ + 236x⁶⁷ + 60x⁶⁶ + 212x⁶⁵ + 242x⁶⁴ + 8x⁶³ + 191x⁶² + 112x⁶¹ + 36x⁶⁰ + 101x⁵⁹ + 95x⁵⁸ + 168x⁵⁷ + 250x⁵⁶ + 152x⁵⁵ + 42x⁵⁴ + 136x⁵³ + 169x⁵² + 203x⁵¹ + 237x⁵⁰ + 87x⁴⁹ + 48x⁴⁸ + 89x⁴⁷ + 18x⁴⁶ + 125x⁴⁵ + 174x⁴⁴ + 111x⁴³ + 88x⁴² + 114x⁴¹ + 171x⁴⁰ + 115x³⁹ + 148x³⁸ + 202x³⁷ + 21x³⁶ + 176x³⁵ + 15x³⁴ + 150x³³ + 209x³² + 102x³¹ + 189x³⁰ + 179x²⁹ + 6x²⁸ + 97x²⁷ + 66x²⁶ + 57x²⁵ + 154x²⁴ + 10x²³ + 48x²² + 101x²¹ + 73x²⁰ + 40x¹⁹ + 202x¹⁸ + 210x¹⁷ + 251x¹⁶ + 101x¹⁵ + 19x¹⁴ + 80x¹³ + 193x¹² + 132x¹¹ + 116x¹⁰ + 118x⁹ + 236x⁸ + 217x⁷ + 179x⁶ + 242x⁵ + 33x⁴ + 204x³ + 182x² + 167x + 173"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes8/properties_Iraqi.txt"
   origin: "Anonymous; alleged Iraqi government cipher; uploaded to Usenet via FTP, c. 1999; widely considered an internet hoax"
-  note: "anonymous; uploaded via FTP to Usenet (~1999); considered an internet hoax; key-dependent SBox (initial fixed table shown here)"
+  note: "Key-dependent SBox; initial fixed table shown"
 
 PICARO:
   canonical_name: ["Picaro"]
@@ -51,6 +53,7 @@ PICARO:
   differential_uniformity: 4
   absolute_linear_uniformity: 28
   boomerang_uniformity:
+  absolute_autocorrelation_uniformity: 96
   involution: false
   fixed_point: []
   year: [2012]
@@ -61,3 +64,4 @@ PICARO:
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes8/properties_Picaro.txt"
   origin: "Piret, Roche, Carlet; PICARO: A Block Cipher Allowing Efficient Higher-Order Side-Channel Resistance; SAC 2012; LNCS 7707"
   note: "Piret, Roche, Carlet; SAC 2012; PICARO - A Block Cipher Allowing Efficient Higher-Order Side-Channel Resistance"
+

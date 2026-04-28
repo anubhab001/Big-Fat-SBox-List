@@ -2,13 +2,13 @@
 
 Public collection of Substitution Boxes (SBoxes for short) used in cryptography
 
-Last update: 25 April 2026 16:00 UTC <!-- TODO: This is to be updated with each (major) commit/push -->
+Last update: 24 April 2026 23:54 UTC <!-- TODO: This is to be updated with each (major) commit/push -->
 
 ## Organisation
 
 - YAML files containing details about multiple SBoxes, properties, cryptographic properties, historical notes etc.
 
-- Files are written by input size (each input size in bits gets a new file) and bijectivity (non-bijective SBoxes are moved to other files). Additionally, due to large number of 4-bit SBoxes, those are split into 2 files based on whether or not those are used in a cipher ([4bit_cipher.yaml](4bit_cipher.yaml)) or just exemplary/representative ([4bit_nocipher.yaml](4bit_nocipher.yaml)).
+- Files are written by input size (each input size in bits gets a new file) and bijectivity (non-bijective SBoxes are moved to other files). Additionally, due to large number of 4-bit SBoxes, those are split into 2 files based on whether or not those are used in a cipher ([`4bit_cipher.yaml`](4bit_cipher.yaml)) or just exemplary/representative ([`4bit_nocipher.yaml`](4bit_nocipher.yaml)).
 
 - Entries within each YAML file are in alphabetical order by key.
 
@@ -29,43 +29,44 @@ Last update: 25 April 2026 16:00 UTC <!-- TODO: This is to be updated with each 
 
 | File | # Entry | Bit Mapping | 
 |:------|:-------:|-------------:|
-| [3bit.yaml](3bit.yaml) | 6 | 3 → 3 |
-| [4bit_cipher.yaml](4bit_cipher.yaml) | 146 | 4 → 4 | 
-| [4bit_nocipher.yaml](4bit_nocipher.yaml) | 354 | 4 → 4 |
-| [5bit.yaml](5bit.yaml) | 16 | 5 → 5 |
-| [6bit.yaml](6bit.yaml) | 5 | 6 → 6 |
-| [7bit.yaml](7bit.yaml) | 2 | 7 → 7 |
-| [8bit.yaml](8bit.yaml) | 65 | 8 → 8 |
-| [9bit.yaml](9bit.yaml) | 1 | 9 → 9 |
+| [`3bit.yaml`](3bit.yaml) | 6 | 3 → 3 |
+| [`4bit_cipher.yaml`](4bit_cipher.yaml) | 146 | 4 → 4 |
+| [`4bit_nocipher.yaml`](4bit_nocipher.yaml) | 354 | 4 → 4 |
+| [`5bit.yaml`](5bit.yaml) | 16 | 5 → 5 |
+| [`6bit.yaml`](6bit.yaml) | 5 | 6 → 6 |
+| [`7bit.yaml`](7bit.yaml) | 2 | 7 → 7 |
+| [`8bit.yaml`](8bit.yaml) | 65 | 8 → 8 |
+| [`9bit.yaml`](9bit.yaml) | 1 | 9 → 9 |
 
 ### Non-Bijective SBoxes
 
 | File | # Entry | Bit Mapping |
 |:------|:-------:|-------------:|
-| [nonbijective4bit.yaml](nonbijective4bit.yaml) | 1 | 4 → 2 |
-| [nonbijective6bit.yaml](nonbijective6bit.yaml) | 8 | 6 → 4 |
-| [nonbijective8bit.yaml](nonbijective8bit.yaml) | 3 | 8 → 8 |
+| [`nonbijective4bit.yaml`](nonbijective4bit.yaml) | 1 | 4 → 2 |
+| [`nonbijective6bit.yaml`](nonbijective6bit.yaml) | 8 | 6 → 4 |
+| [`nonbijective8bit.yaml`](nonbijective8bit.yaml) | 3 | 8 → 8 |
 
 ## Entry Format
 
-Each YAML entry has the following fields in order (mandatory fields are marked with * superscript):
+Each YAML entry has the following fields in order (mandatory fields marked with *, conditionally mandatory fields marked with †):
 
 | Field | Type | Description |
 |-------|------|-------------|
 | `canonical_name` | list | Name as written in the original paper (preserving case, non-Latin character, subscript, hyphen, space) |
-| `output_bits`<sup>*</sup> | int | Output bit size, compulsory for non-bijective SBoxes; skipped for bijective SBoxes |
+| `output_bits`<sup>†</sup> | int | Output bit size, compulsory for non-bijective SBoxes; skipped for bijective SBoxes |
 | `lookup_table`<sup>*</sup> | list | Look-up table (substitution values) |
 | `algebraic_degree`<sup>*</sup> | list | Algebraic degree of each coordinate function in order from the least-significant output bit (bit 0) to the most-significant (bit $n−1$). For an $n$-bit SBox there are $n$ integers in the list. The overall degree of the SBox is the maximum of these values. |
 | `nonlinearity`<sup>*</sup> | int | Non-linearity: Minimum Hamming distance from the set of all affine Boolean functions, taken over all non-zero linear combinations of output bits |
 | `differential_uniformity`<sup>*</sup> | int | Differential uniformity (DU): Maximum number of input pairs $(x, x')$ with $x \oplus x' = \Delta_{in}$ such that $S(x) \oplus S(x') = \Delta_{out}$, maximised over all non-zero $\Delta_{in}$ and all $\Delta_{out}$ |
 | `absolute_linear_uniformity`<sup>*</sup> | int | Absolute linear uniformity (ALU): Maximum absolute value of any entry in the linear approximation table (LAT), excluding row 0 (input mask = 0) and column 0 (output mask = 0) |
-| `boomerang_uniformity`<sup>*</sup> | int | Boomerang Uniformity: Maximum entry of the boomerang connectivity table (BCT). The BCT entry for $\Delta_{in}, \Delta_{out}$ counts the number of $x$ such that $S^{-1}(S(x) \oplus \Delta_{out}) \oplus S^{-1}(S(x \oplus \Delta_{in}) \oplus \Delta_{out}) = \Delta_{in}$, maximised over all non-zero $\Delta_{in}, \Delta_{out}$; compulsory for bijective SBoxes; skipped for non-bijective SBoxes |
+| `boomerang_uniformity`<sup>†</sup> | int | Boomerang Uniformity: Maximum entry of the boomerang connectivity table (BCT). The BCT entry for $\Delta_{in}, \Delta_{out}$ counts the number of $x$ such that $S^{-1}(S(x) \oplus \Delta_{out}) \oplus S^{-1}(S(x \oplus \Delta_{in}) \oplus \Delta_{out}) = \Delta_{in}$, maximised over all non-zero $\Delta_{in}, \Delta_{out}$; compulsory for bijective SBoxes; skipped for non-bijective SBoxes |
+| `absolute_autocorrelation_uniformity`<sup>*</sup> | int | Absolute autocorrelation uniformity (AAU): Maximum absolute value in the autocorrelation table (ACT); $\mathrm{ACT}[a,b] = \sum_x (-1)^{\langle b,\, S(x \oplus a) \oplus S(x)\rangle}$ for non-zero input difference $a$ and non-zero output mask $b$; also called absolute indicator |
 | `differential_branch_number`<sup>*</sup> | int | Differential branch number: Minimum weight $\mathrm{wt}(\Delta_{in}) + \mathrm{wt}(\Delta_{out})$ over all non-trivial DDT entries |
 | `linear_branch_number`<sup>*</sup> | int | Linear branch number: Minimum weight $\mathrm{wt}(a) + \mathrm{wt}(b)$ over all non-trivial LAT entries |
 | `univariate_polynomial`<sup>*</sup> | str | Interpolation polynomial of the SBox over $\mathrm{GF}(2^n)$: the unique polynomial $p(x) = \sum_{k=0}^{2^n-2} c_k x^k$ over $\mathrm{GF}(2^n)$ satisfying $p(i) = S(i)$ $\forall i$ |
 | `involution`<sup>*</sup> | bool | Involutory SBox: True iff $S(S(x)) = x$  $\forall x$ |
 | `fixed_point`<sup>*</sup> | list | Fixed point:  Values where $S(x) = x$ (`[]` for no fixed point) |
-| `year`<sup>*</sup> | list | Collection of significant publication years (competition submission, journal publication, standard approval) etc. Compulsory for all entries including non-cipher research SBoxes (e.g. AE.1–302 use the year of De Cannière's PhD thesis, KU Leuven, 2007). |
+| `year`<sup>*</sup> | list | Collection of significant publication years (competition submission, journal publication, standard approval) etc. |
 | `cipher`<sup>*</sup> | bool | True iff used in a cipher |
 | `source` | str | One or more URL(s) of code or related resources (mainly [PEIGEN SBox collection](https://github.com/peigen-sboxes/PEIGEN/tree/master/EvaluationResults/Sect5.1_CryptographicProperties), [Sage reference manual](https://github.com/sagemath/sage/blob/develop/src/sage/crypto/sboxes.py)) whence some information is mined |
 | `origin`<sup>*</sup> | str | Citation of the original publication |
@@ -89,7 +90,7 @@ Three fields handle inter-cipher SBox relationships:
 
 ### Notes
 
-1. Our convention — uppercase Latin characters with only dot allowed — enforces uniformity and ASCII searchability, but it destroys the original typographic formatting used by the designers, such as mixed case (e.g., "Midori"), non-Latin characters (like Cyrillic "π"; Greek "σ", "ν"), subscript notation (e.g., "Sb₀"), hyphen (like "SHA-3") and space (like "SNOW 3G"). 
+1. Our convention — uppercase Latin characters with only dot allowed — enforces uniformity and ASCII searchability, but it destroys the original typographic formatting used by the designers, such as mixed case (e.g., "Midori"), non-Latin characters (like Cyrillic "π"; Greek "σ"), subscript notation (e.g., "Sb₀"), hyphen (like "SHA-3") and space (like "SNOW 3G"). 
 
 2. `canonical_name` — which is applicable only when `cipher` is true, and used to preserve the original formatting as intended by the cipher's designer(s) — is a list. For a cipher with a single SBox, it is a one-element list (e.g., `["GIFT"]`). When a cipher has multiple SBoxes distinguished by a subscript or letter (e.g., `S₀`, `π₁`), it is a two-element list `["CipherName", "SBoxName"]` where the first element is the cipher's canonical name and the second is the specific SBox sub-name (e.g., `["CLEFIA", "S₁"]`).
 
@@ -105,7 +106,7 @@ Three fields handle inter-cipher SBox relationships:
 
    ```python
    from sage.crypto.sboxes import AES
-   p = AES.interpolation_polynomial()   # polynomial over GF(2^8)
+   p = AES.interpolation_polynomial()   # Polynomial over GF(2^8)
    for k, c in sorted(p.dict().items(), reverse=True):
        print(Integer(c), k)             # Integer(c) = stored integer coefficient
    ```
@@ -113,14 +114,14 @@ Three fields handle inter-cipher SBox relationships:
 
 ## Python / Sage Loader
 
-### Installation / Importing
+### Installing / Importing
 [`bigfatsbox.py`](bigfatsbox.py) is a loader that exposes every YAML entry as a Python object. It requires Python 3.11+ or SageMath 9.3+, on top of [PyYAML](https://pypi.org/project/PyYAML/).
 
-With all files (including YAML data files) available in the working directory (or on `sys.path`), the following works inside a Python or Sage REPL:
+With all files (including YAML data files) available in the working directory (or on `sys.path`), the following should work inside a Python or Sage REPL:
 
 ```python
 import bigfatsbox
-print(bigfatsbox.last_update)
+print(bigfatsbox.last_update)    # Prints '24 April 2026 23:54 UTC'
 ```
 
 
@@ -134,24 +135,27 @@ The `repr` of an `SBoxEntry` shows the key name and (truncated) origin for quick
 
 ```python
 sb = bigfatsbox.present          # SBoxEntry('PRESENT', origin='Bogdanov et al.; PRESENT: An Ultra-Lightweight Block Ciph...')
-print(sb.lookup_table)           # [12, 5, 6, 11, 9, 0, 10, 13, 3, 14, 15, 8, 4, 7, 1, 2]
-print(sb.nonlinearity)           # 4
-print(sb.differential_uniformity)  # 4
-print(sb.absolute_linear_uniformity)  # 8
-print(sb.boomerang_uniformity)   # 8
-print(sb.differential_branch_number)  # 2
-print(sb.linear_branch_number)   # 2
-print(sb.univariate_polynomial)  # interpolation polynomial string
-print(sb.involution)             # False
-print(sb.fixed_point)            # []
-print(sb.year)                   # [2007]
-print(sb.cipher)                 # True
-print(sb.canonical_name)         # ['PRESENT']
-print(sb.lut)                    # alias for lookup_table
-print(sb.input_size)             # 4  (log₂ of LUT length)
-print(sb.output_size)            # 4  (equals input_size for bijective; from output_bits for non-bijective)
-print(sb.keys())                 # dict_keys of all available YAML fields
-print(sb.to_dict())              # raw dict with all YAML fields
+print(sb.lookup_table)           # Prints [12, 5, 6, 11, 9, 0, 10, 13, 3, 14, 15, 8, 4, 7, 1, 2]
+print(sb.nonlinearity)           # Prints 4
+print(sb.differential_uniformity)  # Prints 4
+print(sb.absolute_linear_uniformity)  # Prints 4
+print(sb.boomerang_uniformity)   # Prints 16
+print(sb.absolute_autocorrelation_uniformity)  # Prints 16
+print(sb.differential_branch_number)  # Prints 3
+print(sb.linear_branch_number)   # Prints 2
+print(sb.univariate_polynomial)  # Interpolation polynomial string
+print(sb.involution)             # Prints False
+print(sb.fixed_point)            # Prints []
+print(sb.year)                   # Prints [2007]
+print(sb.cipher)                 # Prints True
+print(sb.canonical_name)         # Prints ['PRESENT']
+print(sb.lut)                    # Alias for lookup_table
+print(sb.input_size)             # Prints 4  (log₂ of LUT length)
+print(sb.output_size)            # Prints 4  (equals input_size for bijective; from output_bits for non-bijective)
+print(sb.keys())                 # Returns dict_keys view of available fields
+print(sb.fields)                 # List of available field names
+print(sb.fields[0])              # Prints 'lookup_table'
+print(sb.to_dict())              # Raw dict copy of all YAML fields
 
 # Case-insensitive access
 assert bigfatsbox.PRESENT == bigfatsbox.present
@@ -171,12 +175,12 @@ Ciphers with multiple SBoxes are accessible as `SBoxGroup` objects:
 ```python
 aria = bigfatsbox.aria            # SBoxGroup('ARIA', members=['inv', 's2', 's2_inv', 'sq', 'sq_inv'])
 print(aria.s2)                   # SBoxEntry('ARIA.S2', origin='Kwon et al.; New Block Cipher: ARIA; ICISC 2003; URL: h...')
-print(aria.s2.lookup_table)      # [...]
-for sb in aria:                   # iterate all ARIA entries
+print(aria.s2.lookup_table)      # Prints [...]
+for sb in aria:                   # Iterate all ARIA entries
     print(sb.name, sb.nonlinearity)
 
 clefia = bigfatsbox.clefia        # SBoxGroup for CLEFIA.S0, CLEFIA.S1
-print(clefia.s0.canonical_name)  # ['CLEFIA', 'S₀']
+print(clefia.s0.canonical_name)  # Prints ['CLEFIA', 'S₀']
 ```
 
 
@@ -187,11 +191,11 @@ The loader is lazy, meaning importing `bigfatsbox` does not load any YAML file i
 ```python
 # Load all 4-bit SBoxes (reads only 4bit_cipher.yaml, 4bit_nocipher.yaml,
 # and nonbijective4bit.yaml)
-all_4bit = bigfatsbox.load_bits(4)   # dict: uppercase key → SBoxEntry
-print(len(all_4bit))                 # ≈ 500 (all bijective + non-bijective 4-bit)
+all_4bit = bigfatsbox.load_bits(4)   # Dict: uppercase key → SBoxEntry
+print(len(all_4bit))                 # Prints approx. 500 (all bijective + non-bijective 4-bit)
 
 # Bit-size namespace (b3, b4, b5, b6, b7, b8, b9 are pre-wired)
-b4 = bigfatsbox.b4                   # namespace for all 4-bit SBoxes
+b4 = bigfatsbox.b4                   # Namespace for all 4-bit SBoxes
 print(b4.present)                    # SBoxEntry('PRESENT')
 
 # Access from a namespace
@@ -202,9 +206,9 @@ print(b8.aes)                        # SBoxEntry('AES')
 Accessing `sb.input_size` and `sb.output_size` works on any loaded entry:
 
 ```python
-print(bigfatsbox.aes.input_size)    # 8
-print(bigfatsbox.aes.output_size)   # 8
-print(bigfatsbox.cmea.output_size)  # 8  (non-bijective; from output_bits field)
+print(bigfatsbox.aes.input_size)    # Prints 8
+print(bigfatsbox.aes.output_size)   # Prints 8
+print(bigfatsbox.cmea.output_size)  # Prints 8  (non-bijective; from output_bits field)
 ```
 
 ### Wildcard Search
@@ -215,11 +219,11 @@ print(bigfatsbox.cmea.output_size)  # 8  (non-bijective; from output_bits field)
 # find() — returns dict: uppercase key → SBoxEntry
 matches = bigfatsbox.find('pre*')      # PRESENT, PRIDE, PRIDE_Inv, PRINCE, PRINCEv2, …
 matches = bigfatsbox.find('ARIA.*')    # ARIA.INV, ARIA.S2, ARIA.S2_Inv, ARIA.SQ, ARIA.SQ_Inv
-matches = bigfatsbox.find('*_S0')      # all entries ending in _S0
-matches = bigfatsbox.find('AE.*')      # all non-cipher AE research SBoxes
+matches = bigfatsbox.find('*_S0')      # All entries ending in _S0
+matches = bigfatsbox.find('AE.*')      # All non-cipher AE research SBoxes
 
 # Bracket notation (equivalent to find for wildcards)
-matches = bigfatsbox['pre*']           # same as bigfatsbox.find('pre*')
+matches = bigfatsbox['pre*']           # Same as bigfatsbox.find('pre*')
 
 # Iterate results
 for name, sb in bigfatsbox.find('pre*').items():
@@ -238,15 +242,15 @@ When `import bigfatsbox` is evaluated inside a SageMath session, attribute acces
 ```python
 # Inside a Sage session:
 aes = bigfatsbox.aes               # sage.crypto.sbox.SBox object
-print(aes.differential_uniformity())    # 4   (Sage method, not attribute)
-print(aes.nonlinearity())               # 112
-print(aes.boomerang_uniformity())       # 4
-print(aes.is_bijective())               # True
-print(aes.interpolation_polynomial())   # polynomial over GF(2^8)
+print(aes.differential_uniformity())    # Prints 4  (Sage method, not attribute)
+print(aes.nonlinearity())               # Prints 112
+print(aes.boomerang_uniformity())       # Prints 4
+print(aes.is_bijective())               # Prints True
+print(aes.interpolation_polynomial())   # Polynomial over GF(2^8)
 
 # Wildcard search and bit-size access work identically in Sage:
 for name, sb in bigfatsbox.find('pre*').items():
-    print(name, sb.nonlinearity())      # sb is a SBox object in Sage
+    print(name, sb.nonlinearity())      # sb is an SBox object in Sage
 
 all_8bit = bigfatsbox.load_bits(8)     # dict: key → SBox object
 from bigfatsbox import b4
@@ -259,24 +263,16 @@ print(data['canonical_name'])          # ['Rijndael']
 print(data['note'])                    # additional remarks
 ```
 
-To convert a Sage SBox back to a Python SBoxEntry (e.g. to read metadata), use `bigfatsbox.yaml`:
-
-```python
-# In Sage: get both the SBox object and the full YAML dict
-aes_box  = bigfatsbox.aes              # SBox object
-aes_data = bigfatsbox.yaml.aes         # raw dict with all YAML fields
-```
-
 ### Raw YAML
 
 Raw dictionary access is available via the `yaml` proxy. This is identical in Python and Sage and exposes all YAML fields including `canonical_name`, `year`, `note`, `fun_fact`, `origin`, `source`, `alias`/`aliases`/`reuse`, `absolute_linear_uniformity`, and `univariate_polynomial`:
 
 ```python
-data = bigfatsbox.yaml.aes         # plain Python dictionary with all YAML fields
-print(data['nonlinearity'])        # 112
-print(data['year'])                # [1997, 2001]
-print(data['canonical_name'])      # ['Rijndael']
-print(data['source'])              # URL
+data = bigfatsbox.yaml.aes         # Plain Python dictionary with all YAML fields
+print(data['nonlinearity'])        # Prints 112
+print(data['year'])                # Prints [1997, 2001]
+print(data['canonical_name'])      # Prints ['Rijndael']
+print(data['source'])              # Source URL string
 data = bigfatsbox.yaml['AES']      # same, case-insensitive bracket access
 
 print(bigfatsbox.yaml.present['univariate_polynomial'])

@@ -168,6 +168,7 @@ class SBoxEntry:
         sb.to_dict()           → copy of the raw dict
         sb.to_sage()           → sage.crypto.sbox.SBox(lut)  (if Sage available)
         sb.keys()              → dict_keys view of available fields
+        sb.fields              → list of available field names (indexable: sb.fields[0])
     """
 
     __slots__ = ('_name', '_data')
@@ -222,6 +223,11 @@ class SBoxEntry:
 
     def keys(self):
         return object.__getattribute__(self, '_data').keys()
+
+    @property
+    def fields(self) -> list:
+        """List of available field names for this entry. Supports indexing: sb.fields[0]."""
+        return list(object.__getattribute__(self, '_data').keys())
 
     def to_dict(self) -> dict:
         return dict(object.__getattribute__(self, '_data'))

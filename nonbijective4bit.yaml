@@ -3,7 +3,7 @@
 # Format: key, lut, input_bits, output_bits, algebraic_degree, nonlinearity, differential_uniformity, cipher, origin, [note]
 # Note: File name indicates input width (4-bit). `output_bits` must be explicitly present per entry.
 
-GAGE_Q:
+GAGE.Q:
   canonical_name: ["GAGE"]
   output_bits: 2
   lookup_table: [1, 0, 3, 2, 0, 2, 1, 3, 2, 3, 0, 1, 3, 1, 2, 0]
@@ -11,6 +11,7 @@ GAGE_Q:
   nonlinearity: 0
   differential_uniformity: 16
   boomerang_uniformity:
+  absolute_autocorrelation_uniformity: 16
   year: [2019]
   cipher: true
   differential_branch_number: 2
@@ -18,3 +19,4 @@ GAGE_Q:
   univariate_polynomial: null
   origin: "Gligoroski, Mihajloska, Otte; GAGE and InGAGE; NIST LWC Round 1 (2019); URL: https://csrc.nist.gov/projects/lightweight-cryptography/round-1-candidates"
   note: "Did not advance to Round 2 of LWC"
+

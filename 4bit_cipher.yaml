@@ -10,6 +10,7 @@ ANUBIS.S0:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 8
   involution: true
   fixed_point: []
   year: [2000]
@@ -30,6 +31,7 @@ ANUBIS.S1:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 8
   involution: true
   fixed_point: []
   year: [2000]
@@ -48,6 +50,7 @@ ARADI:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: [0, 1, 2, 3, 4, 8, 12]
   year: [2024]
@@ -66,6 +69,7 @@ BAKSHEESH:
   differential_uniformity: 16
   absolute_linear_uniformity: 8
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: [5]
   year: [2026] # Publication at CiC 2026 (venue year); ePrint 2023/750 is earlier preprint
@@ -84,6 +88,7 @@ BEANIE:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 8
   involution: false
   fixed_point: [0, 2]
   year: [2025] # Publication at IACR ToSC 2025(4)
@@ -102,6 +107,7 @@ BLAKE.1:
   differential_uniformity: 8
   absolute_linear_uniformity: 6
   boomerang_uniformity: 8
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2008]
@@ -121,6 +127,7 @@ BLAKE.2:
   differential_uniformity: 6
   absolute_linear_uniformity: 6
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2008]
@@ -130,6 +137,7 @@ BLAKE.2:
   univariate_polynomial: "4x¹⁴ + x¹³ + 9x¹² + 15x¹¹ + 14x¹⁰ + 5x⁹ + 6x⁸ + 13x⁶ + 7x⁵ + 3x² + 4x + 11"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_BLAKE_2.txt"
   origin: "Aumasson et al.; SHA-3 proposal BLAKE; SHA-3 submission (2008)"
+  note: "SHA-3 candidate"
 
 BLAKE.3:
   canonical_name: ["BLAKE", "G₃"]
@@ -139,6 +147,7 @@ BLAKE.3:
   differential_uniformity: 6
   absolute_linear_uniformity: 6
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2008]
@@ -148,6 +157,7 @@ BLAKE.3:
   univariate_polynomial: "4x¹³ + 3x¹² + 5x¹¹ + 12x¹⁰ + 2x⁹ + 8x⁸ + 9x⁷ + 12x⁶ + 9x⁵ + 8x⁴ + 6x³ + 14x² + 6x + 7"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_BLAKE_3.txt"
   origin: "Aumasson et al.; SHA-3 proposal BLAKE; SHA-3 submission (2008)"
+  note: "SHA-3 candidate"
 
 BLAKE.4:
   canonical_name: ["BLAKE", "G₄"]
@@ -157,6 +167,7 @@ BLAKE.4:
   differential_uniformity: 6
   absolute_linear_uniformity: 6
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2008]
@@ -166,6 +177,7 @@ BLAKE.4:
   univariate_polynomial: "11x¹⁴ + 6x¹³ + 2x¹² + 11x¹¹ + x¹⁰ + 15x⁹ + 11x⁸ + 14x⁷ + 6x⁵ + 6x⁴ + x³ + 15x² + 8x + 9"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_BLAKE_4.txt"
   origin: "Aumasson et al.; SHA-3 proposal BLAKE; SHA-3 submission (2008)"
+  note: "SHA-3 candidate"
 
 BLAKE.5:
   canonical_name: ["BLAKE", "G₅"]
@@ -175,6 +187,7 @@ BLAKE.5:
   differential_uniformity: 6
   absolute_linear_uniformity: 6
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2008]
@@ -184,6 +197,7 @@ BLAKE.5:
   univariate_polynomial: "9x¹⁴ + 3x¹³ + 14x¹² + 3x¹¹ + 9x¹⁰ + 13x⁹ + 3x⁸ + 11x⁷ + 13x⁶ + 2x⁵ + 11x⁴ + 11x³ + 11x² + x + 2"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_BLAKE_5.txt"
   origin: "Aumasson et al.; SHA-3 proposal BLAKE; SHA-3 submission (2008)"
+  note: "SHA-3 candidate"
 
 BLAKE.6:
   canonical_name: ["BLAKE", "G₆"]
@@ -193,6 +207,7 @@ BLAKE.6:
   differential_uniformity: 8
   absolute_linear_uniformity: 6
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2008]
@@ -202,6 +217,7 @@ BLAKE.6:
   univariate_polynomial: "4x¹⁴ + 5x¹³ + 12x¹² + 4x¹¹ + x¹⁰ + 8x⁹ + 10x⁸ + 15x⁷ + 12x⁵ + 5x⁴ + 3x³ + 11x² + 13x + 12"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_BLAKE_6.txt"
   origin: "Aumasson et al.; SHA-3 proposal BLAKE; SHA-3 submission (2008)"
+  note: "SHA-3 candidate"
 
 BLAKE.7:
   canonical_name: ["BLAKE", "G₇"]
@@ -211,6 +227,7 @@ BLAKE.7:
   differential_uniformity: 6
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2008]
@@ -220,6 +237,7 @@ BLAKE.7:
   univariate_polynomial: "13x¹⁴ + 12x¹³ + x¹¹ + 13x¹⁰ + 6x⁹ + 4x⁸ + 8x⁷ + 8x⁶ + 3x⁵ + 4x⁴ + 2x³ + 12x + 13"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_BLAKE_7.txt"
   origin: "Aumasson et al.; SHA-3 proposal BLAKE; SHA-3 submission (2008)"
+  note: "SHA-3 candidate"
 
 BLAKE.8:
   canonical_name: ["BLAKE", "G₈"]
@@ -229,6 +247,7 @@ BLAKE.8:
   differential_uniformity: 6
   absolute_linear_uniformity: 6
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2008]
@@ -238,6 +257,7 @@ BLAKE.8:
   univariate_polynomial: "9x¹⁴ + 14x¹³ + 9x¹² + 5x¹¹ + 4x¹⁰ + 14x⁹ + 11x⁸ + 12x⁷ + 10x⁶ + 8x⁵ + 3x⁴ + 12x³ + 13x² + 15x + 6"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_BLAKE_8.txt"
   origin: "Aumasson et al.; SHA-3 proposal BLAKE; SHA-3 submission (2008)"
+  note: "SHA-3 candidate"
 
 BLAKE.9:
   canonical_name: ["BLAKE", "G₉"]
@@ -247,6 +267,7 @@ BLAKE.9:
   differential_uniformity: 6
   absolute_linear_uniformity: 6
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2008]
@@ -256,6 +277,7 @@ BLAKE.9:
   univariate_polynomial: "15x¹⁴ + x¹³ + 5x¹² + 13x¹¹ + 9x¹⁰ + x⁹ + 6x⁸ + 2x⁷ + 3x⁶ + 4x⁵ + 15x⁴ + 11x³ + 12x² + 13x + 10"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_BLAKE_9.txt"
   origin: "Aumasson et al.; SHA-3 proposal BLAKE; SHA-3 submission (2008)"
+  note: "SHA-3 candidate"
 
 BLINK:
   canonical_name: ["Blink"]
@@ -265,6 +287,7 @@ BLINK:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: true
   fixed_point: [3, 5, 7, 11]
   year: [2025] # Publication at IACR ToSC 2025(4)
@@ -283,6 +306,7 @@ CLEFIA.SS0:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2007]
@@ -301,6 +325,7 @@ CLEFIA.SS1:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2007]
@@ -319,6 +344,7 @@ CLEFIA.SS2:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2007]
@@ -337,6 +363,7 @@ CLEFIA.SS3:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2007]
@@ -347,12 +374,20 @@ CLEFIA.SS3:
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_CLEFIA_SS3.txt"
   origin: "Shirai et al.; The 128-Bit Blockcipher CLEFIA; FSE 2007"
 
-CS_CIPHER.F:
+CORAL:
+  canonical_name: ["Coral"]
+  year: [2019]
+  origin: "Maene, Piessens; Yarará and Coral; 2019"  
+  note: "Companion cipher to Yarará"
+  alias: YARARA
+
+CSCIPHER.F:
   canonical_name: ["CS-Cipher", "F"]
   lookup_table: [15, 13, 11, 11, 7, 5, 7, 7, 14, 13, 10, 11, 14, 13, 14, 15]
   algebraic_degree: [2, 2, 2, 2]
   nonlinearity: 4
   boomerang_uniformity:
+  absolute_autocorrelation_uniformity: 16
   year: [1998]
   cipher: true  # Used in a cipher
   differential_branch_number: 1
@@ -361,7 +396,7 @@ CS_CIPHER.F:
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_CS_cipher_F.txt"
   origin: "Stern, Vaudenay; CS-Cipher; FSE 1998"
 
-CS_CIPHER.G:
+CSCIPHER.G:
   canonical_name: ["CS-Cipher", "G"]
   lookup_table: [10, 6, 0, 2, 11, 14, 1, 8, 13, 4, 5, 3, 15, 12, 7, 9]
   algebraic_degree: [3, 3, 2, 2]
@@ -369,6 +404,7 @@ CS_CIPHER.G:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [1998]
@@ -387,6 +423,7 @@ DEFAULT.CORE:
   differential_uniformity: 8
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2021]
@@ -405,6 +442,7 @@ DEFAULT.LAYER:
   differential_uniformity: 16
   absolute_linear_uniformity: 8
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: [0]
   year: [2021]
@@ -423,6 +461,7 @@ ELEPHANT:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2019]
@@ -441,6 +480,7 @@ ENOCORO.S4:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2010]
@@ -459,6 +499,7 @@ FOUNTAIN.2:
   differential_uniformity: 6
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2019]
@@ -468,6 +509,7 @@ FOUNTAIN.2:
   univariate_polynomial: "3x¹⁴ + 12x¹³ + 10x¹² + 8x¹¹ + 13x¹⁰ + 5x⁹ + 14x⁸ + 7x⁷ + 8x⁶ + 15x⁵ + x⁴ + 14x³ + 8x + 9"
   source: "URL: https://csrc.nist.gov/csrc/media/Projects/Lightweight-Cryptography/documents/round-1/spec-doc/fountain-spec.pdf"
   origin: "Zhang; Fountain v1.1; NIST LWC round 1 candidate (2019); URL: https://csrc.nist.gov/Projects/lightweight-cryptography/round-1-candidates"
+  note: "NIST LWC round 1 candidate; not selected for round 2"
 
 FOUNTAIN.3:
   canonical_name: ["FOUNTAIN", "S₃"]
@@ -477,6 +519,7 @@ FOUNTAIN.3:
   differential_uniformity: 6
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2019]
@@ -486,6 +529,7 @@ FOUNTAIN.3:
   univariate_polynomial: "11x¹⁴ + 4x¹³ + 4x¹² + 13x¹⁰ + 6x⁹ + 15x⁸ + 15x⁷ + 3x⁶ + 15x⁵ + 11x⁴ + 8x³ + 12x² + 7x + 9"
   source: "URL: https://csrc.nist.gov/csrc/media/Projects/Lightweight-Cryptography/documents/round-1/spec-doc/fountain-spec.pdf"
   origin: "Zhang; Fountain v1.1; NIST LWC round 1 candidate (2019); URL: https://csrc.nist.gov/Projects/lightweight-cryptography/round-1-candidates"
+  note: "NIST LWC round 1 candidate; not selected for round 2"
 
 FOUNTAIN.4:
   canonical_name: ["FOUNTAIN", "S₄"]
@@ -495,6 +539,7 @@ FOUNTAIN.4:
   differential_uniformity: 6
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2019]
@@ -504,6 +549,7 @@ FOUNTAIN.4:
   univariate_polynomial: "2x¹⁴ + 5x¹³ + 4x¹² + 4x¹¹ + 4x¹⁰ + 8x⁹ + 15x⁸ + 3x⁷ + 14x⁶ + 9x⁵ + 9x⁴ + 9x³ + 6x² + 2x + 11"
   source: "URL: https://csrc.nist.gov/csrc/media/Projects/Lightweight-Cryptography/documents/round-1/spec-doc/fountain-spec.pdf"
   origin: "Zhang; Fountain v1.1; NIST LWC round 1 candidate (2019); URL: https://csrc.nist.gov/Projects/lightweight-cryptography/round-1-candidates"
+  note: "NIST LWC round 1 candidate; not selected for round 2"
 
 FOX.S1:
   canonical_name: ["FOX", "S₁"]
@@ -513,6 +559,7 @@ FOX.S1:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2004]
@@ -532,6 +579,7 @@ FOX.S2:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: [12]
   year: [2004]
@@ -550,6 +598,7 @@ FOX.S3:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 6
+  absolute_autocorrelation_uniformity: 8
   involution: false
   fixed_point: [4]
   year: [2004]
@@ -568,6 +617,7 @@ FUTURE:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2022]
@@ -586,6 +636,7 @@ GIFT:
   differential_uniformity: 6
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2017]
@@ -595,44 +646,7 @@ GIFT:
   univariate_polynomial: "7x¹⁴ + 2x¹³ + 11x¹² + 15x¹¹ + 4x¹⁰ + 6x⁹ + 10x⁸ + 10x⁷ + 2x⁶ + 13x⁵ + 6x⁴ + 14x³ + 5x² + 10x + 1"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_GIFT.txt"
   origin: "Banik et al.; GIFT: A Small Present; CHES 2017; URL: https://doi.org/10.1007/978-3-319-66787-4_1"
-  reuse: [ESTATE, FOUNTAIN, GIFT_COFB, LOTUS_LOCUS]
-
-GOST2.1:
-  canonical_name: ["GOST", "π₁"]
-  lookup_table: [6, 10, 15, 4, 3, 8, 5, 0, 13, 14, 7, 1, 2, 11, 12, 9]
-  algebraic_degree: [3, 3, 3, 3]
-  nonlinearity: 4
-  differential_uniformity: 4
-  absolute_linear_uniformity: 4
-  boomerang_uniformity: 10
-  involution: false
-  fixed_point: []
-  year: [2015]
-  cipher: true  # Used in a cipher
-  differential_branch_number: 2
-  linear_branch_number: 2
-  univariate_polynomial: "14x¹⁴ + 10x¹³ + 11x¹² + 11x¹¹ + 15x¹⁰ + 2x⁹ + 2x⁸ + 6x⁷ + 4x⁶ + 2x⁵ + 2x⁴ + 4x³ + 2x² + 3x + 6"
-  source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_GOST2_1.txt"
-  origin: "GOST R 34.12-2015 (Russian national standard); alternate parameter set"
-  note: "Russia. GOST R 34.12-2015 (updated GOST parameters)"
-
-GOST2.2:
-  canonical_name: ["GOST", "π₂"]
-  lookup_table: [14, 0, 8, 1, 7, 10, 5, 6, 13, 2, 4, 9, 3, 15, 12, 11]
-  algebraic_degree: [3, 3, 3, 3]
-  nonlinearity: 4
-  differential_uniformity: 4
-  absolute_linear_uniformity: 4
-  boomerang_uniformity: 10
-  involution: false
-  fixed_point: []
-  year: [2015]
-  cipher: true  # Used in a cipher
-  differential_branch_number: 2
-  linear_branch_number: 2
-  univariate_polynomial: "x¹⁴ + 11x¹³ + 3x¹² + 14x¹¹ + 3x¹⁰ + 8x⁹ + 5x⁸ + 13x⁷ + 13x⁶ + 12x⁵ + x⁴ + 11x³ + 10x² + 11x + 14"
-  source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_GOST2_2.txt"
-  origin: "GOST R 34.12-2015 (Russian national standard); alternate parameter set"
+  reuse: [ESTATE, FOUNTAIN, GIFTCOFB, LOTUSLOCUS]
 
 GOST.1:
   canonical_name: ["GOST", "π₁"]
@@ -642,6 +656,7 @@ GOST.1:
   differential_uniformity: 6
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2015]
@@ -661,6 +676,7 @@ GOST.2:
   differential_uniformity: 6
   absolute_linear_uniformity: 6
   boomerang_uniformity: 8
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2015]
@@ -679,6 +695,7 @@ GOST.3:
   differential_uniformity: 6
   absolute_linear_uniformity: 6
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2015]
@@ -697,6 +714,7 @@ GOST.4:
   differential_uniformity: 6
   absolute_linear_uniformity: 6
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2015]
@@ -715,6 +733,7 @@ GOST.5:
   differential_uniformity: 4
   absolute_linear_uniformity: 6
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2015]
@@ -733,6 +752,7 @@ GOST.6:
   differential_uniformity: 6
   absolute_linear_uniformity: 6
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2015]
@@ -751,6 +771,7 @@ GOST.7:
   differential_uniformity: 8
   absolute_linear_uniformity: 6
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2015]
@@ -769,6 +790,7 @@ GOST.8:
   differential_uniformity: 8
   absolute_linear_uniformity: 6
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2015]
@@ -779,7 +801,46 @@ GOST.8:
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_GOST_8.txt"
   origin: "GOST 28147-89 (Soviet/Russian standard); Central Bank of Russia test parameters; RFC 5830 (2010)"
 
-GOST_IETF.1:
+GOST2.1:
+  canonical_name: ["GOST", "π₁"]
+  lookup_table: [6, 10, 15, 4, 3, 8, 5, 0, 13, 14, 7, 1, 2, 11, 12, 9]
+  algebraic_degree: [3, 3, 3, 3]
+  nonlinearity: 4
+  differential_uniformity: 4
+  absolute_linear_uniformity: 4
+  boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
+  involution: false
+  fixed_point: []
+  year: [2015]
+  cipher: true  # Used in a cipher
+  differential_branch_number: 2
+  linear_branch_number: 2
+  univariate_polynomial: "14x¹⁴ + 10x¹³ + 11x¹² + 11x¹¹ + 15x¹⁰ + 2x⁹ + 2x⁸ + 6x⁷ + 4x⁶ + 2x⁵ + 2x⁴ + 4x³ + 2x² + 3x + 6"
+  source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_GOST2_1.txt"
+  origin: "GOST R 34.12-2015 (Russian national standard); alternate parameter set"
+  note: "Russia. GOST R 34.12-2015 (updated GOST parameters)"
+
+GOST2.2:
+  canonical_name: ["GOST", "π₂"]
+  lookup_table: [14, 0, 8, 1, 7, 10, 5, 6, 13, 2, 4, 9, 3, 15, 12, 11]
+  algebraic_degree: [3, 3, 3, 3]
+  nonlinearity: 4
+  differential_uniformity: 4
+  absolute_linear_uniformity: 4
+  boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
+  involution: false
+  fixed_point: []
+  year: [2015]
+  cipher: true  # Used in a cipher
+  differential_branch_number: 2
+  linear_branch_number: 2
+  univariate_polynomial: "x¹⁴ + 11x¹³ + 3x¹² + 14x¹¹ + 3x¹⁰ + 8x⁹ + 5x⁸ + 13x⁷ + 13x⁶ + 12x⁵ + x⁴ + 11x³ + 10x² + 11x + 14"
+  source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_GOST2_2.txt"
+  origin: "GOST R 34.12-2015 (Russian national standard); alternate parameter set"
+
+GOSTIETF.S1:
   canonical_name: ["GOST", "S₁"]
   lookup_table: [9, 6, 3, 2, 8, 11, 1, 7, 10, 4, 14, 15, 12, 0, 13, 5]
   algebraic_degree: [3, 3, 3, 3]
@@ -787,6 +848,7 @@ GOST_IETF.1:
   differential_uniformity: 6
   absolute_linear_uniformity: 6
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: [7, 12]
   year: [2010]
@@ -796,9 +858,9 @@ GOST_IETF.1:
   univariate_polynomial: "10x¹⁴ + 5x¹³ + 3x¹² + x¹¹ + 12x¹⁰ + x⁹ + 13x⁸ + 5x⁷ + x⁶ + 14x⁵ + 13x⁴ + 10x³ + 14x² + x + 9"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_GOST_IETF_1.txt"
   origin: "Dolmatov; RFC 5830: GOST 28147-89 (IETF, 2010)"
-  note: "S-box parameter set from id-tc26-gost-28147-param-Z (RFC 7836); used in TLS_GOSTR341112_256_WITH_28147_CNT_IMIT cipher suite defined in RFC 9189 for TLS 1.2 with GOST algorithms"
+  note: "SBox parameter set id-tc26-gost-28147-param-Z (RFC 7836); TLS cipher suite RFC 9189"
 
-GOST_IETF.2:
+GOSTIETF.S2:
   canonical_name: ["GOST", "S₂"]
   lookup_table: [3, 7, 14, 9, 8, 10, 15, 0, 5, 2, 6, 12, 11, 4, 13, 1]
   algebraic_degree: [3, 3, 3, 3]
@@ -806,6 +868,7 @@ GOST_IETF.2:
   differential_uniformity: 8
   absolute_linear_uniformity: 6
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2010]
@@ -815,9 +878,9 @@ GOST_IETF.2:
   univariate_polynomial: "4x¹⁴ + 7x¹³ + 8x¹² + 8x¹¹ + 4x¹⁰ + 8x⁹ + 7x⁸ + 5x⁷ + 9x⁶ + 9x⁵ + 14x⁴ + 2x³ + x² + 4x + 3"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_GOST_IETF_2.txt"
   origin: "Dolmatov; RFC 5830: GOST 28147-89 (IETF, 2010)"
-  note: "S-box parameter set from id-tc26-gost-28147-param-Z (RFC 7836); used in TLS_GOSTR341112_256_WITH_28147_CNT_IMIT cipher suite defined in RFC 9189 for TLS 1.2 with GOST algorithms"
+  note: "SBox parameter set id-tc26-gost-28147-param-Z (RFC 7836); TLS cipher suite RFC 9189"
 
-GOST_IETF.3:
+GOSTIETF.S3:
   canonical_name: ["GOST", "S₃"]
   lookup_table: [14, 4, 6, 2, 11, 3, 13, 8, 12, 15, 5, 10, 0, 7, 1, 9]
   algebraic_degree: [3, 3, 3, 2]
@@ -825,6 +888,7 @@ GOST_IETF.3:
   differential_uniformity: 6
   absolute_linear_uniformity: 6
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2010]
@@ -834,9 +898,9 @@ GOST_IETF.3:
   univariate_polynomial: "9x¹⁴ + 12x¹³ + 8x¹² + 4x¹¹ + 6x¹⁰ + x⁹ + 15x⁸ + 2x⁷ + 5x⁶ + 12x⁵ + 12x⁴ + 3x³ + 15x² + 14"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_GOST_IETF_3.txt"
   origin: "Dolmatov; RFC 5830: GOST 28147-89 (IETF, 2010)"
-  note: "S-box parameter set from id-tc26-gost-28147-param-Z (RFC 7836); used in TLS_GOSTR341112_256_WITH_28147_CNT_IMIT cipher suite defined in RFC 9189 for TLS 1.2 with GOST algorithms"
+  note: "SBox parameter set id-tc26-gost-28147-param-Z (RFC 7836); TLS cipher suite RFC 9189"
 
-GOST_IETF.4:
+GOSTIETF.S4:
   canonical_name: ["GOST", "S₄"]
   lookup_table: [14, 7, 10, 12, 13, 1, 3, 9, 0, 2, 11, 4, 15, 8, 5, 6]
   algebraic_degree: [3, 3, 2, 3]
@@ -844,6 +908,7 @@ GOST_IETF.4:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2010]
@@ -853,9 +918,9 @@ GOST_IETF.4:
   univariate_polynomial: "7x¹⁴ + 11x¹³ + 6x¹² + 15x¹¹ + 2x¹⁰ + 7x⁹ + x⁸ + 10x⁷ + 11x⁶ + 9x⁵ + 9x⁴ + 9x³ + 7x² + 7x + 14"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_GOST_IETF_4.txt"
   origin: "Dolmatov; RFC 5830: GOST 28147-89 (IETF, 2010)"
-  note: "S-box parameter set from id-tc26-gost-28147-param-Z (RFC 7836); used in TLS_GOSTR341112_256_WITH_28147_CNT_IMIT cipher suite defined in RFC 9189 for TLS 1.2 with GOST algorithms"
+  note: "SBox parameter set id-tc26-gost-28147-param-Z (RFC 7836); TLS cipher suite RFC 9189"
 
-GOST_IETF.5:
+GOSTIETF.S5:
   canonical_name: ["GOST", "S₅"]
   lookup_table: [11, 5, 1, 9, 8, 13, 15, 0, 14, 4, 2, 3, 12, 7, 10, 6]
   algebraic_degree: [3, 3, 3, 3]
@@ -863,6 +928,7 @@ GOST_IETF.5:
   differential_uniformity: 8
   absolute_linear_uniformity: 6
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: [12]
   year: [2010]
@@ -872,9 +938,9 @@ GOST_IETF.5:
   univariate_polynomial: "11x¹⁴ + 2x¹³ + 14x¹¹ + 2x¹⁰ + 5x⁹ + 15x⁸ + 11x⁷ + 10x⁶ + 10x⁵ + 14x⁴ + 14x³ + x² + 11x + 11"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_GOST_IETF_5.txt"
   origin: "Dolmatov; RFC 5830: GOST 28147-89 (IETF, 2010)"
-  note: "S-box parameter set from id-tc26-gost-28147-param-Z (RFC 7836); used in TLS_GOSTR341112_256_WITH_28147_CNT_IMIT cipher suite defined in RFC 9189 for TLS 1.2 with GOST algorithms"
+  note: "SBox parameter set id-tc26-gost-28147-param-Z (RFC 7836); TLS cipher suite RFC 9189"
 
-GOST_IETF.6:
+GOSTIETF.S6:
   canonical_name: ["GOST", "S₆"]
   lookup_table: [3, 10, 13, 12, 1, 2, 0, 11, 7, 5, 9, 4, 8, 15, 14, 6]
   algebraic_degree: [3, 3, 3, 3]
@@ -882,6 +948,7 @@ GOST_IETF.6:
   differential_uniformity: 6
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: [14]
   year: [2010]
@@ -891,9 +958,9 @@ GOST_IETF.6:
   univariate_polynomial: "5x¹⁴ + 7x¹³ + 9x¹² + 13x¹¹ + x¹⁰ + x⁹ + 13x⁸ + 15x⁷ + 4x⁶ + 8x⁵ + 8x⁴ + 14x³ + 3x² + 4x + 3"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_GOST_IETF_6.txt"
   origin: "Dolmatov; RFC 5830: GOST 28147-89 (IETF, 2010)"
-  note: "S-box parameter set from id-tc26-gost-28147-param-Z (RFC 7836); used in TLS_GOSTR341112_256_WITH_28147_CNT_IMIT cipher suite defined in RFC 9189 for TLS 1.2 with GOST algorithms"
+  note: "SBox parameter set id-tc26-gost-28147-param-Z (RFC 7836); TLS cipher suite RFC 9189"
 
-GOST_IETF.7:
+GOSTIETF.S7:
   canonical_name: ["GOST", "S₇"]
   lookup_table: [1, 13, 2, 9, 7, 10, 6, 0, 8, 12, 4, 5, 15, 3, 11, 14]
   algebraic_degree: [3, 3, 3, 3]
@@ -901,6 +968,7 @@ GOST_IETF.7:
   differential_uniformity: 8
   absolute_linear_uniformity: 6
   boomerang_uniformity: 8
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: [2, 6, 8]
   year: [2010]
@@ -910,9 +978,9 @@ GOST_IETF.7:
   univariate_polynomial: "9x¹⁴ + x¹³ + 4x¹² + 10x¹⁰ + 15x⁹ + 6x⁸ + 4x⁷ + 11x⁶ + 11x⁵ + 4x⁴ + 10x³ + 14x² + 7x + 1"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_GOST_IETF_7.txt"
   origin: "Dolmatov; RFC 5830: GOST 28147-89 (IETF, 2010)"
-  note: "S-box parameter set from id-tc26-gost-28147-param-Z (RFC 7836); used in TLS_GOSTR341112_256_WITH_28147_CNT_IMIT cipher suite defined in RFC 9189 for TLS 1.2 with GOST algorithms"
+  note: "SBox parameter set id-tc26-gost-28147-param-Z (RFC 7836); TLS cipher suite RFC 9189"
 
-GOST_IETF.8:
+GOSTIETF.S8:
   canonical_name: ["GOST", "S₈"]
   lookup_table: [11, 10, 15, 5, 0, 12, 14, 8, 6, 2, 3, 9, 1, 7, 13, 4]
   algebraic_degree: [3, 3, 3, 3]
@@ -920,6 +988,7 @@ GOST_IETF.8:
   differential_uniformity: 6
   absolute_linear_uniformity: 6
   boomerang_uniformity: 8
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2010]
@@ -929,9 +998,9 @@ GOST_IETF.8:
   univariate_polynomial: "x¹⁴ + 9x¹³ + 6x¹² + 12x¹¹ + x¹⁰ + 7x⁸ + 5x⁷ + x⁶ + 6x⁴ + 15x² + 8x + 11"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_GOST_IETF_8.txt"
   origin: "Dolmatov; RFC 5830: GOST 28147-89 (IETF, 2010)"
-  note: "S-box parameter set from id-tc26-gost-28147-param-Z (RFC 7836); used in TLS_GOSTR341112_256_WITH_28147_CNT_IMIT cipher suite defined in RFC 9189 for TLS 1.2 with GOST algorithms"
+  note: "SBox parameter set id-tc26-gost-28147-param-Z (RFC 7836); TLS cipher suite RFC 9189"
 
-HUMMINGBIRD_2.S1:
+HUMMINGBIRDv2.S1:
   canonical_name: ["HUMMINGBIRD-2", "S₁"]
   lookup_table: [7, 12, 14, 9, 2, 1, 5, 15, 11, 6, 13, 0, 4, 8, 10, 3]
   algebraic_degree: [3, 3, 3, 3]
@@ -939,6 +1008,7 @@ HUMMINGBIRD_2.S1:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2011]
@@ -949,7 +1019,7 @@ HUMMINGBIRD_2.S1:
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Hummingbird_2_S1.txt"
   origin: "Engels et al.; Hummingbird-2; RFIDSec 2011"
 
-HUMMINGBIRD_2.S2:
+HUMMINGBIRDv2.S2:
   canonical_name: ["HUMMINGBIRD-2", "S₂"]
   lookup_table: [4, 10, 1, 6, 8, 15, 7, 12, 3, 0, 14, 13, 5, 9, 11, 2]
   algebraic_degree: [3, 3, 3, 3]
@@ -957,6 +1027,7 @@ HUMMINGBIRD_2.S2:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2011]
@@ -967,7 +1038,7 @@ HUMMINGBIRD_2.S2:
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Hummingbird_2_S2.txt"
   origin: "Engels et al.; Hummingbird-2; RFIDSec 2011"
 
-HUMMINGBIRD_2.S3:
+HUMMINGBIRDv2.S3:
   canonical_name: ["HUMMINGBIRD-2", "S₃"]
   lookup_table: [2, 15, 12, 1, 5, 6, 10, 13, 14, 8, 3, 4, 0, 11, 9, 7]
   algebraic_degree: [3, 3, 3, 2]
@@ -975,6 +1046,7 @@ HUMMINGBIRD_2.S3:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2011]
@@ -985,7 +1057,7 @@ HUMMINGBIRD_2.S3:
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Hummingbird_2_S3.txt"
   origin: "Engels et al.; Hummingbird-2; RFIDSec 2011"
 
-HUMMINGBIRD_2.S4:
+HUMMINGBIRDv2.S4:
   canonical_name: ["HUMMINGBIRD-2", "S₄"]
   lookup_table: [15, 4, 5, 8, 9, 7, 2, 1, 10, 3, 0, 14, 6, 12, 13, 11]
   algebraic_degree: [3, 3, 3, 3]
@@ -993,6 +1065,7 @@ HUMMINGBIRD_2.S4:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2011]
@@ -1011,6 +1084,7 @@ ICEBERG.S0:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 8
   involution: true
   fixed_point: []
   year: [2004]
@@ -1029,6 +1103,7 @@ ICEBERG.S1:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 8
   involution: true
   fixed_point: []
   year: [2004]
@@ -1047,6 +1122,7 @@ JH.S0:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 8
   involution: false
   fixed_point: []
   year: [2011]
@@ -1066,6 +1142,7 @@ JH.S1:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 8
   involution: false
   fixed_point: [14]
   year: [2011]
@@ -1075,6 +1152,7 @@ JH.S1:
   univariate_polynomial: "x¹⁴ + 15x¹³ + 4x¹² + x¹¹ + 5x¹⁰ + 2x⁹ + 14x⁸ + x⁷ + 8x⁶ + 6x⁵ + 2x⁴ + 9x³ + 8x² + x + 3"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_JH_S1.txt"
   origin: "W. Hongjun; The Hash Function JH; SHA-3 Round 3 Candidate (2011); URL: https://www3.ntu.edu.sg/home/wuhj/research/jh/jh_round3.pdf"
+  note: "SHA-3 candidate"
 
 KHAZAD.P:
   canonical_name: ["KHAZAD", "P"]
@@ -1084,6 +1162,7 @@ KHAZAD.P:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 8
   involution: true
   fixed_point: []
   year: [2000]
@@ -1102,6 +1181,7 @@ KHAZAD.Q:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 8
   involution: true
   fixed_point: []
   year: [2000]
@@ -1120,6 +1200,7 @@ KLEIN:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 8
   involution: true
   fixed_point: []
   year: [2011]
@@ -1138,6 +1219,7 @@ KNOT:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2019]
@@ -1147,7 +1229,7 @@ KNOT:
   univariate_polynomial: "6x¹⁴ + x¹³ + 6x¹² + 7x¹¹ + 6x¹⁰ + 3x⁹ + 7x⁸ + 3x⁶ + 11x⁵ + 3x⁴ + 14x³ + 14x² + 11x + 4"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_KNOT.txt"
   origin: "Zhang et al.; KNOT: Algorithm Specifications and Supporting Document; NIST LWC (2019)"
-  note: "NIST LWC candidate"
+  note: "NIST LWC round 2 candidate; not selected for finals"
 
 KUZNYECHIK.NU0:
   canonical_name: ["Kuznyechik", "ν₀"]
@@ -1157,6 +1239,7 @@ KUZNYECHIK.NU0:
   differential_uniformity: 6
   absolute_linear_uniformity: 4
   boomerang_uniformity: 6
+  absolute_autocorrelation_uniformity: 8
   involution: false
   fixed_point: [13]
   year: [2015]
@@ -1166,7 +1249,7 @@ KUZNYECHIK.NU0:
   univariate_polynomial: "2x¹⁴ + 10x¹³ + 2x¹² + x¹¹ + 13x¹⁰ + 5x⁹ + 3x⁸ + 13x⁷ + 11x⁶ + 10x⁵ + 15x⁴ + 15x³ + 14x² + 5x + 2"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Kuznyechik_nu0.txt"
   origin: "Shishkin et al.; GOST R 34.12-2015 (Kuznyechik); RFC 7801"
-  note: "Russia. Decomposition of GOST R 34.12-2015 S-box"
+  note: "Decomposition of GOST R 34.12-2015 SBox"
   original_name: "КУЗНЕЧИК"
 
 KUZNYECHIK.NU1:
@@ -1177,6 +1260,7 @@ KUZNYECHIK.NU1:
   differential_uniformity: 16
   absolute_linear_uniformity: 6
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2015]
@@ -1194,6 +1278,7 @@ KUZNYECHIK.PHI:
   nonlinearity: 2
   absolute_linear_uniformity: 6
   boomerang_uniformity:
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2015]
@@ -1212,6 +1297,7 @@ KUZNYECHIK.SIGMA:
   differential_uniformity: 6
   absolute_linear_uniformity: 6
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: [9]
   year: [2015]
@@ -1230,6 +1316,7 @@ LAC:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2014]
@@ -1248,6 +1335,7 @@ LBLOCK.0:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2011]
@@ -1266,6 +1354,7 @@ LBLOCK.1:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2011]
@@ -1284,6 +1373,7 @@ LBLOCK.2:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2011]
@@ -1302,6 +1392,7 @@ LBLOCK.3:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2011]
@@ -1320,6 +1411,7 @@ LBLOCK.4:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2011]
@@ -1338,6 +1430,7 @@ LBLOCK.5:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2011]
@@ -1356,6 +1449,7 @@ LBLOCK.6:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2011]
@@ -1374,6 +1468,7 @@ LBLOCK.7:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2011]
@@ -1392,6 +1487,7 @@ LBLOCK.8:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2011]
@@ -1410,6 +1506,7 @@ LBLOCK.9:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2011]
@@ -1428,6 +1525,7 @@ LUCIFER.S0:
   differential_uniformity: 6
   absolute_linear_uniformity: 6
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [1973]
@@ -1447,6 +1545,7 @@ LUCIFER.S1:
   differential_uniformity: 6
   absolute_linear_uniformity: 4
   boomerang_uniformity: 8
+  absolute_autocorrelation_uniformity: 8
   involution: false
   fixed_point: []
   year: [1973]
@@ -1465,6 +1564,7 @@ LUFFA:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2009]
@@ -1476,7 +1576,7 @@ LUFFA:
   origin: "De Cannière et al.; Luffa v2; SHA-3 submission (2009)"
   note: "SHA-3 candidate"
 
-LUFFA_V1:
+LUFFAv1:
   canonical_name: ["LUFFA", "S"]
   lookup_table: [7, 13, 11, 10, 12, 4, 8, 3, 5, 15, 6, 0, 9, 1, 2, 14]
   algebraic_degree: [3, 3, 3, 3]
@@ -1484,6 +1584,7 @@ LUFFA_V1:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2008]
@@ -1503,6 +1604,7 @@ MAGMA.1:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: [5]
   year: [2015]
@@ -1522,6 +1624,7 @@ MAGMA.2:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: [2, 3, 13, 15]
   year: [2015]
@@ -1540,6 +1643,7 @@ MAGMA.3:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: [12]
   year: [2015]
@@ -1558,6 +1662,7 @@ MAGMA.4:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: [2, 10]
   year: [2015]
@@ -1576,6 +1681,7 @@ MAGMA.5:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: [6, 9]
   year: [2015]
@@ -1594,6 +1700,7 @@ MAGMA.6:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: [14]
   year: [2015]
@@ -1612,6 +1719,7 @@ MAGMA.7:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: [2]
   year: [2015]
@@ -1630,6 +1738,7 @@ MAGMA.8:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: [5, 10]
   year: [2015]
@@ -1648,6 +1757,7 @@ MCRYPTON.S0:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 6
+  absolute_autocorrelation_uniformity: 8
   involution: false
   fixed_point: []
   year: [2005]
@@ -1666,6 +1776,7 @@ MCRYPTON.S1:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 6
+  absolute_autocorrelation_uniformity: 8
   involution: false
   fixed_point: []
   year: [2005]
@@ -1684,6 +1795,7 @@ MCRYPTON.S2:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 6
+  absolute_autocorrelation_uniformity: 8
   involution: false
   fixed_point: []
   year: [2005]
@@ -1702,6 +1814,7 @@ MCRYPTON.S3:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 6
+  absolute_autocorrelation_uniformity: 8
   involution: false
   fixed_point: []
   year: [2005]
@@ -1720,6 +1833,7 @@ MIBS:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 6
+  absolute_autocorrelation_uniformity: 8
   involution: false
   fixed_point: []
   year: [2009]
@@ -1738,6 +1852,7 @@ MIDORI.SB0:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: true
   fixed_point: [3, 7, 8, 9]
   year: [2015]
@@ -1747,8 +1862,7 @@ MIDORI.SB0:
   univariate_polynomial: "2x¹⁴ + 12x¹² + 7x¹¹ + x¹⁰ + 9x⁹ + 13x⁸ + 7x⁶ + 8x⁵ + 3x⁴ + 12x³ + 8x² + 2x + 12"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Midori_Sb0.txt"
   origin: "Banik et al.; Midori: A Block Cipher for Low Energy; ASIACRYPT 2015; URL: https://doi.org/10.1007/978-3-662-48800-3_17"
-  note: "SBox also used in MANTIS (Beierle et al., CRYPTO 2016), CRAFT (Beierle et al., ToSC 2019), WARP (Banik et al., ePrint 2020/1320), and uKNIT-BC (Hu et al., ePrint 2024/1962)"
-  reuse: [CRAFT, MANTIS, SKINNY_MANTIS, WARP, uKNIT-BC]
+  reuse: [CRAFT, MANTIS, SKINNYMANTIS, WARP]
 
 MIDORI.SB1:
   canonical_name: ["MIDORI", "Sb₁"]
@@ -1758,6 +1872,7 @@ MIDORI.SB1:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 8
   involution: true
   fixed_point: [3, 7, 11, 12]
   year: [2015]
@@ -1776,6 +1891,7 @@ MINALPHER:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 8
   involution: true
   fixed_point: []
   year: [2015]
@@ -1795,6 +1911,7 @@ NOEKEON:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: true
   fixed_point: [2, 4, 9, 13]
   year: [2000]
@@ -1813,6 +1930,7 @@ ORTHROS.SSB0:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: [2, 6]
   year: [2021]
@@ -1832,6 +1950,7 @@ PANDA:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 6
+  absolute_autocorrelation_uniformity: 8
   involution: true
   fixed_point: [0, 1]
   year: [2010]
@@ -1850,6 +1969,7 @@ PICCOLO:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2011]
@@ -1869,6 +1989,7 @@ PRESENT:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2007]
@@ -1878,7 +1999,7 @@ PRESENT:
   univariate_polynomial: "13x¹⁴ + 13x¹³ + 12x¹² + 14x¹¹ + 9x¹⁰ + 9x⁹ + 7x⁸ + 4x⁷ + 12x⁶ + 10x⁵ + 14x⁴ + 7x³ + 7x² + 12"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_PRESENT.txt"
   origin: "Bogdanov et al.; PRESENT: An Ultra-Lightweight Block Cipher; CHES 2007; URL: https://doi.org/10.1007/978-3-540-74735-2_31"
-  reuse: [CILIPADI, LBC_IOT, LED, ORANGE, PHOTON, PHOTON_BEETLE, SLIM]
+  reuse: [CILIPADI, LBCIOT, LED, ORANGE, PHOTON, PHOTONBEETLE, SLIM]
 
 PRIDE:
   canonical_name: ["PRIDE"]
@@ -1888,6 +2009,7 @@ PRIDE:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: true
   fixed_point: [0, 5, 10, 13]
   year: [2014]
@@ -1907,6 +2029,7 @@ PRINCE:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 8
   involution: false
   fixed_point: []
   year: [2012]
@@ -1918,7 +2041,7 @@ PRINCE:
   origin: "Borghoff et al.; PRINCE - A Low-Latency Block Cipher for Pervasive Computing Applications; ASIACRYPT 2012; URL: https://doi.org/10.1007/978-3-642-34961-4_18"
   reuse: [PRINCEv2]
 
-PYJAMASK_4:
+PYJAMASK.S4:
   canonical_name: ["PYJAMASK", "S₄"]
   lookup_table: [2, 13, 3, 9, 7, 11, 10, 6, 14, 0, 15, 4, 8, 5, 1, 12]
   algebraic_degree: [3, 2, 3, 2]
@@ -1926,6 +2049,7 @@ PYJAMASK_4:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2019]
@@ -1934,24 +2058,7 @@ PYJAMASK_4:
   linear_branch_number: 2
   univariate_polynomial: "10x¹⁴ + 13x¹³ + 2x¹² + 2x¹¹ + 6x¹⁰ + 3x⁹ + x⁸ + 6x⁶ + 12x⁵ + 3x⁴ + 4x³ + x + 2"
   origin: "Goudarzi et al.; Pyjamask; NIST LWC round 1 candidate (2019); URL: https://csrc.nist.gov/Projects/lightweight-cryptography/round-1-candidates"
-
-QARMAV2.SIGMA:
-  canonical_name: ["QARMAv2", "σ"]
-  lookup_table: [8, 10, 14, 13, 0, 9, 5, 1, 12, 2, 15, 3, 4, 11, 6, 7]
-  algebraic_degree: [3, 3, 3, 3]
-  nonlinearity: 4
-  differential_uniformity: 4
-  absolute_linear_uniformity: 4
-  boomerang_uniformity: 10
-  involution: false
-  fixed_point: []
-  year: [2023]
-  cipher: true  # Used in a cipher
-  differential_branch_number: 2
-  linear_branch_number: 2
-  univariate_polynomial: "3x¹⁴ + 6x¹³ + 7x¹² + 8x¹¹ + 14x¹⁰ + x⁹ + 4x⁸ + x⁷ + 12x⁶ + 12x⁵ + 12x³ + 3x² + 13x + 8"
-  origin: "Avanzi, Banik, Dunkelman et al.; QARMAv2; ToSC 2023. ePrint 2023/929"
-  note: "Updated sigma SBox for QARMAv2; differs from original QARMA sigma0-sigma2"
+  note: "NIST LWC round 2 candidate; not selected for finals"
 
 QARMA.SIGMA0:
   canonical_name: ["QARMA", "σ₀"]
@@ -1961,6 +2068,7 @@ QARMA.SIGMA0:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: true
   fixed_point: [0, 2]
   year: [2017]
@@ -1979,6 +2087,7 @@ QARMA.SIGMA1:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 8
   involution: true
   fixed_point: []
   year: [2017]
@@ -1997,6 +2106,7 @@ QARMA.SIGMA2:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 8
   involution: false
   fixed_point: []
   year: [2017]
@@ -2007,6 +2117,31 @@ QARMA.SIGMA2:
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Qarma_sigma2.txt"
   origin: "Avanzi; The QARMA Block Cipher Family; ToSC 2017(1)"
 
+QARMAV2.SIGMA:
+  canonical_name: ["QARMAv2", "σ"]
+  lookup_table: [8, 10, 14, 13, 0, 9, 5, 1, 12, 2, 15, 3, 4, 11, 6, 7]
+  algebraic_degree: [3, 3, 3, 3]
+  nonlinearity: 4
+  differential_uniformity: 4
+  absolute_linear_uniformity: 4
+  boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 8
+  involution: false
+  fixed_point: []
+  year: [2023]
+  cipher: true  # Used in a cipher
+  differential_branch_number: 2
+  linear_branch_number: 2
+  univariate_polynomial: "3x¹⁴ + 6x¹³ + 7x¹² + 8x¹¹ + 14x¹⁰ + x⁹ + 4x⁸ + x⁷ + 12x⁶ + 12x⁵ + 12x³ + 3x² + 13x + 8"
+  origin: "Avanzi, Banik, Dunkelman et al.; QARMAv2; ToSC 2023. ePrint 2023/929"
+  note: "Updated sigma SBox for QARMAv2; differs from original QARMA sigma0-sigma2"
+
+RAB:
+  canonical_name: ["RAB"]
+  alias: RECTANGLE
+  year: [2024]
+  origin: "Xing Zhang, Min Yang, Jian Chen, Tao Li, Chunguang Wang; RAB: A lightweight block cipher algorithm with variable key length; Peer-to-Peer Networking and Applications, 2024; DOI: https://doi.org/10.1007/s12083-024-01741-8"
+
 RECTANGLE:
   canonical_name: ["RECTANGLE"]
   lookup_table: [6, 5, 12, 10, 1, 14, 7, 9, 11, 0, 3, 13, 8, 15, 4, 2]
@@ -2015,6 +2150,7 @@ RECTANGLE:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2015]
@@ -2024,6 +2160,7 @@ RECTANGLE:
   univariate_polynomial: "14x¹⁴ + 13x¹³ + 9x¹² + x¹¹ + 13x¹⁰ + 4x⁹ + 6x⁷ + 8x⁶ + 12x⁵ + 2x⁴ + 8x³ + 13x² + 4x + 6"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Rectangle.txt"
   origin: "Zhang et al.; RECTANGLE: A Bit-slice Lightweight Block Cipher; Science China 2015; URL: https://doi.org/10.1007/s11432-015-5459-7"
+  aliases: [RAB]
 
 SAND.G0:
   canonical_name: ["SAND", "G₀"]
@@ -2033,6 +2170,7 @@ SAND.G0:
   differential_uniformity: 8
   absolute_linear_uniformity: 8
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: [0, 1, 2, 4, 5, 6, 8, 9, 10]
   year: [2021]
@@ -2042,7 +2180,7 @@ SAND.G0:
   univariate_polynomial: "8x¹⁴ + 8x¹³ + 9x¹² + 8x¹¹ + 9x¹⁰ + 11x⁹ + x⁸ + 8x⁷ + 6x⁶ + 9x⁵ + 12x³ + 5x² + 13x"
   source: "URL: https://eprint.iacr.org/2021/1560"
   origin: "Chen, Fan, Sun, Fu, Zhou, Li, M. Wang, W. Wang, Guo; SAND: an AND-RX Feistel lightweight block cipher supporting S-box-based security evaluations; Design, Codes and Cryptography (2021); DOI: https://doi.org/10.1007/s10623-021-00970-9"
-  note: "Called 'synthetic S-box G₀' in the paper; LUT computed from algebraic specification (not explicitly tabulated); security relies on the AND-RX Feistel structure"
+  note: "Synthetic SBox G₀; LUT from algebraic spec, not tabulated in paper"
 
 SAND.G1:
   canonical_name: ["SAND", "G₁"]
@@ -2052,6 +2190,7 @@ SAND.G1:
   differential_uniformity: 8
   absolute_linear_uniformity: 8
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: [0, 1, 2, 3, 4, 6, 8, 9, 12]
   year: [2021]
@@ -2061,7 +2200,7 @@ SAND.G1:
   univariate_polynomial: "8x¹⁴ + 6x¹³ + 6x¹² + 10x¹¹ + 6x¹⁰ + 4x⁹ + 4x⁸ + 4x⁷ + 10x⁶ + 6x⁵ + 11x⁴ + 10x³ + 14x² + 2x"
   source: "URL: https://eprint.iacr.org/2021/1560"
   origin: "Chen, Fan, Sun, Fu, Zhou, Li, M. Wang, W. Wang, Guo; SAND: an AND-RX Feistel lightweight block cipher supporting S-box-based security evaluations; Design, Codes and Cryptography (2021); DOI: https://doi.org/10.1007/s10623-021-00970-9"
-  note: "Called 'synthetic S-box G₁' in the paper; LUT computed from algebraic specification (not explicitly tabulated); security relies on the AND-RX Feistel structure"
+  note: "Synthetic SBox G₁; LUT from algebraic spec, not tabulated in paper"
 
 SATURNIN.0:
   canonical_name: ["SATURNIN", "S₀"]
@@ -2071,6 +2210,7 @@ SATURNIN.0:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 8
   involution: false
   fixed_point: [0]
   year: [2019]
@@ -2079,7 +2219,7 @@ SATURNIN.0:
   linear_branch_number: 2
   univariate_polynomial: "2x¹⁴ + 8x¹³ + 4x¹² + 10x¹¹ + 4x¹⁰ + 2x⁹ + 13x⁸ + 8x⁷ + 10x⁶ + 14x⁵ + 11x⁴ + 9x² + 7x"
   origin: "Canteaut et al.; Saturnin; NIST LWC round 2 candidate (2019); URL: https://csrc.nist.gov/Projects/lightweight-cryptography/round-2-candidates"
-  note: "NIST LWC candidate"
+  note: "NIST LWC round 2 candidate; not selected for finals"
 
 SATURNIN.1:
   canonical_name: ["SATURNIN", "S₁"]
@@ -2089,6 +2229,7 @@ SATURNIN.1:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 8
   involution: false
   fixed_point: [0, 7]
   year: [2019]
@@ -2097,8 +2238,9 @@ SATURNIN.1:
   linear_branch_number: 2
   univariate_polynomial: "4x¹⁴ + 15x¹³ + 15x¹² + 8x¹¹ + 9x¹⁰ + 10x⁹ + 15x⁸ + 7x⁷ + 14x⁶ + 5x⁵ + 9x⁴ + 14x³ + 6x² + 4x"
   origin: "Canteaut et al.; Saturnin; NIST LWC round 2 candidate (2019); URL: https://csrc.nist.gov/Projects/lightweight-cryptography/round-2-candidates"
+  note: "NIST LWC round 2 candidate; not selected for finals"
 
-SC2000_4:
+SC2000.S4:
   canonical_name: ["SC2000", "S4"]
   lookup_table: [2, 5, 10, 12, 7, 15, 1, 11, 13, 6, 0, 9, 4, 8, 3, 14]
   algebraic_degree: [3, 3, 3, 3]
@@ -2106,6 +2248,7 @@ SC2000_4:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2001]
@@ -2124,6 +2267,7 @@ SERPENT.S0:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [1998]
@@ -2143,6 +2287,7 @@ SERPENT.S1:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: [2, 13]
   year: [1998]
@@ -2161,6 +2306,7 @@ SERPENT.S2:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [1998]
@@ -2179,6 +2325,7 @@ SERPENT.S3:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: [0, 6]
   year: [1998]
@@ -2197,6 +2344,7 @@ SERPENT.S4:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: [3]
   year: [1998]
@@ -2215,6 +2363,7 @@ SERPENT.S5:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: [2, 4]
   year: [1998]
@@ -2233,6 +2382,7 @@ SERPENT.S6:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: [6, 9]
   year: [1998]
@@ -2251,6 +2401,7 @@ SERPENT.S7:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [1998]
@@ -2261,7 +2412,7 @@ SERPENT.S7:
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_SERPENT_S7.txt"
   origin: "Anderson et al.; Serpent: A Proposal for the AES; AES submission (1998)"
 
-SKINNY_4:
+SKINNY.S4:
   canonical_name: ["SKINNY", "S₄"]
   lookup_table: [12, 6, 9, 0, 1, 10, 2, 11, 3, 8, 5, 13, 4, 14, 7, 15]
   algebraic_degree: [3, 3, 2, 2]
@@ -2269,6 +2420,7 @@ SKINNY_4:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: [15]
   year: [2016]
@@ -2287,6 +2439,7 @@ SLA:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 6
+  absolute_autocorrelation_uniformity: 8
   involution: false
   fixed_point: []
   year: [2023]
@@ -2296,9 +2449,9 @@ SLA:
   univariate_polynomial: "5x¹⁴ + 14x¹³ + 12x⁷ + 15"
   source: "URL: https://doi.org/10.3390/app13074398"
   origin: "Ibrahim, Agbinya; Design of a Lightweight Cryptographic Scheme for Resource-Constrained Internet of Things Devices; Applied Sciences 2023, 13(7), 4398; DOI: https://doi.org/10.3390/app13074398"
-  note: "LUT derived from ANF (Equation 26) since Table 1 (explicit LUT) is an image; standard convention x0=LSB, y1=LSB; NL=4 and DU=4 match paper's security analysis"
+  note: "LUT from ANF (Eq. 26); Table 1 is an image; x₀=LSB, y₁=LSB"
 
-SMASH_256.S1:
+SMASH256.S1:
   canonical_name: ["SMASH-256", "s₁"]
   lookup_table: [6, 13, 12, 7, 15, 1, 3, 10, 8, 11, 5, 0, 2, 4, 14, 9]
   algebraic_degree: [3, 3, 3, 2]
@@ -2306,6 +2459,7 @@ SMASH_256.S1:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: [8, 14]
   year: [2005]
@@ -2316,7 +2470,7 @@ SMASH_256.S1:
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_SMASH_256_S1.txt"
   origin: "Knudsen; SMASH: A Cryptographic Hash Function; FSE 2005"
 
-SMASH_256.S2:
+SMASH256.S2:
   canonical_name: ["SMASH-256", "s₂"]
   lookup_table: [1, 11, 6, 0, 14, 13, 5, 10, 12, 2, 9, 7, 3, 8, 15, 4]
   algebraic_degree: [3, 2, 3, 3]
@@ -2324,6 +2478,7 @@ SMASH_256.S2:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2005]
@@ -2334,7 +2489,7 @@ SMASH_256.S2:
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_SMASH_256_S2.txt"
   origin: "Knudsen; SMASH: A Cryptographic Hash Function; FSE 2005"
 
-SMASH_256.S3:
+SMASH256.S3:
   canonical_name: ["SMASH-256", "s₃"]
   lookup_table: [4, 2, 9, 12, 8, 1, 14, 7, 15, 5, 0, 11, 6, 10, 3, 13]
   algebraic_degree: [3, 3, 2, 3]
@@ -2342,6 +2497,7 @@ SMASH_256.S3:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: [7, 11]
   year: [2005]
@@ -2360,6 +2516,7 @@ SPOOK:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: [0]
   year: [2019]
@@ -2368,7 +2525,7 @@ SPOOK:
   linear_branch_number: 2
   univariate_polynomial: "13x¹⁴ + 4x¹³ + 10x¹² + 5x¹¹ + 13x¹⁰ + 3x⁹ + 13x⁸ + 12x⁷ + x⁶ + 6x⁵ + 8x⁴ + 14x³"
   origin: "Bellizia et al.; Spook: Sponge-Based Leakage-Resilient Authenticated Encryption; NIST LWC round 1 candidate (2019); URL: https://csrc.nist.gov/Projects/lightweight-cryptography/round-1-candidates"
-  note: "NIST LWC candidate"
+  note: "NIST LWC round 2 candidate; not selected for finals"
   reuse: [CLYDE, SHADOW]
 
 TRIFLE:
@@ -2379,6 +2536,7 @@ TRIFLE:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 6
+  absolute_autocorrelation_uniformity: 8
   involution: false
   fixed_point: [0, 5, 10, 15]
   year: [2019]
@@ -2387,6 +2545,7 @@ TRIFLE:
   linear_branch_number: 2
   univariate_polynomial: "14x¹⁴ + 10x¹³ + 11x¹² + 14x¹¹ + 5x¹⁰ + 6x⁹ + 10x⁸ + 4x⁷ + 13x⁶ + 7x⁵ + 6x³ + 12x²"
   origin: "Datta et al.; TRIFLE; NIST LWC round 1 candidate (2019); URL: https://csrc.nist.gov/Projects/lightweight-cryptography/round-1-candidates"
+  note: "NIST LWC round 1 candidate; not selected for round 2"
 
 TWINE:
   canonical_name: ["TWINE"]
@@ -2396,6 +2555,7 @@ TWINE:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 6
+  absolute_autocorrelation_uniformity: 8
   involution: false
   fixed_point: [8]
   year: [2012]
@@ -2405,7 +2565,7 @@ TWINE:
   univariate_polynomial: "4x¹⁴ + 10x¹³ + 14x¹² + 15x¹¹ + 11x¹⁰ + 5x⁹ + x⁸ + 13x⁷ + 9x⁶ + 7x⁵ + 3x⁴ + 2x³ + 6x² + 8x + 12"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_TWINE.txt"
   origin: "Suzaki et al.; TWINE: A Lightweight Block Cipher for Multiple Platforms; SAC 2012; URL: https://doi.org/10.1007/978-3-642-35999-6_22"
-  reuse: [CLOC_TWINE]
+  reuse: [CLOCTWINE]
 
 TWINKLE:
   canonical_name: ["Twinkle"]
@@ -2415,6 +2575,7 @@ TWINKLE:
   differential_uniformity: 6
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: [0]
   year: [2024]
@@ -2422,11 +2583,11 @@ TWINKLE:
   differential_branch_number: 2
   linear_branch_number: 2
   univariate_polynomial: "4x¹⁴ + 9x¹³ + 11x¹² + 12x¹¹ + 12x¹⁰ + 5x⁹ + 11x⁸ + x⁷ + 14x⁶ + 2x⁵ + 10x⁴ + x³ + 6x² + 11x"
-  source: "URL: https://doi.org/10.62056/a3n59qgxq"
+  source: "URL: https://doi.org/10.62056/a3n59qgxq; URL: https://github.com/hadipourh/twinkle/blob/main/verification/twinkle/oracle.h"
   origin: "Wang, Huang, Wu, Liu; Twinkle: A family of Low-latency Schemes for Authenticated Encryption and Pointer Authentication; IACR Communications in Cryptology, vol. 1, no. 2, 2024; DOI: https://doi.org/10.62056/a3n59qgxq"
-  note: "LUT derived from ANF in reference implementation oracle.h (https://github.com/hadipourh/twinkle/blob/main/verification/twinkle/oracle.h); x0=LSB, y0=LSB convention; DU=6 (higher than typical 4-bit SBoxes)"
+  note: "LUT from ANF in oracle.h; x₀=LSB, y₀=LSB"
 
-TWOFISH_Q0.T0:
+TWOFISH.Q0T0:
   canonical_name: ["Twofish", "q₀[t₀]"]
   lookup_table: [8, 1, 7, 13, 6, 15, 3, 2, 0, 11, 5, 9, 14, 12, 10, 4]
   algebraic_degree: [3, 3, 3, 3]
@@ -2434,6 +2595,7 @@ TWOFISH_Q0.T0:
   differential_uniformity: 6
   absolute_linear_uniformity: 6
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: [1]
   year: [1998]
@@ -2445,7 +2607,7 @@ TWOFISH_Q0.T0:
   origin: "Schneier et al.; Twofish: A 128-Bit Block Cipher; AES submission (1998)"
   note: "AES finalist"
 
-TWOFISH_Q0.T1:
+TWOFISH.Q0T1:
   canonical_name: ["Twofish", "q₀[t₁]"]
   lookup_table: [14, 12, 11, 8, 1, 2, 3, 5, 15, 4, 10, 6, 7, 0, 9, 13]
   algebraic_degree: [3, 3, 3, 3]
@@ -2453,6 +2615,7 @@ TWOFISH_Q0.T1:
   differential_uniformity: 6
   absolute_linear_uniformity: 6
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: [10]
   year: [1998]
@@ -2463,7 +2626,7 @@ TWOFISH_Q0.T1:
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Twofish_Q0_T1.txt"
   origin: "Schneier et al.; Twofish: A 128-Bit Block Cipher; AES submission (1998)"
 
-TWOFISH_Q0.T2:
+TWOFISH.Q0T2:
   canonical_name: ["Twofish", "q₀[t₂]"]
   lookup_table: [11, 10, 5, 14, 6, 13, 9, 0, 12, 8, 15, 3, 2, 4, 7, 1]
   algebraic_degree: [3, 3, 3, 3]
@@ -2471,6 +2634,7 @@ TWOFISH_Q0.T2:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [1998]
@@ -2481,7 +2645,7 @@ TWOFISH_Q0.T2:
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Twofish_Q0_T2.txt"
   origin: "Schneier et al.; Twofish: A 128-Bit Block Cipher; AES submission (1998)"
 
-TWOFISH_Q0.T3:
+TWOFISH.Q0T3:
   canonical_name: ["Twofish", "q₀[t₃]"]
   lookup_table: [13, 7, 15, 4, 1, 2, 6, 14, 9, 11, 3, 0, 8, 5, 12, 10]
   algebraic_degree: [3, 3, 3, 3]
@@ -2489,6 +2653,7 @@ TWOFISH_Q0.T3:
   differential_uniformity: 6
   absolute_linear_uniformity: 6
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: [6]
   year: [1998]
@@ -2499,7 +2664,7 @@ TWOFISH_Q0.T3:
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Twofish_Q0_T3.txt"
   origin: "Schneier et al.; Twofish: A 128-Bit Block Cipher; AES submission (1998)"
 
-TWOFISH_Q1.T0:
+TWOFISH.Q1T0:
   canonical_name: ["Twofish", "q₁[t₀]"]
   lookup_table: [2, 8, 11, 13, 15, 7, 6, 14, 3, 1, 9, 4, 0, 10, 12, 5]
   algebraic_degree: [3, 3, 3, 3]
@@ -2507,6 +2672,7 @@ TWOFISH_Q1.T0:
   differential_uniformity: 6
   absolute_linear_uniformity: 6
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: [6]
   year: [1998]
@@ -2517,7 +2683,7 @@ TWOFISH_Q1.T0:
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Twofish_Q1_T0.txt"
   origin: "Schneier et al.; Twofish: A 128-Bit Block Cipher; AES submission (1998)"
 
-TWOFISH_Q1.T1:
+TWOFISH.Q1T1:
   canonical_name: ["Twofish", "q₁[t₁]"]
   lookup_table: [1, 14, 2, 11, 4, 12, 3, 7, 6, 13, 10, 5, 15, 9, 0, 8]
   algebraic_degree: [3, 3, 3, 3]
@@ -2525,6 +2691,7 @@ TWOFISH_Q1.T1:
   differential_uniformity: 6
   absolute_linear_uniformity: 6
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: [2, 4, 7, 10]
   year: [1998]
@@ -2535,7 +2702,7 @@ TWOFISH_Q1.T1:
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Twofish_Q1_T1.txt"
   origin: "Schneier et al.; Twofish: A 128-Bit Block Cipher; AES submission (1998)"
 
-TWOFISH_Q1.T2:
+TWOFISH.Q1T2:
   canonical_name: ["Twofish", "q₁[t₂]"]
   lookup_table: [4, 12, 7, 5, 1, 6, 9, 10, 0, 14, 13, 8, 2, 11, 3, 15]
   algebraic_degree: [3, 3, 3, 3]
@@ -2543,6 +2710,7 @@ TWOFISH_Q1.T2:
   differential_uniformity: 6
   absolute_linear_uniformity: 6
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: [15]
   year: [1998]
@@ -2553,7 +2721,7 @@ TWOFISH_Q1.T2:
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Twofish_Q1_T2.txt"
   origin: "Schneier et al.; Twofish: A 128-Bit Block Cipher; AES submission (1998)"
 
-TWOFISH_Q1.T3:
+TWOFISH.Q1T3:
   canonical_name: ["Twofish", "q₁[t₃]"]
   lookup_table: [11, 9, 5, 1, 12, 3, 13, 14, 6, 4, 7, 15, 2, 0, 8, 10]
   algebraic_degree: [3, 3, 3, 3]
@@ -2561,6 +2729,7 @@ TWOFISH_Q1.T3:
   differential_uniformity: 8
   absolute_linear_uniformity: 6
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [1998]
@@ -2579,6 +2748,7 @@ ULBC:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 16
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2025]
@@ -2597,6 +2767,7 @@ WHIRLPOOL.E:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 6
+  absolute_autocorrelation_uniformity: 8
   involution: false
   fixed_point: []
   year: [2000]
@@ -2615,6 +2786,7 @@ WHIRLPOOL.R:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 8
   involution: false
   fixed_point: []
   year: [2000]
@@ -2633,6 +2805,7 @@ YARARA:
   differential_uniformity: 4
   absolute_linear_uniformity: 4
   boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
   involution: false
   fixed_point: []
   year: [2019]
@@ -2641,13 +2814,6 @@ YARARA:
   linear_branch_number: 2
   univariate_polynomial: "2x¹⁴ + 2x¹³ + 11x¹² + 2x¹¹ + 10x¹⁰ + 4x⁹ + 4x⁸ + 10x⁷ + 8x⁶ + x⁵ + 8x⁴ + 8x³ + 15x² + 12x + 4"
   origin: "Maene, Piessens; Yarará and Coral; 2019"  
-  fun_fact: "Yarará (Bothrops alternatus) is a pit viper native to South America (Argentina, Uruguay, southern Brazil). The companion cipher CORAL also takes its name from South American snake species."
+  fun_fact: "Yarará (Bothrops alternatus) is a pit viper native to South America (Argentina, Uruguay, southern Brazil)."
   aliases: [CORAL]
-
-CORAL:
-  canonical_name: ["Coral"]
-  year: [2019]
-  origin: "Maene, Piessens; Yarará and Coral; 2019"  
-  note: "Companion cipher to Yarará; named after South American coral snake species"
-  alias: YARARA
 

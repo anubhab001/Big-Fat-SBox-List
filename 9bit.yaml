@@ -10,6 +10,7 @@ DRYGASCON256:
   differential_uniformity: 128
   absolute_linear_uniformity: 128
   boomerang_uniformity: 448
+  absolute_autocorrelation_uniformity: 512
   involution: false
   fixed_point: []
   year: [2019]
@@ -20,3 +21,4 @@ DRYGASCON256:
   source: "URL: https://github.com/sagemath/sage/blob/develop/src/sage/crypto/sboxes.py"
   origin: "Sebastien Riou; DryGASCON; NIST Lightweight Cryptography Round 2 submission; 2019; URL: https://csrc.nist.gov/CSRC/media/Projects/lightweight-cryptography/documents/round-2/spec-doc-rnd2/drygascon-spec-round2.pdf"
   note: "DryGASCON-256 (NIST LWC Round 2, Table 24 of specification). Quadratic permutation."
+
