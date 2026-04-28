@@ -2,13 +2,13 @@
 
 Public collection of Substitution Boxes (SBoxes for short) used in cryptography
 
-Last update: 24 April 2026 23:54 UTC <!-- TODO: This is to be updated with each (major) commit/push -->
+Last update: 28 April 2026 22:19 UTC <!-- TODO: This is to be updated with each (major) commit/push -->
 
 ## Organisation
 
 - YAML files containing details about multiple SBoxes, properties, cryptographic properties, historical notes etc.
 
-- Files are written by input size (each input size in bits gets a new file) and bijectivity (non-bijective SBoxes are moved to other files). Additionally, due to large number of 4-bit SBoxes, those are split into 2 files based on whether or not those are used in a cipher ([`4bit_cipher.yaml`](4bit_cipher.yaml)) or just exemplary/representative ([`4bit_nocipher.yaml`](4bit_nocipher.yaml)).
+- Files are written by input size (each input size in bits gets a new file) and bijectivity (non-bijective SBoxes are moved to other files). Additionally, due to large number of 4-bit bijective SBoxes, those are split into 2 files based on whether or not those are used in a cipher ([`4bit_cipher.yaml`](4bit_cipher.yaml)) or just exemplary / representative ([`4bit_nocipher.yaml`](4bit_nocipher.yaml)).
 
 - Entries within each YAML file are in alphabetical order by key.
 
@@ -63,7 +63,7 @@ Each YAML entry has the following fields in order (mandatory fields marked with 
 | `absolute_autocorrelation_uniformity`<sup>*</sup> | int | Absolute autocorrelation uniformity (AAU): Maximum absolute value in the autocorrelation table (ACT); $\mathrm{ACT}[a,b] = \sum_x (-1)^{\langle b,\, S(x \oplus a) \oplus S(x)\rangle}$ for non-zero input difference $a$ and non-zero output mask $b$; also called absolute indicator |
 | `differential_branch_number`<sup>*</sup> | int | Differential branch number: Minimum weight $\mathrm{wt}(\Delta_{in}) + \mathrm{wt}(\Delta_{out})$ over all non-trivial DDT entries |
 | `linear_branch_number`<sup>*</sup> | int | Linear branch number: Minimum weight $\mathrm{wt}(a) + \mathrm{wt}(b)$ over all non-trivial LAT entries |
-| `univariate_polynomial`<sup>*</sup> | str | Interpolation polynomial of the SBox over $\mathrm{GF}(2^n)$: the unique polynomial $p(x) = \sum_{k=0}^{2^n-2} c_k x^k$ over $\mathrm{GF}(2^n)$ satisfying $p(i) = S(i)$ $\forall i$ |
+| `univariate_polynomial`<sup>†</sup> | str | Interpolation polynomial of the SBox over $\mathrm{GF}(2^n)$: the unique polynomial $p(x) = \sum_{k=0}^{2^n-2} c_k x^k$ over $\mathrm{GF}(2^n)$ satisfying $p(i) = S(i)$ $\forall i$; compulsory for bijective SBoxes; skipped for non-bijective SBoxes |
 | `involution`<sup>*</sup> | bool | Involutory SBox: True iff $S(S(x)) = x$  $\forall x$ |
 | `fixed_point`<sup>*</sup> | list | Fixed point:  Values where $S(x) = x$ (`[]` for no fixed point) |
 | `year`<sup>*</sup> | list | Collection of significant publication years (competition submission, journal publication, standard approval) etc. |

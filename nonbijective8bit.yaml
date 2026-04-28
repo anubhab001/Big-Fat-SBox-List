@@ -1,6 +1,6 @@
-# 8-bit non-bijective S-boxes
+﻿# 8-bit non-bijective S-boxes
 # Total: 3 S-boxes
-# Format: key (our all-uppercase-Latin-underscore name), canonical_name, output_bits, lut, algebraic_degree, nonlinearity, differential_uniformity, absolute_linear_uniformity, boomerang_uniformity (blank), involution, fixed_point, year, cipher, differential_branch_number, linear_branch_number, univariate_polynomial, source, [note]
+# Format: key (our all-uppercase-Latin-underscore name), canonical_name, output_bits, lut, algebraic_degree, nonlinearity, differential_uniformity, absolute_linear_uniformity, involution, fixed_point, year, cipher, differential_branch_number, linear_branch_number, source, [note]
 
 CMEA:
   canonical_name: ["CMEA"]
@@ -10,7 +10,6 @@ CMEA:
   nonlinearity: 96
   differential_uniformity: 12
   absolute_linear_uniformity: 32
-  boomerang_uniformity:
   absolute_autocorrelation_uniformity: 104
   involution: false
   fixed_point: []
@@ -18,7 +17,6 @@ CMEA:
   cipher: true  # Used in a cipher
   differential_branch_number: 1
   linear_branch_number: 2
-  univariate_polynomial: "233x²⁵⁴ + 14x²⁵³ + 216x²⁵² + 178x²⁵¹ + 176x²⁵⁰ + 159x²⁴⁹ + 102x²⁴⁸ + 3x²⁴⁷ + x²⁴⁶ + 217x²⁴⁵ + 3x²⁴⁴ + 165x²⁴³ + 98x²⁴² + 168x²⁴¹ + 6x²⁴⁰ + 179x²³⁹ + 252x²³⁸ + 5x²³⁷ + 184x²³⁶ + 200x²³⁵ + 84x²³⁴ + 235x²³³ + 4x²³² + 153x²³¹ + 150x²³⁰ + 195x²²⁹ + 30x²²⁸ + 227x²²⁷ + 140x²²⁶ + 227x²²⁵ + 62x²²⁴ + 5x²²³ + 216x²²² + 131x²²¹ + 138x²²⁰ + 45x²¹⁹ + 210x²¹⁸ + 123x²¹⁷ + 13x²¹⁶ + 54x²¹⁵ + 56x²¹⁴ + 19x²¹³ + 71x²¹² + 124x²¹¹ + 195x²¹⁰ + 76x²⁰⁹ + 63x²⁰⁸ + 204x²⁰⁷ + 131x²⁰⁶ + 3x²⁰⁵ + 181x²⁰⁴ + 195x²⁰³ + 177x²⁰² + 45x²⁰¹ + 53x²⁰⁰ + 186x¹⁹⁹ + 254x¹⁹⁸ + 180x¹⁹⁷ + 221x¹⁹⁶ + 51x¹⁹⁵ + 32x¹⁹⁴ + 156x¹⁹³ + 37x¹⁹² + 216x¹⁹¹ + 35x¹⁹⁰ + 231x¹⁸⁹ + 95x¹⁸⁸ + 159x¹⁸⁷ + 17x¹⁸⁶ + 190x¹⁸⁵ + 201x¹⁸⁴ + 127x¹⁸³ + 162x¹⁸² + 19x¹⁸¹ + x¹⁸⁰ + 18x¹⁷⁹ + 51x¹⁷⁸ + 11x¹⁷⁷ + 31x¹⁷⁶ + 253x¹⁷⁵ + 81x¹⁷⁴ + 162x¹⁷³ + 178x¹⁷² + 211x¹⁷¹ + 224x¹⁷⁰ + 23x¹⁶⁹ + 187x¹⁶⁸ + 110x¹⁶⁷ + 30x¹⁶⁶ + 29x¹⁶⁵ + 31x¹⁶⁴ + 14x¹⁶³ + 209x¹⁶² + 76x¹⁶¹ + 14x¹⁶⁰ + 38x¹⁵⁹ + 176x¹⁵⁸ + 136x¹⁵⁷ + 51x¹⁵⁶ + 203x¹⁵⁵ + 209x¹⁵⁴ + 133x¹⁵³ + 116x¹⁵² + 157x¹⁵¹ + 140x¹⁵⁰ + 236x¹⁴⁹ + 7x¹⁴⁸ + 111x¹⁴⁷ + 155x¹⁴⁶ + 234x¹⁴⁵ + 149x¹⁴⁴ + 137x¹⁴³ + 58x¹⁴² + 227x¹⁴¹ + 210x¹⁴⁰ + 103x¹³⁹ + 65x¹³⁸ + 9x¹³⁷ + 125x¹³⁶ + 39x¹³⁵ + 162x¹³⁴ + 32x¹³³ + 171x¹³² + 236x¹³¹ + 209x¹³⁰ + 255x¹²⁹ + 151x¹²⁸ + 56x¹²⁷ + 132x¹²⁶ + 127x¹²⁵ + 156x¹²⁴ + x¹²³ + 121x¹²² + 208x¹²¹ + 54x¹²⁰ + 89x¹¹⁹ + 155x¹¹⁸ + 110x¹¹⁷ + 166x¹¹⁶ + 165x¹¹⁵ + 28x¹¹⁴ + 98x¹¹³ + 156x¹¹² + 164x¹¹¹ + 231x¹¹⁰ + 22x¹⁰⁹ + 28x¹⁰⁸ + 157x¹⁰⁷ + 234x¹⁰⁶ + 128x¹⁰⁵ + 21x¹⁰⁴ + 99x¹⁰³ + 82x¹⁰² + 254x¹⁰¹ + 133x¹⁰⁰ + 158x⁹⁹ + 162x⁹⁸ + 57x⁹⁷ + 252x⁹⁶ + 161x⁹⁵ + 240x⁹⁴ + 40x⁹³ + 243x⁹² + 149x⁹¹ + 200x⁹⁰ + 138x⁸⁹ + 175x⁸⁸ + 28x⁸⁷ + 103x⁸⁶ + 51x⁸⁵ + 216x⁸⁴ + 200x⁸³ + 159x⁸² + 120x⁸¹ + 153x⁸⁰ + 203x⁷⁹ + 241x⁷⁸ + 22x⁷⁷ + 241x⁷⁶ + 31x⁷⁵ + 43x⁷⁴ + 212x⁷³ + 51x⁷² + 242x⁷¹ + 206x⁷⁰ + 55x⁶⁹ + 220x⁶⁸ + 221x⁶⁷ + 152x⁶⁶ + 212x⁶⁵ + 228x⁶⁴ + 88x⁶³ + 214x⁶² + 80x⁶¹ + 219x⁶⁰ + 209x⁵⁹ + 46x⁵⁸ + 74x⁵⁷ + 98x⁵⁶ + 47x⁵⁵ + 124x⁵⁴ + 40x⁵³ + 23x⁵² + 135x⁵¹ + 150x⁵⁰ + 99x⁴⁹ + 197x⁴⁸ + 97x⁴⁷ + 45x⁴⁶ + 98x⁴⁵ + 131x⁴⁴ + 238x⁴³ + 78x⁴² + 214x⁴¹ + 125x⁴⁰ + 82x³⁹ + 63x³⁸ + 170x³⁷ + 144x³⁶ + 68x³⁵ + 81x³⁴ + 57x³³ + 72x³² + 91x³¹ + 171x³⁰ + 112x²⁹ + 160x²⁸ + 131x²⁷ + 171x²⁶ + 142x²⁵ + 89x²⁴ + 14x²³ + 19x²² + 102x²¹ + 193x²⁰ + 86x¹⁹ + 36x¹⁸ + 232x¹⁷ + 114x¹⁶ + 253x¹⁵ + 55x¹⁴ + 56x¹³ + 104x¹² + 133x¹¹ + 224x¹⁰ + 111x⁹ + 193x⁸ + 233x⁷ + 140x⁶ + 146x⁵ + 203x⁴ + 182x³ + 242x² + 213x + 217"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes8/properties_CMEA.txt"
   origin: "TIA (Telecommunications Industry Association); Cellular Message Encryption Algorithm (CMEA); IS-136 TDMA cellular standard; designed by James A. Reeds III; 1991; cryptanalysis: Wagner, Goldberg, Briceno; CRYPTO 1997"
   note: "James A. Reeds III; Telecommunications Industry Association (TIA); IS-136 cellular standard; 1991"
@@ -31,7 +29,6 @@ IRAQI:
   nonlinearity: 94
   differential_uniformity: 12
   absolute_linear_uniformity: 34
-  boomerang_uniformity:
   absolute_autocorrelation_uniformity: 96
   involution: false
   fixed_point: []
@@ -39,7 +36,6 @@ IRAQI:
   cipher: true  # Used in a cipher
   differential_branch_number: 1
   linear_branch_number: 2
-  univariate_polynomial: "166x²⁵⁵ + 247x²⁵⁴ + 120x²⁵³ + 229x²⁵² + 110x²⁵¹ + 193x²⁵⁰ + 210x²⁴⁹ + 119x²⁴⁸ + 79x²⁴⁷ + 127x²⁴⁶ + 172x²⁴⁵ + 156x²⁴⁴ + 228x²⁴³ + 240x²⁴² + 239x²⁴¹ + 32x²⁴⁰ + 230x²³⁹ + 19x²³⁸ + 156x²³⁷ + 182x²³⁶ + 48x²³⁵ + 2x²³⁴ + 217x²³³ + 112x²³² + 78x²³¹ + 203x²³⁰ + 41x²²⁹ + 249x²²⁸ + 44x²²⁷ + 132x²²⁶ + 236x²²⁵ + 134x²²⁴ + 145x²²³ + 9x²²² + 31x²²¹ + 129x²²⁰ + 170x²¹⁹ + 208x²¹⁸ + 95x²¹⁷ + 204x²¹⁶ + 148x²¹⁵ + 50x²¹⁴ + 221x²¹³ + 205x²¹² + 20x²¹⁰ + 121x²⁰⁹ + 108x²⁰⁸ + 120x²⁰⁷ + 185x²⁰⁶ + 27x²⁰⁵ + 110x²⁰⁴ + 19x²⁰³ + 57x²⁰² + 174x²⁰¹ + 129x²⁰⁰ + 180x¹⁹⁹ + 11x¹⁹⁸ + 233x¹⁹⁷ + 134x¹⁹⁶ + 228x¹⁹⁵ + 99x¹⁹⁴ + 86x¹⁹³ + 191x¹⁹² + 88x¹⁹¹ + 128x¹⁹⁰ + 74x¹⁸⁹ + 203x¹⁸⁸ + 8x¹⁸⁷ + 51x¹⁸⁶ + 86x¹⁸⁵ + 88x¹⁸⁴ + 32x¹⁸³ + 199x¹⁸² + 65x¹⁸¹ + 90x¹⁸⁰ + 95x¹⁷⁹ + 76x¹⁷⁸ + 88x¹⁷⁷ + 156x¹⁷⁶ + 198x¹⁷⁵ + 4x¹⁷⁴ + 62x¹⁷³ + 64x¹⁷² + 176x¹⁷¹ + 113x¹⁷⁰ + 64x¹⁶⁹ + 85x¹⁶⁸ + 200x¹⁶⁷ + 26x¹⁶⁶ + 61x¹⁶⁵ + 119x¹⁶⁴ + 81x¹⁶³ + 78x¹⁶² + 209x¹⁶¹ + 131x¹⁶⁰ + 252x¹⁵⁹ + 223x¹⁵⁸ + 162x¹⁵⁷ + 142x¹⁵⁶ + 210x¹⁵⁵ + 171x¹⁵⁴ + 90x¹⁵³ + 118x¹⁵² + 16x¹⁵¹ + 125x¹⁵⁰ + 248x¹⁴⁹ + 113x¹⁴⁸ + 82x¹⁴⁷ + 60x¹⁴⁶ + 180x¹⁴⁵ + 108x¹⁴⁴ + 69x¹⁴³ + 192x¹⁴² + 86x¹⁴¹ + 227x¹⁴⁰ + 198x¹³⁹ + 49x¹³⁸ + 125x¹³⁷ + 255x¹³⁶ + 108x¹³⁵ + 223x¹³⁴ + 195x¹³³ + 83x¹³² + 116x¹³¹ + 90x¹³⁰ + 211x¹²⁹ + 66x¹²⁸ + 208x¹²⁷ + 36x¹²⁶ + 157x¹²⁵ + 135x¹²⁴ + 240x¹²³ + 34x¹²² + 19x¹²¹ + 152x¹²⁰ + 170x¹¹⁹ + 25x¹¹⁸ + 202x¹¹⁷ + 116x¹¹⁶ + 118x¹¹⁵ + 152x¹¹⁴ + 160x¹¹³ + 211x¹¹² + 110x¹¹¹ + 231x¹¹⁰ + 195x¹⁰⁹ + 145x¹⁰⁸ + 110x¹⁰⁷ + 34x¹⁰⁶ + 129x¹⁰⁵ + 104x¹⁰⁴ + 171x¹⁰³ + 167x¹⁰² + 126x¹⁰¹ + 42x¹⁰⁰ + 217x⁹⁹ + 26x⁹⁸ + 164x⁹⁷ + 61x⁹⁶ + 54x⁹⁵ + 202x⁹⁴ + 235x⁹³ + 163x⁹² + 69x⁹¹ + 183x⁹⁰ + 142x⁸⁹ + 147x⁸⁸ + 171x⁸⁷ + 21x⁸⁶ + 28x⁸⁵ + 152x⁸⁴ + 207x⁸³ + 163x⁸² + 85x⁸¹ + 226x⁸⁰ + 202x⁷⁹ + 46x⁷⁸ + 232x⁷⁷ + 6x⁷⁶ + 17x⁷⁵ + 155x⁷⁴ + 42x⁷³ + 135x⁷² + 69x⁷¹ + 82x⁷⁰ + 192x⁶⁹ + 147x⁶⁸ + 236x⁶⁷ + 60x⁶⁶ + 212x⁶⁵ + 242x⁶⁴ + 8x⁶³ + 191x⁶² + 112x⁶¹ + 36x⁶⁰ + 101x⁵⁹ + 95x⁵⁸ + 168x⁵⁷ + 250x⁵⁶ + 152x⁵⁵ + 42x⁵⁴ + 136x⁵³ + 169x⁵² + 203x⁵¹ + 237x⁵⁰ + 87x⁴⁹ + 48x⁴⁸ + 89x⁴⁷ + 18x⁴⁶ + 125x⁴⁵ + 174x⁴⁴ + 111x⁴³ + 88x⁴² + 114x⁴¹ + 171x⁴⁰ + 115x³⁹ + 148x³⁸ + 202x³⁷ + 21x³⁶ + 176x³⁵ + 15x³⁴ + 150x³³ + 209x³² + 102x³¹ + 189x³⁰ + 179x²⁹ + 6x²⁸ + 97x²⁷ + 66x²⁶ + 57x²⁵ + 154x²⁴ + 10x²³ + 48x²² + 101x²¹ + 73x²⁰ + 40x¹⁹ + 202x¹⁸ + 210x¹⁷ + 251x¹⁶ + 101x¹⁵ + 19x¹⁴ + 80x¹³ + 193x¹² + 132x¹¹ + 116x¹⁰ + 118x⁹ + 236x⁸ + 217x⁷ + 179x⁶ + 242x⁵ + 33x⁴ + 204x³ + 182x² + 167x + 173"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes8/properties_Iraqi.txt"
   origin: "Anonymous; alleged Iraqi government cipher; uploaded to Usenet via FTP, c. 1999; widely considered an internet hoax"
   note: "Key-dependent SBox; initial fixed table shown"
@@ -52,7 +48,6 @@ PICARO:
   nonlinearity: 94
   differential_uniformity: 4
   absolute_linear_uniformity: 28
-  boomerang_uniformity:
   absolute_autocorrelation_uniformity: 96
   involution: false
   fixed_point: []
@@ -60,7 +55,6 @@ PICARO:
   cipher: true  # Used in a cipher
   differential_branch_number: 1
   linear_branch_number: 2
-  univariate_polynomial: "140x²⁴⁰ + 69x²³² + 251x²²⁸ + 196x²²⁶ + 210x²²⁵ + 163x²²⁴ + 33x²¹⁶ + 79x²¹² + 235x²¹⁰ + 40x²⁰⁹ + 170x²⁰⁸ + 121x²⁰² + 59x²⁰¹ + 47x²⁰⁰ + 15x¹⁹⁸ + 150x¹⁹⁷ + 109x¹⁹⁶ + 229x¹⁹⁵ + 220x¹⁹⁴ + 81x¹⁹³ + 120x¹⁹² + 22x¹⁸⁴ + 141x¹⁸⁰ + 168x¹⁷⁸ + 238x¹⁷⁷ + 78x¹⁷⁶ + 108x¹⁷² + 224x¹⁷⁰ + 72x¹⁶⁹ + 97x¹⁶⁸ + 50x¹⁶⁶ + 192x¹⁶⁵ + 13x¹⁶⁴ + 227x¹⁶³ + 80x¹⁶² + 17x¹⁶¹ + 38x¹⁶⁰ + 151x¹⁵⁶ + 161x¹⁵⁴ + 183x¹⁵² + 182x¹⁵⁰ + 90x¹⁴⁹ + 240x¹⁴⁸ + 104x¹⁴⁷ + 66x¹⁴⁶ + 49x¹⁴⁵ + 36x¹⁴⁴ + 25x¹⁴² + 23x¹⁴¹ + 40x¹⁴⁰ + 195x¹³⁹ + 112x¹³⁸ + 129x¹³⁷ + 97x¹³⁶ + 85x¹³⁵ + 225x¹³⁴ + 69x¹³³ + 7x¹³² + 66x¹³¹ + 234x¹³⁰ + 121x¹²⁹ + 141x¹²⁸ + 123x¹²⁰ + 157x¹¹⁶ + 76x¹¹⁴ + 9x¹¹³ + 154x¹¹² + 172x¹⁰⁸ + 241x¹⁰⁶ + 197x¹⁰⁵ + 18x¹⁰⁴ + 150x¹⁰¹ + 25x¹⁰⁰ + 254x⁹⁹ + 220x⁹⁸ + 16x⁹⁷ + 223x⁹⁶ + x⁹² + 237x⁹⁰ + 37x⁸⁹ + 183x⁸⁸ + 140x⁸⁶ + 239x⁸⁵ + 220x⁸⁴ + 196x⁸³ + 150x⁸² + 213x⁸¹ + 68x⁸⁰ + 102x⁷⁸ + 26x⁷⁷ + 32x⁷⁶ + 254x⁷⁵ + 141x⁷⁴ + 33x⁷³ + 161x⁷² + 214x⁷¹ + 156x⁷⁰ + 53x⁶⁹ + 240x⁶⁸ + 240x⁶⁷ + 63x⁶⁶ + 145x⁶⁵ + 60x⁶⁴ + 243x⁶⁰ + 100x⁵⁸ + 205x⁵⁷ + 115x⁵⁶ + 235x⁵⁴ + 178x⁵³ + 168x⁵² + 171x⁵⁰ + 236x⁴⁹ + 254x⁴⁸ + 109x⁴⁶ + 203x⁴⁵ + 138x⁴⁴ + 219x⁴³ + 219x⁴² + 65x⁴¹ + 170x⁴⁰ + 214x³⁹ + 26x³⁸ + 200x³⁷ + 184x³⁶ + 160x³⁵ + 65x³⁴ + 130x³³ + 129x³² + 218x³⁰ + 185x²⁹ + 151x²⁸ + 103x²⁷ + 207x²⁶ + 184x²⁵ + 146x²⁴ + 230x²³ + 3x²² + 173x²¹ + 182x²⁰ + 89x¹⁹ + 43x¹⁸ + 92x¹⁷ + 120x¹⁶ + 181x¹⁵ + 236x¹⁴ + 214x¹³ + 14x¹² + 246x¹¹ + 207x¹⁰ + 56x⁹ + 135x⁸ + 38x⁷ + 83x⁶ + 154x⁵ + 70x⁴ + 162x³ + 46x² + 168x + 8"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes8/properties_Picaro.txt"
   origin: "Piret, Roche, Carlet; PICARO: A Block Cipher Allowing Efficient Higher-Order Side-Channel Resistance; SAC 2012; LNCS 7707"
   note: "Piret, Roche, Carlet; SAC 2012; PICARO - A Block Cipher Allowing Efficient Higher-Order Side-Channel Resistance"
