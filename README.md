@@ -2,7 +2,7 @@
 
 Public collection of Substitution Boxes (SBoxes for short) used in cryptography
 
-Last update: 28 April 2026 22:19 UTC <!-- TODO: This is to be updated with each (major) commit/push -->
+Last update: 31 July 2026 <!-- TODO: This is to be updated in UTC with each (major) commit/push -->
 
 ## Organisation
 
@@ -14,13 +14,15 @@ Last update: 28 April 2026 22:19 UTC <!-- TODO: This is to be updated with each 
 
 ## Naming Convention
 
-- Entry keys use an all-uppercase Latin with/without dot convention (e.g., `PRESENT` as without dot; `MIDORI.SB0`, `JH.S0` as with dot), with no hyphen/underscore and no space. Note that the cipher name preceeds the dot and the SBox name is after dot, or if there is no specific name to its SBox then only the cipher's name or some identifier (like `DILLON`) is used.
+- Entry keys use an all-uppercase Latin with/without dot convention (e.g., `PRESENT` as without dot; `MIDORI.SB0`, `JH.S0` as with dot), with no hyphen and no space. Note that the cipher name preceeds the dot and the SBox name is after dot, or if there is no specific name to its SBox then only the cipher's name or some identifier (like `DILLON`) is used.
 
 - `canonical_name` field records the exact name as it appears in the original paper to preserve information (related to casing, non-Latin characters, subscript, hyphen, space). 
 
 - Lowercase `v` indicates a version number and is not part of the cipher name (e.g., `PRINCEv2`).
 
-- `_Inv` at the end indicates that it is the inverse of another SBox which is already included (e.g., `ARIA.S2_Inv`).
+- The underscore `_` is a permitted special character. Its principal use is the `_Inv` suffix, which indicates that the entry is the inverse of another SBox already included (e.g., `ARIA.S2_Inv`).
+
+- The all-uppercase rule may be relaxed where a version or variant designator would otherwise be lost. For example, the trailing letter in `SNOW V` or `ROCCA S` marks a specific version, so it is retained as a designator rather than being folded into an indistinct run of capitals. The exact form is always preserved in `canonical_name` (e.g., `["SNOW-V"]`, `["ROCCA-S"]`).
 
 
 ## Data Files
@@ -29,13 +31,13 @@ Last update: 28 April 2026 22:19 UTC <!-- TODO: This is to be updated with each 
 
 | File | # Entry | Bit Mapping | 
 |:------|:-------:|-------------:|
-| [`3bit.yaml`](3bit.yaml) | 6 | 3 → 3 |
-| [`4bit_cipher.yaml`](4bit_cipher.yaml) | 146 | 4 → 4 |
+| [`3bit.yaml`](3bit.yaml) | 7 | 3 → 3 |
+| [`4bit_cipher.yaml`](4bit_cipher.yaml) | 147 | 4 → 4 |
 | [`4bit_nocipher.yaml`](4bit_nocipher.yaml) | 354 | 4 → 4 |
 | [`5bit.yaml`](5bit.yaml) | 16 | 5 → 5 |
 | [`6bit.yaml`](6bit.yaml) | 5 | 6 → 6 |
 | [`7bit.yaml`](7bit.yaml) | 2 | 7 → 7 |
-| [`8bit.yaml`](8bit.yaml) | 65 | 8 → 8 |
+| [`8bit.yaml`](8bit.yaml) | 66 | 8 → 8 |
 | [`9bit.yaml`](9bit.yaml) | 1 | 9 → 9 |
 
 ### Non-Bijective SBoxes
@@ -53,7 +55,7 @@ Each YAML entry has the following fields in order (mandatory fields marked with 
 | Field | Type | Description |
 |-------|------|-------------|
 | `canonical_name` | list | Name as written in the original paper (preserving case, non-Latin character, subscript, hyphen, space) |
-| `output_bits`<sup>†</sup> | int | Output bit size, compulsory for non-bijective SBoxes; skipped for bijective SBoxes |
+| `output_bits`<sup>†</sup> | int | Output bit size; compulsory for non-bijective SBoxes; skipped for bijective SBoxes |
 | `lookup_table`<sup>*</sup> | list | Look-up table (substitution values) |
 | `algebraic_degree`<sup>*</sup> | list | Algebraic degree of each coordinate function in order from the least-significant output bit (bit 0) to the most-significant (bit $n−1$). For an $n$-bit SBox there are $n$ integers in the list. The overall degree of the SBox is the maximum of these values. |
 | `nonlinearity`<sup>*</sup> | int | Non-linearity: Minimum Hamming distance from the set of all affine Boolean functions, taken over all non-zero linear combinations of output bits |
@@ -63,18 +65,18 @@ Each YAML entry has the following fields in order (mandatory fields marked with 
 | `absolute_autocorrelation_uniformity`<sup>*</sup> | int | Absolute autocorrelation uniformity (AAU): Maximum absolute value in the autocorrelation table (ACT); $\mathrm{ACT}[a,b] = \sum_x (-1)^{\langle b,\, S(x \oplus a) \oplus S(x)\rangle}$ for non-zero input difference $a$ and non-zero output mask $b$; also called absolute indicator |
 | `differential_branch_number`<sup>*</sup> | int | Differential branch number: Minimum weight $\mathrm{wt}(\Delta_{in}) + \mathrm{wt}(\Delta_{out})$ over all non-trivial DDT entries |
 | `linear_branch_number`<sup>*</sup> | int | Linear branch number: Minimum weight $\mathrm{wt}(a) + \mathrm{wt}(b)$ over all non-trivial LAT entries |
-| `univariate_polynomial`<sup>†</sup> | str | Interpolation polynomial of the SBox over $\mathrm{GF}(2^n)$: the unique polynomial $p(x) = \sum_{k=0}^{2^n-2} c_k x^k$ over $\mathrm{GF}(2^n)$ satisfying $p(i) = S(i)$ $\forall i$; compulsory for bijective SBoxes; skipped for non-bijective SBoxes |
 | `involution`<sup>*</sup> | bool | Involutory SBox: True iff $S(S(x)) = x$  $\forall x$ |
+| `order`<sup>†</sup> | int | Least $k$ with $S$ applied $k$ times equal to the identity, that is, the least common multiple of the cycle lengths; compulsory for bijective SBoxes, skipped for non-bijective SBoxes. An involution has order $2$ |
 | `fixed_point`<sup>*</sup> | list | Fixed point:  Values where $S(x) = x$ (`[]` for no fixed point) |
 | `year`<sup>*</sup> | list | Collection of significant publication years (competition submission, journal publication, standard approval) etc. |
 | `cipher`<sup>*</sup> | bool | True iff used in a cipher |
 | `source` | str | One or more URL(s) of code or related resources (mainly [PEIGEN SBox collection](https://github.com/peigen-sboxes/PEIGEN/tree/master/EvaluationResults/Sect5.1_CryptographicProperties), [Sage reference manual](https://github.com/sagemath/sage/blob/develop/src/sage/crypto/sboxes.py)) whence some information is mined |
 | `origin`<sup>*</sup> | str | Citation of the original publication |
 | `aliases` | list | Ciphers that have rebranded this SBox under a new name |
-| `alias` | str | The cipher whose SBox this entry is an alias for |
+| `alias` | str | The cipher whose SBox this entry is an alias for; placed immediately below `canonical_name` |
 | `reuse` | list | Ciphers that reuse this SBox under its original name |
 | `note` | str | Remarks such as government-body origin, competition/standardization status, related cryptographic properties or information |
-| `fun_fact` | str | Relevant lesser-known trivia (not directly related to the cipher) |
+| `trivium` | str | Lesser-known trivium about the cipher at hand (e.g., etymology, but not related to cryptographic importance) |
 
 
 ### Reuse and Rebranding (Alias)
@@ -90,7 +92,7 @@ Three fields handle inter-cipher SBox relationships:
 
 ### Notes
 
-1. Our convention — uppercase Latin characters with only dot allowed — enforces uniformity and ASCII searchability, but it destroys the original typographic formatting used by the designers, such as mixed case (e.g., "Midori"), non-Latin characters (like Cyrillic "π"; Greek "σ"), subscript notation (e.g., "Sb₀"), hyphen (like "SHA-3") and space (like "SNOW 3G"). 
+1. Our convention — uppercase Latin characters with the dot and the underscore allowed — enforces uniformity and ASCII searchability, but it destroys the original typographic formatting used by the designers, such as mixed case (e.g., "Midori"), non-Latin characters (like Cyrillic "π"; Greek "σ"), subscript notation (e.g., "Sb₀"), hyphen (like "SHA-3") and space (like "SNOW 3G"). 
 
 2. `canonical_name` — which is applicable only when `cipher` is true, and used to preserve the original formatting as intended by the cipher's designer(s) — is a list. For a cipher with a single SBox, it is a one-element list (e.g., `["GIFT"]`). When a cipher has multiple SBoxes distinguished by a subscript or letter (e.g., `S₀`, `π₁`), it is a two-element list `["CipherName", "SBoxName"]` where the first element is the cipher's canonical name and the second is the specific SBox sub-name (e.g., `["CLEFIA", "S₁"]`).
 
@@ -100,17 +102,9 @@ Three fields handle inter-cipher SBox relationships:
 
 5. The dot notation is not restricted to ciphers; non-cipher research entries may also use it (e.g., `APN.1` where APN is a class and 1 is an index).
 
-6. Coefficients in `univariate_polynomial` are field elements written as integers and with power as superscript for dummy variable `x`, for example: `"3x⁶ + 7x⁵ + 2x⁴ + 5x³ + 6x + 7"`. The coefficients $c_k$ are field elements of $\mathrm{GF}(2^n)$, i.e., bit $i$ of the integer encodes the coefficient of the primitive element $\alpha^i$ in the field element.  For example, in $\mathrm{GF}(2^8)$ the element $\alpha^6 + \alpha^4 + \alpha + 1$ is written as the integer $2^6 + 2^4 + 2^1 + 2^0 = 83$. 
+6. In a secondary (alias) entry, the `alias` field is placed immediately below `canonical_name`, ahead of any `year`, `origin` or `note`.
 
-7. The field structure in `univariate_polynomial` follows the same irreducible polynomial used in the Sage implementation of [`interpolation_polynomial`](https://doc.sagemath.org/html/en/reference/cryptography/sage/crypto/sbox.html#sage.crypto.sbox.SBox.interpolation_polynomial) for the given bit size. The following code snippet can be used in Sage to convert to the Sage-compatible polynomial:
-
-   ```python
-   from sage.crypto.sboxes import AES
-   p = AES.interpolation_polynomial()   # Polynomial over GF(2^8)
-   for k, c in sorted(p.dict().items(), reverse=True):
-       print(Integer(c), k)             # Integer(c) = stored integer coefficient
-   ```
-8. . Each URL is prefixed with `URL: `. Multiple URLs are separated by `; `.
+7. Each URL is prefixed with `URL: `. Multiple URLs are separated by `; `.
 
 ## Python / Sage Loader
 
@@ -135,7 +129,7 @@ The `repr` of an `SBoxEntry` shows the key name and (truncated) origin for quick
 
 ```python
 sb = bigfatsbox.present          # SBoxEntry('PRESENT', origin='Bogdanov et al.; PRESENT: An Ultra-Lightweight Block Ciph...')
-print(sb.lookup_table)           # Prints [12, 5, 6, 11, 9, 0, 10, 13, 3, 14, 15, 8, 4, 7, 1, 2]
+print(sb.lookup_table)           # Prints (12, 5, 6, 11, 9, 0, 10, 13, 3, 14, 15, 8, 4, 7, 1, 2)
 print(sb.nonlinearity)           # Prints 4
 print(sb.differential_uniformity)  # Prints 4
 print(sb.absolute_linear_uniformity)  # Prints 4
@@ -143,12 +137,11 @@ print(sb.boomerang_uniformity)   # Prints 16
 print(sb.absolute_autocorrelation_uniformity)  # Prints 16
 print(sb.differential_branch_number)  # Prints 3
 print(sb.linear_branch_number)   # Prints 2
-print(sb.univariate_polynomial)  # Interpolation polynomial string
 print(sb.involution)             # Prints False
-print(sb.fixed_point)            # Prints []
-print(sb.year)                   # Prints [2007]
+print(sb.fixed_point)            # Prints ()
+print(sb.year)                   # Prints (2007,)
 print(sb.cipher)                 # Prints True
-print(sb.canonical_name)         # Prints ['PRESENT']
+print(sb.canonical_name)         # Prints ('PRESENT',)
 print(sb.lut)                    # Alias for lookup_table
 print(sb.input_size)             # Prints 4  (log₂ of LUT length)
 print(sb.output_size)            # Prints 4  (equals input_size for bijective; from output_bits for non-bijective)
@@ -180,7 +173,7 @@ for sb in aria:                   # Iterate all ARIA entries
     print(sb.name, sb.nonlinearity)
 
 clefia = bigfatsbox.clefia        # SBoxGroup for CLEFIA.S0, CLEFIA.S1
-print(clefia.s0.canonical_name)  # Prints ['CLEFIA', 'S₀']
+print(clefia.s0.canonical_name)  # Prints ('CLEFIA', 'S₀')
 ```
 
 
@@ -237,7 +230,7 @@ sb = bigfatsbox['PRESENT']            # same as bigfatsbox.present
 
 ### Sage (Automatic)
 
-When `import bigfatsbox` is evaluated inside a SageMath session, attribute access automatically returns a [`sage.crypto.sbox.SBox`](https://doc.sagemath.org/html/en/reference/cryptography/sage/crypto/sbox.html#sage.crypto.sbox.SBox) object directly. Additional metadata fields (`note`, `fun_fact`, `year`, `origin`, etc.) are not exposed via the SBox object itself but remain accessible via `bigfatsbox.yaml`:
+When `import bigfatsbox` is evaluated inside a SageMath session, attribute access automatically returns a [`sage.crypto.sbox.SBox`](https://doc.sagemath.org/html/en/reference/cryptography/sage/crypto/sbox.html#sage.crypto.sbox.SBox) object directly. Additional metadata fields (`note`, `trivium`, `year`, `origin`, etc.) are not exposed via the SBox object itself but remain accessible via `bigfatsbox.yaml`:
 
 ```python
 # Inside a Sage session:
@@ -246,7 +239,6 @@ print(aes.differential_uniformity())    # Prints 4  (Sage method, not attribute)
 print(aes.nonlinearity())               # Prints 112
 print(aes.boomerang_uniformity())       # Prints 4
 print(aes.is_bijective())               # Prints True
-print(aes.interpolation_polynomial())   # Polynomial over GF(2^8)
 
 # Wildcard search and bit-size access work identically in Sage:
 for name, sb in bigfatsbox.find('pre*').items():
@@ -258,25 +250,23 @@ print(b4.present)                      # SBox([12, 5, 6, ...])
 
 # Access YAML metadata in Sage (always returns plain Python dict)
 data = bigfatsbox.yaml.aes
-print(data['year'])                    # [1997, 2001]
-print(data['canonical_name'])          # ['Rijndael']
+print(data['year'])                    # (2001,)
+print(data['canonical_name'])          # ('Rijndael',)
 print(data['note'])                    # additional remarks
 ```
 
 ### Raw YAML
 
-Raw dictionary access is available via the `yaml` proxy. This is identical in Python and Sage and exposes all YAML fields including `canonical_name`, `year`, `note`, `fun_fact`, `origin`, `source`, `alias`/`aliases`/`reuse`, `absolute_linear_uniformity`, and `univariate_polynomial`:
+Raw dictionary access is available via the `yaml` proxy. This is identical in Python and Sage and exposes all YAML fields including `canonical_name`, `year`, `note`, `trivium`, `origin`, `source`, `alias`/`aliases`/`reuse`, and `absolute_linear_uniformity`:
 
 ```python
 data = bigfatsbox.yaml.aes         # Plain Python dictionary with all YAML fields
 print(data['nonlinearity'])        # Prints 112
-print(data['year'])                # Prints [1997, 2001]
-print(data['canonical_name'])      # Prints ['Rijndael']
+print(data['year'])                # Prints (2001,)
+print(data['canonical_name'])      # Prints ('Rijndael',)
 print(data['source'])              # Source URL string
 data = bigfatsbox.yaml['AES']      # same, case-insensitive bracket access
 
-print(bigfatsbox.yaml.present['univariate_polynomial'])
-# "x¹⁴ + x¹³ + …"
 
 all_names = bigfatsbox.yaml.all_names()    # sorted list of all entry keys (uppercase)
 all_dicts = bigfatsbox.yaml.all_entries()  # full dict: key → raw dict
@@ -290,7 +280,7 @@ all_dicts = bigfatsbox.yaml.all_entries()  # full dict: key → raw dict
     print(bigfatsbox.kuznechik)      # SBoxEntry('KUZNYECHIK', ...) — alternate transliteration
     ```
 
-2. The `yaml` proxy always returns raw dicts regardless of Sage mode, giving access to all YAML fields.
+2. The `yaml` proxy always returns raw dicts regardless of Sage mode, giving access to all YAML fields. List-valued fields are returned as tuples (e.g., `year`, `canonical_name`, `lookup_table`).
 
 3. Python identifiers cannot start with a digit, so use `bigfatsbox.b3.sea` instead of `bigfatsbox.3bit.sea`. The `b` prefix is used throughout: `b3`, `b4`, `b5`, `b6`, `b7`, `b8`, `b9`.
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-bigfatsbox.py — Big Fat SBox List loader (generated using artificial intelligence)
+bigfatsbox.py: Big-Fat-SBox-List loader
 
 Two access modes:
 
@@ -9,7 +9,7 @@ Two access modes:
   import bigfatsbox
   sb  = bigfatsbox.present          # SBoxEntry (or Sage SBox if in Sage)
   sb  = bigfatsbox.PRESENT          # case-insensitive
-  sb.lookup_table                   # the LUT list
+  sb.lookup_table                   # the LUT tuple
   sb.nonlinearity                   # any YAML field as attribute
   sb.to_dict()                      # raw dict
 
@@ -86,6 +86,15 @@ def _ensure_loaded() -> None:
     _do_load()
 
 
+def _tuplify(obj):
+    """Recursively convert lists to tuples (dicts kept, values converted)."""
+    if isinstance(obj, list):
+        return tuple(_tuplify(x) for x in obj)
+    if isinstance(obj, dict):
+        return {k: _tuplify(v) for k, v in obj.items()}
+    return obj
+
+
 def _do_load() -> None:
     try:
         import yaml as _yaml
@@ -105,6 +114,7 @@ def _do_load() -> None:
             if not isinstance(val, dict):
                 continue
             ukey = key.upper()
+            val = _tuplify(val)
             _raw[ukey] = val
             # Register canonical aliases list (e.g. AES has ARIA_S1, RIJNDAEL…)
             for alias in (val.get('aliases') or []):
@@ -156,12 +166,14 @@ class SBoxEntry:
     Thin wrapper providing attribute access to a single S-box YAML entry.
 
     Field access:
-        sb.lookup_table        → list of ints
+        sb.lookup_table        → tuple of ints
         sb.nonlinearity        → int
-        sb.algebraic_degree    → list of ints
-        sb.univariate_polynomial → str or None
+        sb.algebraic_degree    → tuple of ints
         sb.note                → str or None
         ...  (any YAML field)
+
+    List-valued fields (lookup_table, algebraic_degree, fixed_point, year,
+    canonical_name, aliases, reuse, ...) are exposed as tuples.
 
     Convenience:
         sb.lut                 → alias for sb.lookup_table
@@ -194,7 +206,7 @@ class SBoxEntry:
     # ── convenience properties ──────────────────────────────────────────────
 
     @property
-    def lut(self) -> list | None:
+    def lut(self) -> tuple | None:
         data = object.__getattribute__(self, '_data')
         return data.get('lookup_table', data.get('lut'))
 
@@ -319,7 +331,7 @@ def _wrap(name: str, data: dict) -> 'SBoxEntry | Any':
     """Wrap data as SBoxEntry (or Sage SBox when inside a Sage session)."""
     if _in_sage():
         lut = data.get('lookup_table', data.get('lut'))
-        if lut and isinstance(lut, list):
+        if lut and isinstance(lut, (list, tuple)):
             obj = _sage_sbox(lut)
             if obj is not None:
                 return obj
@@ -483,7 +495,7 @@ def load_bits(n: int) -> 'dict[str, SBoxEntry | Any]':
         if 'alias' in data:
             continue
         lut = data.get('lookup_table', data.get('lut'))
-        if lut and isinstance(lut, list) and len(lut) > 0:
+        if lut and isinstance(lut, (list, tuple)) and len(lut) > 0:
             try:
                 bits = int(_math.log2(len(lut)))
                 if bits == n:

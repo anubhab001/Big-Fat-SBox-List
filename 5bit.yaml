@@ -1,5 +1,5 @@
 # Total: 16 S-boxes
-# Format: key (our all-uppercase-Latin-underscore name), canonical_name, lut, algebraic_degree, nonlinearity, differential_uniformity, involution, fixed_point, absolute_linear_uniformity, year, cipher, origin, [aliases], [reuse], [note], [fun_fact]
+# Format: key (our all-uppercase-Latin-underscore name), canonical_name, lut, algebraic_degree, nonlinearity, differential_uniformity, involution, fixed_point, absolute_linear_uniformity, year, cipher, origin, [aliases], [reuse], [note], [trivium]
 
 APN.S0:
   lookup_table: [0, 1, 2, 4, 3, 6, 8, 16, 5, 10, 15, 27, 19, 29, 31, 20, 7, 18, 25, 21, 12, 14, 24, 28, 26, 11, 23, 13, 30, 9, 17, 22]
@@ -10,11 +10,11 @@ APN.S0:
   boomerang_uniformity: 2
   absolute_autocorrelation_uniformity: 8
   involution: false
+  order: 66
   fixed_point: [0, 1, 2]
   cipher: false  # Exemplary; not used in a cipher
   differential_branch_number: 2
   linear_branch_number: 2
-  univariate_polynomial: "16x³⁰ + 16x²⁹ + 23x²⁸ + 28x²⁷ + 12x²⁶ + 5x²⁵ + 15x²³ + 7x²² + 10x²¹ + 27x²⁰ + 22x¹⁹ + 29x¹⁸ + 15x¹⁷ + 17x¹⁵ + 23x¹⁴ + 17x¹³ + 24x¹² + 11x¹¹ + 15x¹⁰ + 19x⁸ + 11x⁷ + 12x⁶ + 25x⁴ + 31x³ + 24x² + 31x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes5/properties_APN_S0.txt"
   origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN — a Platform for Evaluation, Implementation, and Generation of S-boxes; TOSC 2019; URL: https://eprint.iacr.org/2019/209"
   note: "Exemplary APN permutation, not used in a cipher"
@@ -28,11 +28,11 @@ APN.S1:
   boomerang_uniformity: 2
   absolute_autocorrelation_uniformity: 8
   involution: false
+  order: 114
   fixed_point: [0, 1, 2]
   cipher: false  # Exemplary; not used in a cipher
   differential_branch_number: 2
   linear_branch_number: 2
-  univariate_polynomial: "6x²⁸ + 12x²⁶ + 20x²⁵ + 10x²⁴ + 19x²² + 10x²¹ + 9x²⁰ + 23x¹⁹ + 27x¹⁸ + 2x¹⁷ + 18x¹⁶ + 11x¹⁴ + 24x¹³ + 22x¹² + 11x¹¹ + 15x¹⁰ + 12x⁹ + 27x⁸ + 16x⁷ + x⁶ + 8x⁵ + 19x⁴ + 18x³ + 17x² + 6x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes5/properties_APN_S1.txt"
   origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN — a Platform for Evaluation, Implementation, and Generation of S-boxes; TOSC 2019; URL: https://eprint.iacr.org/2019/209"
 
@@ -45,11 +45,11 @@ APN.S2:
   boomerang_uniformity: 2
   absolute_autocorrelation_uniformity: 8
   involution: false
+  order: 210
   fixed_point: [0, 1, 2]
   cipher: false  # Exemplary; not used in a cipher
   differential_branch_number: 2
   linear_branch_number: 2
-  univariate_polynomial: "31x²⁸ + 28x²⁶ + 19x²⁵ + 20x²⁴ + 18x²² + 20x²¹ + 13x²⁰ + 25x¹⁹ + 4x¹⁸ + 29x¹⁷ + 26x¹⁶ + 8x¹⁴ + 27x¹³ + 9x¹² + 31x¹¹ + 2x¹⁰ + 16x⁹ + 5x⁸ + 28x⁷ + 5x⁶ + 6x⁵ + 31x⁴ + 22x³ + 22x² + 6x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes5/properties_APN_S2.txt"
   origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN — a Platform for Evaluation, Implementation, and Generation of S-boxes; TOSC 2019; URL: https://eprint.iacr.org/2019/209"
 
@@ -62,11 +62,11 @@ APN.S3:
   boomerang_uniformity: 2
   absolute_autocorrelation_uniformity: 32
   involution: false
+  order: 210
   fixed_point: [0, 1, 2, 30]
   cipher: false  # Exemplary; not used in a cipher
   differential_branch_number: 2
   linear_branch_number: 2
-  univariate_polynomial: "11x²⁴ + 3x²⁰ + 30x¹⁸ + 22x¹⁷ + 17x¹⁶ + 6x¹² + 2x¹⁰ + 19x⁹ + 4x⁸ + 4x⁶ + 8x⁵ + 7x⁴ + 30x³ + 3x² + 21x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes5/properties_APN_S3.txt"
   origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN — a Platform for Evaluation, Implementation, and Generation of S-boxes; TOSC 2019; URL: https://eprint.iacr.org/2019/209"
 
@@ -79,11 +79,11 @@ APN.S4:
   boomerang_uniformity: 2
   absolute_autocorrelation_uniformity: 32
   involution: false
+  order: 90
   fixed_point: [0, 1, 2]
   cipher: false  # Exemplary; not used in a cipher
   differential_branch_number: 2
   linear_branch_number: 2
-  univariate_polynomial: "29x²⁴ + 2x²⁰ + 2x¹⁸ + 20x¹⁷ + 30x¹⁶ + 31x¹² + 15x¹⁰ + 3x⁹ + 13x⁸ + 17x⁶ + 26x⁵ + 21x³ + 19x² + 5x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes5/properties_APN_S4.txt"
   origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN — a Platform for Evaluation, Implementation, and Generation of S-boxes; TOSC 2019; URL: https://eprint.iacr.org/2019/209"
 
@@ -97,15 +97,15 @@ ASCON:
   boomerang_uniformity: 16
   absolute_autocorrelation_uniformity: 32
   involution: false
+  order: 78
   fixed_point: []
   year: [2014, 2021, 2023]  # CAESAR submission (2014); ToSC 2021; NIST LWC winner (2023)
   cipher: true  # Used in a cipher
   differential_branch_number: 3
   linear_branch_number: 3
-  univariate_polynomial: "30x²⁴ + 16x²⁰ + 27x¹⁸ + 11x¹⁷ + 19x¹⁶ + 22x¹² + 20x¹⁰ + 21x⁹ + 27x⁸ + 27x⁶ + 21x⁵ + 19x⁴ + 2x³ + 14x² + 31x + 4"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes5/properties_Ascon.txt"
   origin: "Dobraunig et al.; Ascon v1.2; CAESAR winner (2019); NIST LWC winner (2023); ToSC 2021; URL: https://doi.org/10.46586/tosc.v2021.i1.208-253"
-  fun_fact: "Ascon is the simplest body plan of sponges"
+  trivium: "Ascon is the simplest body plan of sponges"
 
 DRYGASCON128:
   canonical_name: ["DryGASCON128"]
@@ -117,12 +117,12 @@ DRYGASCON128:
   boomerang_uniformity: 16
   absolute_autocorrelation_uniformity: 32
   involution: false
+  order: 78
   fixed_point: []
   year: [2019]
   cipher: true
   differential_branch_number: 3
   linear_branch_number: 3
-  univariate_polynomial: "28x²⁴ + 11x²⁰ + 26x¹⁸ + 8x¹⁷ + 6x¹⁶ + 25x¹² + 12x¹⁰ + 2x⁹ + 20x⁸ + 23x⁶ + 15x⁴ + 9x³ + 8x² + 18x + 4"
   source: "URL: https://csrc.nist.gov/CSRC/media/Projects/lightweight-cryptography/documents/round-2/spec-doc-rnd2/drygascon-spec-round2.pdf"
   origin: "Riou-Durand; DryGASCON: Lightweight AEAD and Hash Functions; NIST LWC Round 2 (2019); URL: https://github.com/sebastien-riou/DryGASCON"
 
@@ -136,12 +136,12 @@ FIDES.S5:
   boomerang_uniformity: 2
   absolute_autocorrelation_uniformity: 32
   involution: false
+  order: 616
   fixed_point: []
   year: [2013]
   cipher: true  # Used in a cipher
   differential_branch_number: 2
   linear_branch_number: 2
-  univariate_polynomial: "23x²⁴ + 11x²⁰ + 18x¹⁸ + 3x¹⁷ + 27x¹⁶ + 10x¹² + 26x¹⁰ + 19x⁹ + 10x⁵ + 23x⁴ + 26x³ + 30x² + 13x + 1"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes5/properties_Fides_5.txt"
   origin: "Bilgin et al.; FIDES: Lightweight Authenticated Cipher with Side-Channel Resistance for Constrained Hardware; CHES 2013; URL: https://doi.org/10.1007/978-3-642-40349-1_8"
   note: "APN (Almost Perfect Non-linear) permutation used"
@@ -158,36 +158,36 @@ ICEPOLE:
   boomerang_uniformity: 18
   absolute_autocorrelation_uniformity: 32
   involution: false
+  order: 4
   fixed_point: []
   year: [2014]
   cipher: true  # Used in a cipher
   differential_branch_number: 2
   linear_branch_number: 2
-  univariate_polynomial: "18x³⁰ + 29x²⁹ + 9x²⁸ + 28x²⁷ + 22x²⁶ + 14x²⁵ + 22x²⁴ + 7x²³ + 23x²² + 17x²¹ + 14x²⁰ + 26x¹⁹ + x¹⁸ + 24x¹⁷ + 8x¹⁶ + 20x¹⁵ + 21x¹⁴ + 10x¹³ + 8x¹² + 5x¹¹ + 29x¹⁰ + 22x⁹ + 12x⁸ + 8x⁷ + 29x⁶ + 28x⁵ + 27x⁴ + 20x³ + 6x² + 11x + 31"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes5/properties_icepole.txt"
   origin: "Morawiecki et al.; ICEPOLE v2; CAESAR competition (2014)"
 
 KECCAK:
   canonical_name: ["Keccak"]
+  alias: SHA3
   year: [2007, 2012, 2015]  # SHA-3 competition submission (2007); NIST selected (2012); FIPS 202 (2015)
   origin: "Bertoni et al.; Keccak; SHA-3 winner; FIPS 202 (2015); URL: https://doi.org/10.6028/NIST.FIPS.202"
   note: "Keccak is the original submission name; SHA-3 is the NIST standardized name"
-  alias: SHA3
 
 PRIMATES:
   canonical_name: ["PRIMATEs"]
+  alias: FIDES.S5
   year: [2014]
   cipher: true
   origin: "Andreeva et al.; PRIMATEs; CAESAR submission (2014); URL: https://competitions.cr.yp.to/round2/primatesv102.pdf"
   note: "5-bit APN permutation (same as FIDES.S5) used in PRIMATE-80/120 (APE, HANUMAN, GIBBON)"
-  alias: FIDES.S5
 
 RASTA:
   canonical_name: ["Rasta"]
+  alias: SHA3
   year: [2018]
   origin: "Dobraunig et al.; Rasta: A Cipher with Low ANDdepth and Few ANDs per Bit; CRYPTO 2018; URL: https://doi.org/10.1007/978-3-319-96884-1_22"
   note: "Rasta uses the chi (χ) nonlinear function from Keccak/SHA-3"
-  alias: SHA3
 
 SC2000.S5:
   canonical_name: ["SC2000"]
@@ -199,12 +199,12 @@ SC2000.S5:
   boomerang_uniformity: 2
   absolute_autocorrelation_uniformity: 8
   involution: false
+  order: 120
   fixed_point: []
   year: [2001]
   cipher: true  # Used in a cipher
   differential_branch_number: 2
   linear_branch_number: 2
-  univariate_polynomial: "22x²⁸ + 19x²⁵ + 22x¹⁹ + 29x¹⁴ + 20"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes5/properties_SC2000_5.txt"
   origin: "Shimoyama et al.; The Block Cipher SC2000; FSE 2001"
 
@@ -218,16 +218,17 @@ SHA3:
   boomerang_uniformity: 16
   absolute_autocorrelation_uniformity: 32
   involution: false
+  order: 4
   fixed_point: [0, 31]
   year: [2007, 2012, 2015]  # SHA-3 competition submission (2007); NIST selected (2012); FIPS 202 (2015)
   cipher: true  # Used in a cipher
   differential_branch_number: 2
   linear_branch_number: 2
-  univariate_polynomial: "29x²⁴ + 23x²⁰ + 31x¹⁸ + 21x¹⁷ + 7x¹⁶ + 16x¹² + 17x¹⁰ + 6x⁹ + 10x⁸ + 30x⁶ + 24x⁵ + 8x⁴ + 22x³ + 29x² + 10x"
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes5/properties_keccak.txt"
   origin: "Bertoni et al.; Keccak; SHA-3 winner; FIPS 202 (2015); URL: https://doi.org/10.6028/NIST.FIPS.202"
   aliases: [KECCAK]
-  reuse: [RASTA]
+  reuse: [RASTA, GLEEOK]
+  note: "The Keccak chi mapping; reused as the 5-bit SBox (S5) in Branch2 of Gleeok"
 
 SHAMASH:
   canonical_name: ["Shamash"]
@@ -239,12 +240,12 @@ SHAMASH:
   boomerang_uniformity: 2
   absolute_autocorrelation_uniformity: 32
   involution: false
+  order: 65
   fixed_point: [20]
   year: [2019]
   cipher: true  # Used in a cipher
   differential_branch_number: 2
   linear_branch_number: 2
-  univariate_polynomial: "14x²⁴ + 5x²⁰ + 15x¹⁸ + 9x¹⁷ + 17x¹⁶ + 6x¹² + 27x¹⁰ + 6x⁹ + 12x⁸ + 10x⁵ + 21x⁴ + 17x³ + 21x² + 14x + 16"
   origin: "Parhi, Mane; Shamash; 2019"
 
 SYCON:
@@ -257,12 +258,12 @@ SYCON:
   boomerang_uniformity: 16
   absolute_autocorrelation_uniformity: 32
   involution: false
+  order: 528
   fixed_point: []
   year: [2019, 2021, 2022]  # NIST LWC Round 1 submission (2019); ePrint 2021/157 (2021); J. Cryptographic Engineering (2022); DOI: 10.1007/s13389-022-00298-z
   cipher: true  # Used in a cipher
   differential_branch_number: 3
   linear_branch_number: 3
-  univariate_polynomial: "16x²⁴ + 27x²⁰ + 30x¹⁸ + 5x¹⁷ + 30x¹⁶ + 20x¹² + 15x¹⁰ + 2x⁹ + 4x⁸ + 5x⁶ + 20x⁵ + 30x⁴ + 13x³ + 18x² + 24x + 8"
   origin: "Mandal, Saha, Sarkar, Todo; Sycon: A New Milestone in Designing ASCON-like Permutations; IACR ePrint 2021/157 (2021); J. Cryptographic Engineering 12 (2022); URL: https://eprint.iacr.org/2021/157"
-  fun_fact: "Sycon is a genus of calcareous marine sponges"
+  trivium: "Sycon is a genus of calcareous marine sponges"
 
