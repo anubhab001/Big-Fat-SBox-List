@@ -1,5 +1,5 @@
 # 6-bit bijective S-boxes
-# Total: 5 S-boxes
+# Total: 5 SBoxes
 # Format: key (our all-uppercase-Latin-underscore name), canonical_name, lut, algebraic_degree, nonlinearity, differential_uniformity, involution, fixed_point, absolute_linear_uniformity, year, cipher, origin, [aliases], [reuse], [note], [trivium]
 
 BIPBIP:
@@ -13,6 +13,7 @@ BIPBIP:
   absolute_autocorrelation_uniformity: 64
   involution: false
   order: 288
+  inversion: 926
   fixed_point: [0, 1, 2, 3, 4, 8]
   year: [2023]
   cipher: true  # Used in a cipher
@@ -31,6 +32,7 @@ DILLON:
   absolute_autocorrelation_uniformity: 64
   involution: false
   order: 330
+  inversion: 994
   fixed_point: [0]
   year: [2010]
   cipher: false  # Not used in a cipher
@@ -51,6 +53,7 @@ FIDES6:
   absolute_autocorrelation_uniformity: 64
   involution: false
   order: 5278
+  inversion: 1010
   fixed_point: []
   year: [2013]
   cipher: true  # Used in a cipher
@@ -71,6 +74,7 @@ SC2000.S6:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 306
+  inversion: 1105
   fixed_point: []
   year: [2001]
   cipher: true  # Used in a cipher
@@ -89,6 +93,7 @@ SPEEDY:
   absolute_autocorrelation_uniformity: 56
   involution: false
   order: 720
+  inversion: 646
   fixed_point: [3]
   year: [2021]
   cipher: true  # Used in a cipher

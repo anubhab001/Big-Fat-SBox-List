@@ -32,21 +32,35 @@ Last update: 31 July 2026 <!-- TODO: This is to be updated in UTC with each (maj
 | File | # Entry | Bit Mapping | 
 |:------|:-------:|-------------:|
 | [`3bit.yaml`](3bit.yaml) | 7 | 3 → 3 |
-| [`4bit_cipher.yaml`](4bit_cipher.yaml) | 147 | 4 → 4 |
+| [`4bit_cipher.yaml`](4bit_cipher.yaml) | 309 | 4 → 4 |
 | [`4bit_nocipher.yaml`](4bit_nocipher.yaml) | 354 | 4 → 4 |
 | [`5bit.yaml`](5bit.yaml) | 16 | 5 → 5 |
 | [`6bit.yaml`](6bit.yaml) | 5 | 6 → 6 |
 | [`7bit.yaml`](7bit.yaml) | 2 | 7 → 7 |
-| [`8bit.yaml`](8bit.yaml) | 66 | 8 → 8 |
+| [`8bit.yaml`](8bit.yaml) | 65 | 8 → 8 |
 | [`9bit.yaml`](9bit.yaml) | 1 | 9 → 9 |
 
 ### Non-Bijective SBoxes
 
 | File | # Entry | Bit Mapping |
 |:------|:-------:|-------------:|
-| [`nonbijective4bit.yaml`](nonbijective4bit.yaml) | 1 | 4 → 2 |
+| [`nonbijective4bit.yaml`](nonbijective4bit.yaml) | 3 | 4 → 2, 4 → 4 |
 | [`nonbijective6bit.yaml`](nonbijective6bit.yaml) | 8 | 6 → 4 |
 | [`nonbijective8bit.yaml`](nonbijective8bit.yaml) | 3 | 8 → 8 |
+
+## Entries Holding One SBox
+
+Some SBoxes turn up in more than one design, and the catalogue settles each case one of three ways.
+
+- An entry that renames another cipher's SBox is an alias: the key resolves to the entry holding the look-up table, and the name is listed in that entry's `aliases`. This is what the twelve keys around `AES` do.
+
+- A cipher that uses an earlier SBox under its own name is a `reuse`, recorded on the earlier entry. `ANUBIS.S0` and `ANUBIS.S1` list `ICEBERG.S0` and `ICEBERG.S1`, `LBLOCK.0` lists `LAC`, `MCRYPTON.S0` lists `MIBS`, and `STREEBOG` lists `KUZNYECHIK`. None of it waits for the later design to say where the SBox came from; the identity is established by comparing the look-up tables, and the `note` of both entries says so.
+
+- Two catalogues of representative SBoxes that overlap are merged rather than kept side by side, since neither is a cipher's own SBox. `GOLDEN.S1`, `GOLDEN.S2` and `GOLDEN.S3` read through to `SERPENTTYPE.S4`, `SERPENTTYPE.S3` and `SERPENTTYPE.S5`, the earlier of each pair.
+
+An SBox is not given a second entry for its inverse. The inverse of a bijective SBox is recovered from the look-up table, and a decryption circuit is a matter of implementation rather than of a distinct SBox, so the AES inverse for instance is not catalogued. Where two entries, each catalogued in its own right, happen to be inverses of one another, both `note` fields say which: `ARIA.S2` with `ARIA.S2_Inv`, the two pairs inside `CRYPTONv1` and inside `MCRYPTON`, `MCRYPTON.S2` with `MIBS`, and `REC.0` with `RECTANGLE`.
+
+Not every one of these relations is stated by the design concerned. Where it is not, it was established here by comparing the tables, and the reasoning is written into the `note` so that a reader can weigh it.
 
 ## Entry Format
 
@@ -67,6 +81,7 @@ Each YAML entry has the following fields in order (mandatory fields marked with 
 | `linear_branch_number`<sup>*</sup> | int | Linear branch number: Minimum weight $\mathrm{wt}(a) + \mathrm{wt}(b)$ over all non-trivial LAT entries |
 | `involution`<sup>*</sup> | bool | Involutory SBox: True iff $S(S(x)) = x$  $\forall x$ |
 | `order`<sup>†</sup> | int | Least $k$ with $S$ applied $k$ times equal to the identity, that is, the least common multiple of the cycle lengths; compulsory for bijective SBoxes, skipped for non-bijective SBoxes. An involution has order $2$ |
+| `inversion`<sup>†</sup> | int | Number of pairs of positions the SBox puts out of order, that is of $i < j$ with $S[i] > S[j]$. It is the number of adjacent swaps needed to sort the table back to the identity, so it measures how far the SBox moves its inputs; it runs from $0$ for the identity to $n(n-1)/2$ for the reversal. Compulsory for bijective SBoxes, skipped for non-bijective ones. The parity of the permutation is this count modulo two, so it is not recorded separately: an even count is an even permutation, which is what decides the fifteen puzzle, whose position is reachable exactly when the permutation of the tiles, composed with the moves of the blank, is even |
 | `fixed_point`<sup>*</sup> | list | Fixed point:  Values where $S(x) = x$ (`[]` for no fixed point) |
 | `year`<sup>*</sup> | list | Collection of significant publication years (competition submission, journal publication, standard approval) etc. |
 | `cipher`<sup>*</sup> | bool | True iff used in a cipher |
@@ -74,7 +89,7 @@ Each YAML entry has the following fields in order (mandatory fields marked with 
 | `origin`<sup>*</sup> | str | Citation of the original publication |
 | `aliases` | list | Ciphers that have rebranded this SBox under a new name |
 | `alias` | str | The cipher whose SBox this entry is an alias for; placed immediately below `canonical_name` |
-| `reuse` | list | Ciphers that reuse this SBox under its original name |
+| `reuse` | tuple | Ciphers that use this same SBox; recorded on the earlier publication, whether or not the later design says where it came from |
 | `note` | str | Remarks such as government-body origin, competition/standardization status, related cryptographic properties or information |
 | `trivium` | str | Lesser-known trivium about the cipher at hand (e.g., etymology, but not related to cryptographic importance) |
 
@@ -92,9 +107,9 @@ Three fields handle inter-cipher SBox relationships:
 
 ### Notes
 
-1. Our convention — uppercase Latin characters with the dot and the underscore allowed — enforces uniformity and ASCII searchability, but it destroys the original typographic formatting used by the designers, such as mixed case (e.g., "Midori"), non-Latin characters (like Cyrillic "π"; Greek "σ"), subscript notation (e.g., "Sb₀"), hyphen (like "SHA-3") and space (like "SNOW 3G"). 
+1. Our convention, uppercase Latin characters with the dot and the underscore allowed, enforces uniformity and ASCII searchability, but it destroys the original typographic formatting used by the designers, such as mixed case (e.g., "Midori"), non-Latin characters (like Cyrillic "π"; Greek "σ"), subscript notation (e.g., "Sb₀"), hyphen (like "SHA-3") and space (like "SNOW 3G"). 
 
-2. `canonical_name` — which is applicable only when `cipher` is true, and used to preserve the original formatting as intended by the cipher's designer(s) — is a list. For a cipher with a single SBox, it is a one-element list (e.g., `["GIFT"]`). When a cipher has multiple SBoxes distinguished by a subscript or letter (e.g., `S₀`, `π₁`), it is a two-element list `["CipherName", "SBoxName"]` where the first element is the cipher's canonical name and the second is the specific SBox sub-name (e.g., `["CLEFIA", "S₁"]`).
+2. `canonical_name`, which is applicable only when `cipher` is true and preserves the original formatting as intended by the cipher's designer(s) — is a list. For a cipher with a single SBox, it is a one-element list (e.g., `["GIFT"]`). When a cipher has multiple SBoxes distinguished by a subscript or letter (e.g., `S₀`, `π₁`), it is a two-element list `["CipherName", "SBoxName"]` where the first element is the cipher's canonical name and the second is the specific SBox sub-name (e.g., `["CLEFIA", "S₁"]`).
 
 3. `alias` (a secondary entry's field pointing to one source) and `aliases` (the main entry's list of ciphers that rebranded it) are not the singular and plural of the same concept. `reuse` is not linked with `alias` or `aliases` (both `alias` and `aliases` deal with cases where an SBox ) 
 
@@ -209,7 +224,7 @@ print(bigfatsbox.cmea.output_size)  # Prints 8  (non-bijective; from output_bits
 `bigfatsbox.find(pattern)` returns a dict of all entries matching a wildcard pattern. Bracket notation `bigfatsbox['pattern']` is equivalent for wildcards:
 
 ```python
-# find() — returns dict: uppercase key → SBoxEntry
+# find() returns a dict: uppercase key to SBoxEntry
 matches = bigfatsbox.find('pre*')      # PRESENT, PRIDE, PRIDE_Inv, PRINCE, PRINCEv2, …
 matches = bigfatsbox.find('ARIA.*')    # ARIA.INV, ARIA.S2, ARIA.S2_Inv, ARIA.SQ, ARIA.SQ_Inv
 matches = bigfatsbox.find('*_S0')      # All entries ending in _S0
@@ -276,8 +291,8 @@ all_dicts = bigfatsbox.yaml.all_entries()  # full dict: key → raw dict
 1. Entries with an `alias` field are transparently resolved to the source entry in both Python and Sage:
 
     ```python
-    print(bigfatsbox.rijndael)       # SBoxEntry('AES', ...) — resolves through alias
-    print(bigfatsbox.kuznechik)      # SBoxEntry('KUZNYECHIK', ...) — alternate transliteration
+    print(bigfatsbox.rijndael)       # SBoxEntry('AES', ...), resolves through alias
+    print(bigfatsbox.kuznechik)      # SBoxEntry('KUZNYECHIK', ...), alternate transliteration
     ```
 
 2. The `yaml` proxy always returns raw dicts regardless of Sage mode, giving access to all YAML fields. List-valued fields are returned as tuples (e.g., `year`, `canonical_name`, `lookup_table`).

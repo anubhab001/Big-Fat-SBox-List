@@ -1,5 +1,5 @@
 ﻿# 8-bit non-bijective S-boxes
-# Total: 3 S-boxes
+# Total: 3 SBoxes
 # Format: key (our all-uppercase-Latin-underscore name), canonical_name, output_bits, lut, algebraic_degree, nonlinearity, differential_uniformity, absolute_linear_uniformity, involution, fixed_point, year, cipher, differential_branch_number, linear_branch_number, source, [note]
 
 CMEA:
@@ -11,7 +11,6 @@ CMEA:
   differential_uniformity: 12
   absolute_linear_uniformity: 32
   absolute_autocorrelation_uniformity: 104
-  involution: false
   fixed_point: []
   year: [1991]
   cipher: true  # Used in a cipher
@@ -30,7 +29,6 @@ IRAQI:
   differential_uniformity: 12
   absolute_linear_uniformity: 34
   absolute_autocorrelation_uniformity: 96
-  involution: false
   fixed_point: []
   year: [1999]
   cipher: true  # Used in a cipher
@@ -49,7 +47,6 @@ PICARO:
   differential_uniformity: 4
   absolute_linear_uniformity: 28
   absolute_autocorrelation_uniformity: 96
-  involution: false
   fixed_point: []
   year: [2012]
   cipher: true  # Used in a cipher

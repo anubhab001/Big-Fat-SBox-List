@@ -1,5 +1,5 @@
 # 7-bit bijective S-boxes
-# Total: 2 S-boxes
+# Total: 2 SBoxes
 # Format: key (our all-uppercase-Latin-underscore name), canonical_name, lut, algebraic_degree, nonlinearity, differential_uniformity, involution, fixed_point, absolute_linear_uniformity, year, cipher, origin, [aliases], [reuse], [note], [trivium]
 
 MISTY.S7:
@@ -13,6 +13,7 @@ MISTY.S7:
   absolute_autocorrelation_uniformity: 64
   involution: false
   order: 11424
+  inversion: 3888
   fixed_point: [68]
   year: [1997]
   cipher: true # Used in a cipher
@@ -33,6 +34,7 @@ WAGE:
   absolute_autocorrelation_uniformity: 80
   involution: false
   order: 1316
+  inversion: 3828
   fixed_point: []
   year: [2019]
   cipher: true # Used in a cipher

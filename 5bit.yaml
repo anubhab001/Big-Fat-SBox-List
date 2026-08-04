@@ -1,4 +1,4 @@
-# Total: 16 S-boxes
+# Total: 16 SBoxes
 # Format: key (our all-uppercase-Latin-underscore name), canonical_name, lut, algebraic_degree, nonlinearity, differential_uniformity, involution, fixed_point, absolute_linear_uniformity, year, cipher, origin, [aliases], [reuse], [note], [trivium]
 
 APN.S0:
@@ -11,6 +11,7 @@ APN.S0:
   absolute_autocorrelation_uniformity: 8
   involution: false
   order: 66
+  inversion: 141
   fixed_point: [0, 1, 2]
   cipher: false  # Exemplary; not used in a cipher
   differential_branch_number: 2
@@ -29,6 +30,7 @@ APN.S1:
   absolute_autocorrelation_uniformity: 8
   involution: false
   order: 114
+  inversion: 159
   fixed_point: [0, 1, 2]
   cipher: false  # Exemplary; not used in a cipher
   differential_branch_number: 2
@@ -46,6 +48,7 @@ APN.S2:
   absolute_autocorrelation_uniformity: 8
   involution: false
   order: 210
+  inversion: 160
   fixed_point: [0, 1, 2]
   cipher: false  # Exemplary; not used in a cipher
   differential_branch_number: 2
@@ -63,6 +66,7 @@ APN.S3:
   absolute_autocorrelation_uniformity: 32
   involution: false
   order: 210
+  inversion: 161
   fixed_point: [0, 1, 2, 30]
   cipher: false  # Exemplary; not used in a cipher
   differential_branch_number: 2
@@ -80,6 +84,7 @@ APN.S4:
   absolute_autocorrelation_uniformity: 32
   involution: false
   order: 90
+  inversion: 166
   fixed_point: [0, 1, 2]
   cipher: false  # Exemplary; not used in a cipher
   differential_branch_number: 2
@@ -98,6 +103,7 @@ ASCON:
   absolute_autocorrelation_uniformity: 32
   involution: false
   order: 78
+  inversion: 248
   fixed_point: []
   year: [2014, 2021, 2023]  # CAESAR submission (2014); ToSC 2021; NIST LWC winner (2023)
   cipher: true  # Used in a cipher
@@ -106,6 +112,7 @@ ASCON:
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes5/properties_Ascon.txt"
   origin: "Dobraunig et al.; Ascon v1.2; CAESAR winner (2019); NIST LWC winner (2023); ToSC 2021; URL: https://doi.org/10.46586/tosc.v2021.i1.208-253"
   trivium: "Ascon is the simplest body plan of sponges"
+  note: "The same table as DRYGASCON128 up to a permutation of the five bits."
 
 DRYGASCON128:
   canonical_name: ["DryGASCON128"]
@@ -118,6 +125,7 @@ DRYGASCON128:
   absolute_autocorrelation_uniformity: 32
   involution: false
   order: 78
+  inversion: 254
   fixed_point: []
   year: [2019]
   cipher: true
@@ -125,6 +133,7 @@ DRYGASCON128:
   linear_branch_number: 3
   source: "URL: https://csrc.nist.gov/CSRC/media/Projects/lightweight-cryptography/documents/round-2/spec-doc-rnd2/drygascon-spec-round2.pdf"
   origin: "Riou-Durand; DryGASCON: Lightweight AEAD and Hash Functions; NIST LWC Round 2 (2019); URL: https://github.com/sebastien-riou/DryGASCON"
+  note: "The same table as ASCON up to a permutation of the five bits."
 
 FIDES.S5:
   canonical_name: ["FIDES", "S₅"]
@@ -137,6 +146,7 @@ FIDES.S5:
   absolute_autocorrelation_uniformity: 32
   involution: false
   order: 616
+  inversion: 243
   fixed_point: []
   year: [2013]
   cipher: true  # Used in a cipher
@@ -159,6 +169,7 @@ ICEPOLE:
   absolute_autocorrelation_uniformity: 32
   involution: false
   order: 4
+  inversion: 213
   fixed_point: []
   year: [2014]
   cipher: true  # Used in a cipher
@@ -166,6 +177,7 @@ ICEPOLE:
   linear_branch_number: 2
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes5/properties_icepole.txt"
   origin: "Morawiecki et al.; ICEPOLE v2; CAESAR competition (2014)"
+  note: "The Keccak chi mapping with its two fixed points exchanged: it agrees with SHA3 everywhere except at 0 and 31, which it swaps. That single transposition is what makes its parity odd where the parity of SHA3 is even."
 
 KECCAK:
   canonical_name: ["Keccak"]
@@ -200,6 +212,7 @@ SC2000.S5:
   absolute_autocorrelation_uniformity: 8
   involution: false
   order: 120
+  inversion: 280
   fixed_point: []
   year: [2001]
   cipher: true  # Used in a cipher
@@ -219,6 +232,7 @@ SHA3:
   absolute_autocorrelation_uniformity: 32
   involution: false
   order: 4
+  inversion: 152
   fixed_point: [0, 31]
   year: [2007, 2012, 2015]  # SHA-3 competition submission (2007); NIST selected (2012); FIPS 202 (2015)
   cipher: true  # Used in a cipher
@@ -228,7 +242,7 @@ SHA3:
   origin: "Bertoni et al.; Keccak; SHA-3 winner; FIPS 202 (2015); URL: https://doi.org/10.6028/NIST.FIPS.202"
   aliases: [KECCAK]
   reuse: [RASTA, GLEEOK]
-  note: "The Keccak chi mapping; reused as the 5-bit SBox (S5) in Branch2 of Gleeok"
+  note: "The Keccak chi mapping; reused as the 5-bit SBox (S5) in Branch2 of Gleeok ICEPOLE takes this mapping with 0 and 31 exchanged, and differs from it nowhere else."
 
 SHAMASH:
   canonical_name: ["Shamash"]
@@ -241,6 +255,7 @@ SHAMASH:
   absolute_autocorrelation_uniformity: 32
   involution: false
   order: 65
+  inversion: 254
   fixed_point: [20]
   year: [2019]
   cipher: true  # Used in a cipher
@@ -259,6 +274,7 @@ SYCON:
   absolute_autocorrelation_uniformity: 32
   involution: false
   order: 528
+  inversion: 250
   fixed_point: []
   year: [2019, 2021, 2022]  # NIST LWC Round 1 submission (2019); ePrint 2021/157 (2021); J. Cryptographic Engineering (2022); DOI: 10.1007/s13389-022-00298-z
   cipher: true  # Used in a cipher

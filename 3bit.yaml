@@ -1,5 +1,5 @@
 # 3-bit bijective S-boxes
-# Total: 7 S-boxes
+# Total: 7 SBoxes
 # Format: key (our all-uppercase-Latin-underscore name), canonical_name, lut, algebraic_degree, nonlinearity, differential_uniformity, involution, fixed_point, absolute_linear_uniformity, year, cipher, origin, [aliases], [reuse], [note], [trivium]
 
 3WAY:
@@ -13,6 +13,7 @@
   absolute_autocorrelation_uniformity: 8
   involution: false
   order: 6
+  inversion: 19
   fixed_point: []
   year: [1995]
   cipher: true
@@ -20,6 +21,7 @@
   linear_branch_number: 2
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes3/properties_3-way.txt"
   origin: "Daemen; Cipher and Hash Function Design; Strategies Based on Linear and Differential Cryptanalysis; PhD thesis (1995)"
+  note: "The same table as GLEEOK.S3, PRINTCIPHER up to XOR of a constant into the input and the output, so one circuit serves either once the constants are folded into the layers around it. Neither specification says so; it was established by comparing the tables."
 
 BAKSHEESH_3:
   canonical_name: ["BAKSHEESH"]
@@ -32,6 +34,7 @@ BAKSHEESH_3:
   absolute_autocorrelation_uniformity: 8
   involution: false
   order: 10
+  inversion: 7
   fixed_point: [7]
   year: [2026] # CiC 2026; ePrint 2023/750 is earlier preprint
   cipher: true
@@ -51,6 +54,7 @@ CTC2:
   absolute_autocorrelation_uniformity: 8
   involution: false
   order: 10
+  inversion: 19
   fixed_point: [5]
   year: [2007]
   cipher: true
@@ -70,13 +74,14 @@ GLEEOK.S3:
   absolute_autocorrelation_uniformity: 8
   involution: true
   order: 2
+  inversion: 9
   fixed_point: [0, 7]
   year: [2024]
   cipher: true  # Used in a cipher
   differential_branch_number: 2
   linear_branch_number: 2
   origin: "Anand, Banik, Caforio, Ishikawa, Isobe, Liu, Minematsu, Rahman, Sakamoto; Gleeok: A Family of Low-Latency PRFs and its Applications to Authenticated Encryption; TCHES 2024(2); pp. 545-587; DOI: 10.46586/tches.v2024.i2.545-587"
-  note: "3-bit SBox used in Branch1 of the Gleeok PRF. Gleeok's other two SBoxes reuse existing SBoxes: its 4-bit SBox (S4) equals the Orthros SBox (see ORTHROS.SSB0) and its 5-bit SBox (S5) equals the SHA-3 (Keccak chi) SBox (see SHA3)"
+  note: "3-bit SBox used in Branch1 of the Gleeok PRF. Gleeok's other two SBoxes reuse existing SBoxes: its 4-bit SBox (S4) equals the Orthros SBox (see ORTHROS.SSB0) and its 5-bit SBox (S5) equals the SHA-3 (Keccak chi) SBox (see SHA3) The same table as 3WAY, PRINTCIPHER up to XOR of a constant into the input and the output, so one circuit serves either once the constants are folded into the layers around it. Neither specification says so; it was established by comparing the tables."
 
 PRINTCIPHER:
   canonical_name: ["PRINTcipher"]
@@ -89,6 +94,7 @@ PRINTCIPHER:
   absolute_autocorrelation_uniformity: 8
   involution: false
   order: 6
+  inversion: 9
   fixed_point: [0, 1]
   year: [2010]
   cipher: true
@@ -96,6 +102,7 @@ PRINTCIPHER:
   linear_branch_number: 2
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes3/properties_PRINTcipher.txt"
   origin: "Knudsen et al.; PRINTcipher: A Block Cipher for IC-Printing; CHES 2010; URL: https://doi.org/10.1007/978-3-642-15031-9_12"
+  note: "The same table as 3WAY, GLEEOK.S3 up to XOR of a constant into the input and the output, so one circuit serves either once the constants are folded into the layers around it. Neither specification says so; it was established by comparing the tables."
 
 PYJAMASK:
   canonical_name: ["Pyjamask"]
@@ -108,6 +115,7 @@ PYJAMASK:
   absolute_autocorrelation_uniformity: 8
   involution: false
   order: 8
+  inversion: 13
   fixed_point: []
   year: [2019]
   cipher: true  # Used in a cipher
@@ -126,6 +134,7 @@ SEA:
   absolute_autocorrelation_uniformity: 8
   involution: false
   order: 6
+  inversion: 17
   fixed_point: [0, 4]
   year: [2006]
   cipher: true

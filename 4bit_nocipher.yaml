@@ -13,6 +13,7 @@ AE.1:
   absolute_autocorrelation_uniformity: 8
   involution: false
   order: 12
+  inversion: 34
   fixed_point: [6, 7, 9, 10, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -32,6 +33,7 @@ AE.10:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 14
+  inversion: 43
   fixed_point: [5, 6, 7, 9, 11, 12, 13]
   year: [2007]
   cipher: false
@@ -51,6 +53,7 @@ AE.100:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 29
   fixed_point: [3, 6, 7, 9, 11, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -70,6 +73,7 @@ AE.101:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 17
   fixed_point: [6, 7, 9, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -89,6 +93,7 @@ AE.102:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 23
   fixed_point: [6, 7, 9, 10, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -108,6 +113,7 @@ AE.103:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 4
+  inversion: 21
   fixed_point: [6, 7, 9, 10, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -127,6 +133,7 @@ AE.104:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 4
+  inversion: 23
   fixed_point: [6, 7, 9, 10, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -146,6 +153,7 @@ AE.105:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 15
   fixed_point: [5, 6, 7, 10, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -165,6 +173,7 @@ AE.106:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 37
   fixed_point: [5, 7, 9, 10, 11, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -184,6 +193,7 @@ AE.107:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 29
   fixed_point: [5, 7, 9, 10, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -203,6 +213,7 @@ AE.108:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 33
   fixed_point: [5, 7, 9, 10, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -222,6 +233,7 @@ AE.109:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 32
   fixed_point: [6, 7, 9, 10, 11, 12, 13, 15]
   year: [2007]
   cipher: false
@@ -241,6 +253,7 @@ AE.11:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 14
+  inversion: 47
   fixed_point: [5, 7, 9, 10, 11, 13, 14]
   year: [2007]
   cipher: false
@@ -260,6 +273,7 @@ AE.110:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 20
   fixed_point: [6, 7, 9, 10, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -279,6 +293,7 @@ AE.111:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 33
   fixed_point: [5, 7, 9, 10, 11, 12, 13, 15]
   year: [2007]
   cipher: false
@@ -298,6 +313,7 @@ AE.112:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 26
   fixed_point: [5, 6, 9, 10, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -317,6 +333,7 @@ AE.113:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 28
   fixed_point: [5, 6, 7, 10, 11, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -336,6 +353,7 @@ AE.114:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 22
   fixed_point: [5, 6, 7, 9, 10, 12, 13, 15]
   year: [2007]
   cipher: false
@@ -355,6 +373,7 @@ AE.115:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 12
   fixed_point: [5, 6, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -374,6 +393,7 @@ AE.116:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 36
   fixed_point: [5, 6, 7, 9, 11, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -393,6 +413,7 @@ AE.117:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 27
   fixed_point: [6, 7, 9, 10, 11, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -412,6 +433,7 @@ AE.118:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 4
+  inversion: 27
   fixed_point: [5, 7, 9, 10, 11, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -431,6 +453,7 @@ AE.119:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 33
   fixed_point: [5, 7, 9, 10, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -450,6 +473,7 @@ AE.12:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 14
+  inversion: 47
   fixed_point: [5, 6, 9, 10, 11, 12, 14]
   year: [2007]
   cipher: false
@@ -469,6 +493,7 @@ AE.120:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 24
   fixed_point: [6, 7, 9, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -488,6 +513,7 @@ AE.121:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 28
   fixed_point: [6, 7, 9, 10, 11, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -507,6 +533,7 @@ AE.122:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 24
   fixed_point: [5, 7, 9, 10, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -526,6 +553,7 @@ AE.123:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 28
   fixed_point: [5, 7, 9, 10, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -545,6 +573,7 @@ AE.124:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 20
   fixed_point: [5, 6, 9, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -564,6 +593,7 @@ AE.125:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 20
   fixed_point: [5, 6, 9, 10, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -583,6 +613,7 @@ AE.126:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 16
   fixed_point: [5, 6, 7, 10, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -602,6 +633,7 @@ AE.127:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 26
   fixed_point: [5, 6, 7, 9, 11, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -621,6 +653,7 @@ AE.128:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 20
   fixed_point: [5, 7, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -640,6 +673,7 @@ AE.129:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 16
   fixed_point: [5, 6, 7, 9, 10, 12, 13, 15]
   year: [2007]
   cipher: false
@@ -659,6 +693,7 @@ AE.13:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 9
+  inversion: 28
   fixed_point: [5, 7, 10, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -678,6 +713,7 @@ AE.130:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 4
+  inversion: 14
   fixed_point: [5, 7, 9, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -697,6 +733,7 @@ AE.131:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 22
   fixed_point: [5, 7, 9, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -716,6 +753,7 @@ AE.132:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 27
   fixed_point: [5, 7, 9, 10, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -735,6 +773,7 @@ AE.133:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 19
   fixed_point: [5, 7, 9, 10, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -754,6 +793,7 @@ AE.134:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 29
   fixed_point: [5, 7, 9, 10, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -773,6 +813,7 @@ AE.135:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 31
   fixed_point: [5, 7, 9, 10, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -792,6 +833,7 @@ AE.136:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 29
   fixed_point: [5, 7, 9, 10, 11, 12, 13, 15]
   year: [2007]
   cipher: false
@@ -811,6 +853,7 @@ AE.137:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 31
   fixed_point: [5, 7, 9, 10, 11, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -830,6 +873,7 @@ AE.138:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 25
   fixed_point: [5, 7, 9, 10, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -849,6 +893,7 @@ AE.139:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 20
   fixed_point: [5, 7, 9, 10, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -868,6 +913,7 @@ AE.14:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 9
+  inversion: 36
   fixed_point: [5, 7, 9, 10, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -887,6 +933,7 @@ AE.140:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 4
+  inversion: 17
   fixed_point: [6, 7, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -906,6 +953,7 @@ AE.141:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 20
   fixed_point: [5, 6, 7, 9, 11, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -925,6 +973,7 @@ AE.142:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 17
   fixed_point: [5, 7, 9, 10, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -944,6 +993,7 @@ AE.143:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 19
   fixed_point: [5, 7, 9, 10, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -963,6 +1013,7 @@ AE.144:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 35
   fixed_point: [5, 7, 9, 10, 11, 12, 13, 15]
   year: [2007]
   cipher: false
@@ -982,6 +1033,7 @@ AE.145:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 15
+  inversion: 32
   fixed_point: [5, 6, 7, 9, 11, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -1001,6 +1053,7 @@ AE.146:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 25
   fixed_point: [5, 7, 9, 10, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -1020,6 +1073,7 @@ AE.147:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 27
   fixed_point: [5, 7, 9, 10, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -1039,6 +1093,7 @@ AE.148:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 31
   fixed_point: [5, 7, 9, 10, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -1058,6 +1113,7 @@ AE.149:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 35
   fixed_point: [5, 7, 9, 10, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -1077,6 +1133,7 @@ AE.15:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 9
+  inversion: 32
   fixed_point: [5, 7, 10, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -1096,6 +1153,7 @@ AE.150:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 27
   fixed_point: [5, 7, 9, 10, 11, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -1115,6 +1173,7 @@ AE.151:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 15
+  inversion: 32
   fixed_point: [5, 7, 9, 10, 11, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -1134,6 +1193,7 @@ AE.152:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 20
   fixed_point: [5, 6, 9, 10, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -1153,6 +1213,7 @@ AE.153:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 20
   fixed_point: [5, 6, 7, 9, 10, 11, 13, 15]
   year: [2007]
   cipher: false
@@ -1172,6 +1233,7 @@ AE.154:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 20
   fixed_point: [5, 6, 7, 9, 10, 11, 12, 14]
   year: [2007]
   cipher: false
@@ -1191,6 +1253,7 @@ AE.155:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 35
   fixed_point: [5, 7, 9, 10, 11, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -1210,6 +1273,7 @@ AE.156:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 15
+  inversion: 32
   fixed_point: [5, 6, 7, 10, 11, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -1229,6 +1293,7 @@ AE.157:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 4
+  inversion: 17
   fixed_point: [5, 6, 7, 9, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -1248,6 +1313,7 @@ AE.158:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 19
   fixed_point: [5, 6, 7, 9, 10, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -1267,6 +1333,7 @@ AE.159:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 21
   fixed_point: [6, 7, 9, 10, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -1286,6 +1353,7 @@ AE.16:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 9
+  inversion: 34
   fixed_point: [5, 7, 9, 10, 12, 13, 15]
   year: [2007]
   cipher: false
@@ -1305,6 +1373,7 @@ AE.160:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 4
+  inversion: 19
   fixed_point: [6, 7, 9, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -1324,6 +1393,7 @@ AE.161:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 17
   fixed_point: [5, 6, 7, 10, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -1343,6 +1413,7 @@ AE.162:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 4
+  inversion: 15
   fixed_point: [5, 7, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -1362,6 +1433,7 @@ AE.163:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 24
   fixed_point: [6, 7, 9, 10, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -1381,6 +1453,7 @@ AE.164:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 26
   fixed_point: [6, 7, 9, 10, 11, 12, 13, 15]
   year: [2007]
   cipher: false
@@ -1400,6 +1473,7 @@ AE.165:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 19
   fixed_point: [3, 6, 9, 10, 11, 12, 13, 15]
   year: [2007]
   cipher: false
@@ -1419,6 +1493,7 @@ AE.166:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 18
   fixed_point: [5, 6, 9, 10, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -1438,6 +1513,7 @@ AE.167:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 4
+  inversion: 17
   fixed_point: [5, 6, 7, 10, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -1457,6 +1533,7 @@ AE.168:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 18
   fixed_point: [5, 6, 7, 10, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -1476,6 +1553,7 @@ AE.169:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 4
+  inversion: 17
   fixed_point: [5, 6, 7, 9, 10, 12, 13, 15]
   year: [2007]
   cipher: false
@@ -1495,6 +1573,7 @@ AE.17:
   absolute_autocorrelation_uniformity: 8
   involution: false
   order: 14
+  inversion: 35
   fixed_point: [6, 7, 9, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -1514,6 +1593,7 @@ AE.170:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 18
   fixed_point: [5, 6, 7, 9, 10, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -1533,6 +1613,7 @@ AE.171:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 12
+  inversion: 25
   fixed_point: [5, 6, 7, 9, 10, 11, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -1552,6 +1633,7 @@ AE.172:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 7
+  inversion: 36
   fixed_point: [5, 6, 7, 9, 10, 11, 12, 13, 15]
   year: [2007]
   cipher: false
@@ -1571,6 +1653,7 @@ AE.173:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 7
+  inversion: 38
   fixed_point: [5, 6, 7, 9, 10, 11, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -1590,6 +1673,7 @@ AE.174:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 12
+  inversion: 21
   fixed_point: [5, 6, 7, 9, 10, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -1609,6 +1693,7 @@ AE.175:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 7
+  inversion: 30
   fixed_point: [5, 6, 7, 9, 10, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -1628,6 +1713,7 @@ AE.176:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 22
   fixed_point: [6, 7, 9, 10, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -1647,6 +1733,7 @@ AE.177:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 22
   fixed_point: [5, 6, 9, 10, 11, 12, 13, 15]
   year: [2007]
   cipher: false
@@ -1666,6 +1753,7 @@ AE.178:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 7
+  inversion: 38
   fixed_point: [5, 6, 7, 9, 10, 11, 12, 13, 15]
   year: [2007]
   cipher: false
@@ -1685,6 +1773,7 @@ AE.179:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 18
   fixed_point: [6, 7, 9, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -1704,6 +1793,7 @@ AE.18:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 12
+  inversion: 22
   fixed_point: [7, 9, 10, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -1723,6 +1813,7 @@ AE.180:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 22
   fixed_point: [5, 7, 9, 10, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -1742,6 +1833,7 @@ AE.181:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 14
   fixed_point: [5, 7, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -1761,6 +1853,7 @@ AE.182:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 18
   fixed_point: [5, 7, 9, 10, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -1780,6 +1873,7 @@ AE.183:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 37
   fixed_point: [5, 7, 9, 10, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -1799,6 +1893,7 @@ AE.184:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 19
   fixed_point: [3, 7, 9, 10, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -1818,6 +1913,7 @@ AE.185:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 4
+  inversion: 17
   fixed_point: [5, 7, 9, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -1837,6 +1933,7 @@ AE.186:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 22
   fixed_point: [5, 7, 9, 10, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -1856,6 +1953,7 @@ AE.187:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 4
+  inversion: 15
   fixed_point: [5, 6, 7, 9, 10, 11, 13, 15]
   year: [2007]
   cipher: false
@@ -1875,6 +1973,7 @@ AE.188:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 18
   fixed_point: [5, 6, 7, 9, 11, 12, 13, 15]
   year: [2007]
   cipher: false
@@ -1894,6 +1993,7 @@ AE.189:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 7
+  inversion: 28
   fixed_point: [5, 6, 7, 9, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -1913,6 +2013,7 @@ AE.19:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 12
+  inversion: 16
   fixed_point: [5, 9, 10, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -1932,6 +2033,7 @@ AE.190:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 12
+  inversion: 15
   fixed_point: [5, 6, 7, 9, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -1951,6 +2053,7 @@ AE.191:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 12
+  inversion: 11
   fixed_point: [5, 7, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -1970,6 +2073,7 @@ AE.192:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 7
+  inversion: 16
   fixed_point: [5, 7, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -1989,6 +2093,7 @@ AE.193:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 7
+  inversion: 20
   fixed_point: [5, 7, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -2008,6 +2113,7 @@ AE.194:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 31
   fixed_point: [3, 6, 7, 9, 10, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -2027,6 +2133,7 @@ AE.195:
   absolute_autocorrelation_uniformity: 16
   involution: true
   order: 2
+  inversion: 26
   fixed_point: [5, 7, 9, 10, 11, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -2046,6 +2153,7 @@ AE.196:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 4
+  inversion: 21
   fixed_point: [5, 6, 7, 10, 11, 12, 13, 15]
   year: [2007]
   cipher: false
@@ -2065,6 +2173,7 @@ AE.197:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 10
+  inversion: 19
   fixed_point: [3, 6, 7, 9, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -2084,6 +2193,7 @@ AE.198:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 10
+  inversion: 27
   fixed_point: [5, 6, 7, 9, 10, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -2103,6 +2213,7 @@ AE.199:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 10
+  inversion: 29
   fixed_point: [5, 6, 7, 9, 10, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -2122,6 +2233,7 @@ AE.2:
   absolute_autocorrelation_uniformity: 8
   involution: false
   order: 20
+  inversion: 27
   fixed_point: [5, 6, 10, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -2141,6 +2253,7 @@ AE.20:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 12
+  inversion: 22
   fixed_point: [5, 9, 10, 11, 12, 13, 15]
   year: [2007]
   cipher: false
@@ -2160,6 +2273,7 @@ AE.200:
   absolute_autocorrelation_uniformity: 16
   involution: true
   order: 2
+  inversion: 18
   fixed_point: [6, 7, 9, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -2179,6 +2293,7 @@ AE.201:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 4
+  inversion: 21
   fixed_point: [6, 7, 9, 10, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -2198,6 +2313,7 @@ AE.202:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 21
   fixed_point: [3, 7, 9, 10, 11, 12, 13, 15]
   year: [2007]
   cipher: false
@@ -2217,6 +2333,7 @@ AE.203:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 23
   fixed_point: [3, 7, 9, 10, 11, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -2236,6 +2353,7 @@ AE.204:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 4
+  inversion: 15
   fixed_point: [5, 6, 7, 9, 10, 11, 12, 14]
   year: [2007]
   cipher: false
@@ -2255,6 +2373,7 @@ AE.205:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 7
+  inversion: 20
   fixed_point: [5, 6, 7, 9, 10, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -2274,6 +2393,7 @@ AE.206:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 7
+  inversion: 22
   fixed_point: [5, 6, 7, 9, 10, 11, 12, 13, 15]
   year: [2007]
   cipher: false
@@ -2293,6 +2413,7 @@ AE.207:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 7
+  inversion: 34
   fixed_point: [5, 6, 7, 9, 10, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -2312,6 +2433,7 @@ AE.208:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 7
+  inversion: 30
   fixed_point: [5, 6, 7, 9, 10, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -2331,6 +2453,7 @@ AE.209:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 12
+  inversion: 19
   fixed_point: [5, 6, 7, 9, 10, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -2350,6 +2473,7 @@ AE.21:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 14
+  inversion: 25
   fixed_point: [5, 9, 10, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -2369,6 +2493,7 @@ AE.210:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 12
+  inversion: 23
   fixed_point: [5, 6, 7, 9, 10, 11, 12, 13, 15]
   year: [2007]
   cipher: false
@@ -2388,6 +2513,7 @@ AE.211:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 10
+  inversion: 29
   fixed_point: [3, 6, 7, 9, 10, 11, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -2407,6 +2533,7 @@ AE.212:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 7
+  inversion: 20
   fixed_point: [5, 7, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -2426,6 +2553,7 @@ AE.213:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 10
+  inversion: 23
   fixed_point: [5, 6, 7, 9, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -2445,6 +2573,7 @@ AE.214:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 10
+  inversion: 15
   fixed_point: [5, 7, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -2464,6 +2593,7 @@ AE.215:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 25
   fixed_point: [5, 7, 9, 10, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -2483,6 +2613,7 @@ AE.216:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 27
   fixed_point: [5, 7, 9, 10, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -2502,6 +2633,7 @@ AE.217:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 24
   fixed_point: [3, 6, 7, 9, 10, 11, 12, 13, 15]
   year: [2007]
   cipher: false
@@ -2521,6 +2653,7 @@ AE.218:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 7
+  inversion: 18
   fixed_point: [5, 6, 7, 9, 10, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -2540,6 +2673,7 @@ AE.219:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 7
+  inversion: 32
   fixed_point: [5, 6, 7, 9, 10, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -2559,6 +2693,7 @@ AE.22:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 12
+  inversion: 16
   fixed_point: [7, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -2578,6 +2713,7 @@ AE.220:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 8
   fixed_point: [6, 7, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -2597,6 +2733,7 @@ AE.221:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 10
+  inversion: 5
   fixed_point: [5, 6, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -2616,6 +2753,7 @@ AE.222:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 10
+  inversion: 9
   fixed_point: [6, 7, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -2635,6 +2773,7 @@ AE.223:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 25
   fixed_point: [3, 5, 6, 7, 9, 10, 11, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -2654,6 +2793,7 @@ AE.224:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 3
+  inversion: 22
   fixed_point: [3, 5, 6, 7, 9, 10, 11, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -2673,6 +2813,7 @@ AE.225:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 20
   fixed_point: [3, 6, 7, 9, 10, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -2692,6 +2833,7 @@ AE.226:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 7
+  inversion: 10
   fixed_point: [5, 6, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -2711,6 +2853,7 @@ AE.227:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 10
+  inversion: 33
   fixed_point: [5, 6, 7, 9, 10, 11, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -2730,6 +2873,7 @@ AE.228:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 3
+  inversion: 10
   fixed_point: [5, 6, 7, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -2749,6 +2893,7 @@ AE.229:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 17
   fixed_point: [5, 6, 7, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -2768,6 +2913,7 @@ AE.23:
   absolute_autocorrelation_uniformity: 8
   involution: false
   order: 8
+  inversion: 37
   fixed_point: [5, 6, 7, 9, 11, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -2787,6 +2933,7 @@ AE.230:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 4
+  inversion: 12
   fixed_point: [5, 6, 7, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -2806,6 +2953,7 @@ AE.231:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 5
+  inversion: 12
   fixed_point: [3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -2825,6 +2973,7 @@ AE.232:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 20
   fixed_point: [5, 7, 9, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -2844,6 +2993,7 @@ AE.233:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 18
   fixed_point: [5, 6, 7, 9, 10, 11, 13, 15]
   year: [2007]
   cipher: false
@@ -2863,6 +3013,7 @@ AE.234:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 23
   fixed_point: [5, 7, 9, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -2882,6 +3033,7 @@ AE.235:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 7
+  inversion: 18
   fixed_point: [5, 7, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -2901,6 +3053,7 @@ AE.236:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 7
+  inversion: 10
   fixed_point: [5, 7, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -2920,6 +3073,7 @@ AE.237:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 17
   fixed_point: [3, 7, 9, 10, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -2939,6 +3093,7 @@ AE.238:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 4
+  inversion: 19
   fixed_point: [5, 7, 9, 10, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -2958,6 +3113,7 @@ AE.239:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 12
+  inversion: 17
   fixed_point: [5, 6, 7, 9, 10, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -2977,6 +3133,7 @@ AE.24:
   absolute_autocorrelation_uniformity: 8
   involution: false
   order: 4
+  inversion: 28
   fixed_point: [5, 7, 9, 10, 11, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -2996,6 +3153,7 @@ AE.240:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 10
+  inversion: 7
   fixed_point: [5, 7, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -3015,6 +3173,7 @@ AE.241:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 15
   fixed_point: [5, 6, 7, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -3034,6 +3193,7 @@ AE.242:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 11
   fixed_point: [5, 6, 7, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -3053,6 +3213,7 @@ AE.243:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 25
   fixed_point: [5, 7, 9, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -3072,6 +3233,7 @@ AE.244:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 7
+  inversion: 18
   fixed_point: [5, 7, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -3091,6 +3253,7 @@ AE.245:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 4
+  inversion: 14
   fixed_point: [3, 5, 6, 7, 10, 12, 13, 15]
   year: [2007]
   cipher: false
@@ -3110,6 +3273,7 @@ AE.246:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 12
+  inversion: 13
   fixed_point: [3, 5, 6, 7, 9, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -3129,6 +3293,7 @@ AE.247:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 4
+  inversion: 11
   fixed_point: [3, 5, 6, 7, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -3148,6 +3313,7 @@ AE.248:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 4
+  inversion: 19
   fixed_point: [6, 7, 9, 10, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -3167,6 +3333,7 @@ AE.249:
   absolute_autocorrelation_uniformity: 16
   involution: true
   order: 2
+  inversion: 16
   fixed_point: [5, 7, 9, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -3186,6 +3353,7 @@ AE.25:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 9
+  inversion: 34
   fixed_point: [5, 7, 9, 10, 11, 12, 15]
   year: [2007]
   cipher: false
@@ -3205,6 +3373,7 @@ AE.250:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 15
+  inversion: 14
   fixed_point: [5, 6, 7, 9, 11, 12, 13, 15]
   year: [2007]
   cipher: false
@@ -3224,6 +3393,7 @@ AE.251:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 15
+  inversion: 16
   fixed_point: [5, 6, 7, 9, 11, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -3243,6 +3413,7 @@ AE.252:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 4
+  inversion: 18
   fixed_point: [3, 5, 6, 7, 11, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -3262,6 +3433,7 @@ AE.253:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 15
+  inversion: 10
   fixed_point: [5, 6, 7, 9, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -3281,6 +3453,7 @@ AE.254:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 15
+  inversion: 12
   fixed_point: [5, 6, 7, 9, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -3300,6 +3473,7 @@ AE.255:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 4
+  inversion: 14
   fixed_point: [3, 5, 6, 7, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -3319,6 +3493,7 @@ AE.256:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 14
   fixed_point: [5, 7, 9, 10, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -3338,6 +3513,7 @@ AE.257:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 16
   fixed_point: [5, 7, 9, 10, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -3357,6 +3533,7 @@ AE.258:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 7
+  inversion: 14
   fixed_point: [7, 8, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -3376,6 +3553,7 @@ AE.259:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 16
   fixed_point: [3, 6, 7, 9, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -3395,6 +3573,7 @@ AE.26:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 9
+  inversion: 34
   fixed_point: [5, 7, 9, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -3414,6 +3593,7 @@ AE.260:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 10
   fixed_point: [5, 6, 7, 9, 10, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -3433,6 +3613,7 @@ AE.261:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 10
+  inversion: 13
   fixed_point: [5, 6, 7, 9, 10, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -3452,6 +3633,7 @@ AE.262:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 10
+  inversion: 15
   fixed_point: [5, 6, 7, 9, 10, 11, 12, 13, 15]
   year: [2007]
   cipher: false
@@ -3471,6 +3653,7 @@ AE.263:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 12
+  inversion: 15
   fixed_point: [3, 5, 6, 7, 10, 11, 12, 13, 15]
   year: [2007]
   cipher: false
@@ -3490,6 +3673,7 @@ AE.264:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 12
+  inversion: 9
   fixed_point: [3, 5, 6, 7, 10, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -3509,6 +3693,7 @@ AE.265:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 4
+  inversion: 18
   fixed_point: [3, 5, 6, 7, 9, 10, 11, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -3528,6 +3713,7 @@ AE.266:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 14
   fixed_point: [3, 6, 7, 9, 10, 11, 12, 13, 15]
   year: [2007]
   cipher: false
@@ -3547,6 +3733,7 @@ AE.267:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 10
+  inversion: 11
   fixed_point: [5, 6, 7, 9, 10, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -3566,6 +3753,7 @@ AE.268:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 10
+  inversion: 17
   fixed_point: [5, 6, 7, 9, 10, 11, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -3585,6 +3773,7 @@ AE.269:
   absolute_autocorrelation_uniformity: 16
   involution: true
   order: 2
+  inversion: 10
   fixed_point: [5, 7, 9, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -3604,6 +3793,7 @@ AE.27:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 9
+  inversion: 34
   fixed_point: [5, 7, 9, 10, 11, 13, 14]
   year: [2007]
   cipher: false
@@ -3623,6 +3813,7 @@ AE.270:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 4
+  inversion: 12
   fixed_point: [3, 5, 6, 7, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -3642,6 +3833,7 @@ AE.271:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 4
+  inversion: 17
   fixed_point: [6, 7, 9, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -3661,6 +3853,7 @@ AE.272:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 4
+  inversion: 8
   fixed_point: [3, 5, 6, 7, 9, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -3680,6 +3873,7 @@ AE.273:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 3
+  inversion: 8
   fixed_point: [3, 6, 7, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -3699,6 +3893,7 @@ AE.274:
   absolute_autocorrelation_uniformity: 16
   involution: true
   order: 2
+  inversion: 11
   fixed_point: [5, 6, 7, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -3718,6 +3913,7 @@ AE.275:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 9
   fixed_point: [3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -3737,6 +3933,7 @@ AE.276:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 13
   fixed_point: [5, 7, 8, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -3756,6 +3953,7 @@ AE.277:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 4
+  inversion: 8
   fixed_point: [5, 7, 8, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -3775,6 +3973,7 @@ AE.278:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 4
+  inversion: 6
   fixed_point: [3, 5, 6, 7, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -3794,6 +3993,7 @@ AE.279:
   absolute_autocorrelation_uniformity: 16
   involution: true
   order: 2
+  inversion: 7
   fixed_point: [5, 7, 8, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -3813,6 +4013,7 @@ AE.28:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 9
+  inversion: 24
   fixed_point: [7, 9, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -3832,6 +4033,7 @@ AE.280:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 3
   fixed_point: [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -3851,6 +4053,7 @@ AE.281:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 4
+  inversion: 5
   fixed_point: [3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -3870,6 +4073,7 @@ AE.282:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 10
+  inversion: 7
   fixed_point: [5, 6, 7, 9, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -3889,6 +4093,7 @@ AE.283:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 12
+  inversion: 7
   fixed_point: [3, 5, 6, 7, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -3908,6 +4113,7 @@ AE.284:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 7
   fixed_point: [5, 7, 8, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -3927,6 +4133,7 @@ AE.285:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 4
+  inversion: 10
   fixed_point: [5, 6, 7, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -3946,6 +4153,7 @@ AE.286:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 5
+  inversion: 4
   fixed_point: [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -3965,6 +4173,7 @@ AE.287:
   absolute_autocorrelation_uniformity: 16
   involution: true
   order: 2
+  inversion: 17
   fixed_point: [3, 5, 6, 7, 9, 10, 11, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -3984,6 +4193,7 @@ AE.288:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 6
   fixed_point: [3, 6, 7, 9, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -4003,6 +4213,7 @@ AE.289:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 3
+  inversion: 6
   fixed_point: [3, 6, 8, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -4022,6 +4233,7 @@ AE.29:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 9
+  inversion: 30
   fixed_point: [7, 9, 10, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -4041,6 +4253,7 @@ AE.290:
   absolute_autocorrelation_uniformity: 16
   involution: true
   order: 2
+  inversion: 4
   fixed_point: [3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -4060,6 +4273,7 @@ AE.291:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 3
   fixed_point: [3, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -4079,6 +4293,7 @@ AE.292:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 3
+  inversion: 2
   fixed_point: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -4098,6 +4313,7 @@ AE.293:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 23
   fixed_point: [5, 7, 9, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -4117,6 +4333,7 @@ AE.294:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 4
+  inversion: 10
   fixed_point: [3, 5, 6, 7, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -4136,6 +4353,7 @@ AE.295:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 14
   fixed_point: [5, 7, 9, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -4155,6 +4373,7 @@ AE.296:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 11
   fixed_point: [5, 7, 8, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -4174,6 +4393,7 @@ AE.297:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 3
+  inversion: 4
   fixed_point: [3, 7, 8, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -4193,6 +4413,7 @@ AE.298:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 4
+  inversion: 6
   fixed_point: [5, 7, 8, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -4212,6 +4433,7 @@ AE.299:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 4
+  inversion: 3
   fixed_point: [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -4231,6 +4453,7 @@ AE.3:
   absolute_autocorrelation_uniformity: 8
   involution: false
   order: 6
+  inversion: 47
   fixed_point: [5, 6, 7, 10, 11, 13, 14]
   year: [2007]
   cipher: false
@@ -4250,6 +4473,7 @@ AE.30:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 39
   fixed_point: [5, 7, 9, 10, 11, 12, 13, 15]
   year: [2007]
   cipher: false
@@ -4269,6 +4493,7 @@ AE.300:
   absolute_autocorrelation_uniformity: 16
   involution: true
   order: 2
+  inversion: 1
   fixed_point: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -4288,6 +4513,7 @@ AE.301:
   absolute_autocorrelation_uniformity: 16
   involution: true
   order: 2
+  inversion: 2
   fixed_point: [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -4307,6 +4533,7 @@ AE.302:
   absolute_autocorrelation_uniformity: 16
   involution: true
   order: 1
+  inversion: 0
   fixed_point: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -4326,6 +4553,7 @@ AE.31:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 4
+  inversion: 18
   fixed_point: [5, 7, 9, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -4345,6 +4573,7 @@ AE.32:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 9
+  inversion: 32
   fixed_point: [5, 7, 9, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -4364,6 +4593,7 @@ AE.33:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 9
+  inversion: 34
   fixed_point: [5, 7, 9, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -4383,6 +4613,7 @@ AE.34:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 14
+  inversion: 49
   fixed_point: [6, 7, 9, 10, 11, 13, 14]
   year: [2007]
   cipher: false
@@ -4402,6 +4633,7 @@ AE.35:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 10
+  inversion: 34
   fixed_point: [5, 7, 9, 10, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -4421,6 +4653,7 @@ AE.36:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 10
+  inversion: 36
   fixed_point: [5, 7, 9, 10, 11, 14, 15]
   year: [2007]
   cipher: false
@@ -4440,6 +4673,7 @@ AE.37:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 14
+  inversion: 35
   fixed_point: [6, 7, 9, 10, 11, 13, 14]
   year: [2007]
   cipher: false
@@ -4459,6 +4693,7 @@ AE.38:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 14
+  inversion: 27
   fixed_point: [5, 6, 9, 10, 11, 14, 15]
   year: [2007]
   cipher: false
@@ -4478,6 +4713,7 @@ AE.39:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 14
+  inversion: 29
   fixed_point: [5, 6, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -4497,6 +4733,7 @@ AE.4:
   absolute_autocorrelation_uniformity: 8
   involution: false
   order: 3
+  inversion: 22
   fixed_point: [6, 7, 9, 10, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -4516,6 +4753,7 @@ AE.40:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 10
+  inversion: 40
   fixed_point: [6, 7, 9, 10, 11, 13, 15]
   year: [2007]
   cipher: false
@@ -4535,6 +4773,7 @@ AE.41:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 12
+  inversion: 24
   fixed_point: [7, 9, 10, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -4554,6 +4793,7 @@ AE.42:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 12
+  inversion: 18
   fixed_point: [7, 9, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -4573,6 +4813,7 @@ AE.43:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 14
+  inversion: 27
   fixed_point: [5, 9, 10, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -4592,6 +4833,7 @@ AE.44:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 14
+  inversion: 29
   fixed_point: [5, 9, 10, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -4611,6 +4853,7 @@ AE.45:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 14
+  inversion: 21
   fixed_point: [5, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -4630,6 +4873,7 @@ AE.46:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 37
   fixed_point: [5, 6, 7, 9, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -4649,6 +4893,7 @@ AE.47:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 35
   fixed_point: [5, 6, 7, 9, 11, 12, 13, 15]
   year: [2007]
   cipher: false
@@ -4668,6 +4913,7 @@ AE.48:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 14
+  inversion: 31
   fixed_point: [5, 7, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -4687,6 +4933,7 @@ AE.49:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 15
+  inversion: 28
   fixed_point: [5, 6, 7, 9, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -4706,6 +4953,7 @@ AE.5:
   absolute_autocorrelation_uniformity: 8
   involution: false
   order: 3
+  inversion: 26
   fixed_point: [6, 7, 9, 11, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -4725,6 +4973,7 @@ AE.50:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 15
+  inversion: 28
   fixed_point: [5, 7, 9, 10, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -4744,6 +4993,7 @@ AE.51:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 31
   fixed_point: [5, 7, 9, 10, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -4763,6 +5013,7 @@ AE.52:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 39
   fixed_point: [5, 7, 9, 10, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -4782,6 +5033,7 @@ AE.53:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 41
   fixed_point: [5, 7, 9, 10, 11, 12, 13, 15]
   year: [2007]
   cipher: false
@@ -4801,6 +5053,7 @@ AE.54:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 4
+  inversion: 24
   fixed_point: [5, 7, 9, 10, 11, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -4820,6 +5073,7 @@ AE.55:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 4
+  inversion: 20
   fixed_point: [6, 7, 9, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -4839,6 +5093,7 @@ AE.56:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 4
+  inversion: 16
   fixed_point: [5, 6, 9, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -4858,6 +5113,7 @@ AE.57:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 39
   fixed_point: [5, 7, 9, 10, 11, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -4877,6 +5133,7 @@ AE.58:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 33
   fixed_point: [5, 7, 9, 10, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -4896,6 +5153,7 @@ AE.59:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 35
   fixed_point: [5, 7, 9, 10, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -4915,6 +5173,7 @@ AE.6:
   absolute_autocorrelation_uniformity: 8
   involution: false
   order: 3
+  inversion: 26
   fixed_point: [6, 7, 9, 10, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -4934,6 +5193,7 @@ AE.60:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 37
   fixed_point: [5, 7, 9, 10, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -4953,6 +5213,7 @@ AE.61:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 15
+  inversion: 26
   fixed_point: [5, 6, 7, 10, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -4972,6 +5233,7 @@ AE.62:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 15
+  inversion: 20
   fixed_point: [5, 6, 9, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -4991,6 +5253,7 @@ AE.63:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 15
+  inversion: 26
   fixed_point: [5, 7, 9, 10, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -5010,6 +5273,7 @@ AE.64:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 15
+  inversion: 28
   fixed_point: [5, 6, 7, 9, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -5029,6 +5293,7 @@ AE.65:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 31
   fixed_point: [5, 7, 9, 10, 11, 12, 13, 15]
   year: [2007]
   cipher: false
@@ -5048,6 +5313,7 @@ AE.66:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 31
   fixed_point: [5, 7, 9, 10, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -5067,6 +5333,7 @@ AE.67:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 39
   fixed_point: [5, 7, 9, 10, 11, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -5086,6 +5353,7 @@ AE.68:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 14
+  inversion: 25
   fixed_point: [7, 9, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -5105,6 +5373,7 @@ AE.69:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 15
+  inversion: 28
   fixed_point: [3, 6, 7, 9, 11, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -5124,6 +5393,7 @@ AE.7:
   absolute_autocorrelation_uniformity: 8
   involution: false
   order: 6
+  inversion: 31
   fixed_point: [6, 7, 9, 10, 12, 13, 15]
   year: [2007]
   cipher: false
@@ -5143,6 +5413,7 @@ AE.70:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 4
+  inversion: 20
   fixed_point: [5, 7, 9, 10, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -5162,6 +5433,7 @@ AE.71:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 15
+  inversion: 26
   fixed_point: [5, 7, 9, 10, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -5181,6 +5453,7 @@ AE.72:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 15
+  inversion: 26
   fixed_point: [5, 6, 9, 10, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -5200,6 +5473,7 @@ AE.73:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 4
+  inversion: 16
   fixed_point: [5, 7, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -5219,6 +5493,7 @@ AE.74:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 14
+  inversion: 23
   fixed_point: [7, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -5238,6 +5513,7 @@ AE.75:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 29
   fixed_point: [5, 7, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -5257,6 +5533,7 @@ AE.76:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 15
+  inversion: 18
   fixed_point: [5, 7, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -5276,6 +5553,7 @@ AE.77:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 15
+  inversion: 24
   fixed_point: [5, 7, 9, 10, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -5295,6 +5573,7 @@ AE.78:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 15
+  inversion: 28
   fixed_point: [3, 6, 7, 9, 11, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -5314,6 +5593,7 @@ AE.79:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 29
   fixed_point: [5, 7, 9, 10, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -5333,6 +5613,7 @@ AE.8:
   absolute_autocorrelation_uniformity: 8
   involution: false
   order: 20
+  inversion: 31
   fixed_point: [5, 7, 10, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -5352,6 +5633,7 @@ AE.80:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 29
   fixed_point: [5, 7, 9, 10, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -5371,6 +5653,7 @@ AE.81:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 33
   fixed_point: [5, 7, 9, 10, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -5390,6 +5673,7 @@ AE.82:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 43
   fixed_point: [5, 7, 9, 10, 11, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -5409,6 +5693,7 @@ AE.83:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 37
   fixed_point: [5, 7, 9, 10, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -5428,6 +5713,7 @@ AE.84:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 17
   fixed_point: [7, 9, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -5447,6 +5733,7 @@ AE.85:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 27
   fixed_point: [5, 7, 9, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -5466,6 +5753,7 @@ AE.86:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 25
   fixed_point: [5, 7, 9, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -5485,6 +5773,7 @@ AE.87:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 43
   fixed_point: [5, 6, 7, 9, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -5504,6 +5793,7 @@ AE.88:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 15
+  inversion: 24
   fixed_point: [5, 6, 9, 10, 11, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -5523,6 +5813,7 @@ AE.89:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 19
   fixed_point: [6, 7, 9, 10, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -5542,6 +5833,7 @@ AE.9:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 14
+  inversion: 41
   fixed_point: [5, 6, 7, 10, 11, 13, 15]
   year: [2007]
   cipher: false
@@ -5561,6 +5853,7 @@ AE.90:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 26
   fixed_point: [6, 7, 9, 10, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -5580,6 +5873,7 @@ AE.91:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 18
   fixed_point: [5, 6, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -5599,6 +5893,7 @@ AE.92:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 27
   fixed_point: [5, 7, 10, 11, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -5618,6 +5913,7 @@ AE.93:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 14
+  inversion: 27
   fixed_point: [7, 9, 10, 12, 13, 14, 15]
   year: [2007]
   cipher: false
@@ -5637,6 +5933,7 @@ AE.94:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 14
+  inversion: 33
   fixed_point: [7, 9, 10, 11, 12, 13, 15]
   year: [2007]
   cipher: false
@@ -5656,6 +5953,7 @@ AE.95:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 14
+  inversion: 35
   fixed_point: [7, 9, 10, 11, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -5675,6 +5973,7 @@ AE.96:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 36
   fixed_point: [3, 6, 7, 9, 10, 11, 13, 14]
   year: [2007]
   cipher: false
@@ -5694,6 +5993,7 @@ AE.97:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 8
+  inversion: 31
   fixed_point: [5, 7, 9, 10, 11, 12, 14, 15]
   year: [2007]
   cipher: false
@@ -5713,6 +6013,7 @@ AE.98:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 4
+  inversion: 22
   fixed_point: [5, 6, 7, 9, 11, 12, 13, 15]
   year: [2007]
   cipher: false
@@ -5732,6 +6033,7 @@ AE.99:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 15
+  inversion: 30
   fixed_point: [5, 7, 9, 10, 11, 12, 13, 14]
   year: [2007]
   cipher: false
@@ -5751,6 +6053,7 @@ GOLDEN.S0:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 14
+  inversion: 43
   fixed_point: [0, 7]
   year: [2011]
   cipher: false  # not used in a cipher
@@ -5761,61 +6064,16 @@ GOLDEN.S0:
   note: "Research construct; ideal cryptographic properties per Saarinen SAC 2011; not used in a cipher"
 
 GOLDEN.S1:
-  lookup_table: [0, 3, 5, 8, 6, 12, 11, 7, 9, 14, 10, 13, 15, 2, 1, 4]
-  algebraic_degree: [3, 3, 3, 3]
-  nonlinearity: 4
-  differential_uniformity: 4
-  absolute_linear_uniformity: 4
-  boomerang_uniformity: 10
-  absolute_autocorrelation_uniformity: 16
-  involution: false
-  order: 40
-  fixed_point: [0, 7, 10]
-  year: [2011]
-  cipher: false  # not used in a cipher
-  differential_branch_number: 3
-  linear_branch_number: 2
-  source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Golden_S1.txt"
-  origin: "Saarinen; Cryptographic Analysis of All 4x4-Bit S-Boxes; SAC 2011; IACR ePrint 2011/218"
-  note: "Research construct; ideal cryptographic properties per Saarinen SAC 2011; not used in a cipher The same look-up table is catalogued as SERPENTTYPE.S4; SERPENTTYPE.S4 is the earlier publication."
+  canonical_name: []
+  alias: SERPENTTYPE.S4
 
 GOLDEN.S2:
-  lookup_table: [0, 3, 5, 8, 6, 10, 15, 4, 14, 13, 9, 2, 1, 7, 12, 11]
-  algebraic_degree: [3, 3, 3, 3]
-  nonlinearity: 4
-  differential_uniformity: 4
-  absolute_linear_uniformity: 4
-  boomerang_uniformity: 10
-  absolute_autocorrelation_uniformity: 16
-  involution: false
-  order: 10
-  fixed_point: [0]
-  year: [2011]
-  cipher: false  # not used in a cipher
-  differential_branch_number: 3
-  linear_branch_number: 2
-  source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Golden_S2.txt"
-  origin: "Saarinen; Cryptographic Analysis of All 4x4-Bit S-Boxes; SAC 2011; IACR ePrint 2011/218"
-  note: "Research construct; ideal cryptographic properties per Saarinen SAC 2011; not used in a cipher The same look-up table is catalogued as SERPENTTYPE.S3; SERPENTTYPE.S3 is the earlier publication."
+  canonical_name: []
+  alias: SERPENTTYPE.S3
 
 GOLDEN.S3:
-  lookup_table: [0, 3, 5, 8, 6, 12, 11, 7, 10, 4, 9, 14, 15, 1, 2, 13]
-  algebraic_degree: [3, 3, 3, 3]
-  nonlinearity: 4
-  differential_uniformity: 4
-  absolute_linear_uniformity: 4
-  boomerang_uniformity: 10
-  absolute_autocorrelation_uniformity: 16
-  involution: false
-  order: 14
-  fixed_point: [0, 7]
-  year: [2011]
-  cipher: false  # not used in a cipher
-  differential_branch_number: 3
-  linear_branch_number: 2
-  source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Golden_S3.txt"
-  origin: "Saarinen; Cryptographic Analysis of All 4x4-Bit S-Boxes; SAC 2011; IACR ePrint 2011/218"
-  note: "Research construct; ideal cryptographic properties per Saarinen SAC 2011; not used in a cipher The same look-up table is catalogued as SERPENTTYPE.S5; SERPENTTYPE.S5 is the earlier publication."
+  canonical_name: []
+  alias: SERPENTTYPE.S5
 
 OPTIMAL.S0:
   lookup_table: [0, 1, 2, 13, 4, 7, 15, 6, 8, 11, 12, 9, 3, 14, 10, 5]
@@ -5827,6 +6085,7 @@ OPTIMAL.S0:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 20
+  inversion: 40
   fixed_point: [0, 1, 2, 4, 8]
   year: [2007]
   cipher: false  # not used in a cipher
@@ -5845,6 +6104,7 @@ OPTIMAL.S1:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 20
+  inversion: 36
   fixed_point: [0, 1, 2, 4, 8]
   cipher: false  # not used in a cipher
   differential_branch_number: 2
@@ -5862,6 +6122,7 @@ OPTIMAL.S10:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 28
+  inversion: 41
   fixed_point: [0, 1, 2, 4, 8]
   cipher: false  # not used in a cipher
   differential_branch_number: 2
@@ -5879,6 +6140,7 @@ OPTIMAL.S11:
   absolute_autocorrelation_uniformity: 8
   involution: false
   order: 18
+  inversion: 43
   fixed_point: [0, 1, 2, 4, 8]
   cipher: false  # not used in a cipher
   differential_branch_number: 2
@@ -5896,6 +6158,7 @@ OPTIMAL.S12:
   absolute_autocorrelation_uniformity: 8
   involution: false
   order: 12
+  inversion: 43
   fixed_point: [0, 1, 2, 4, 8]
   cipher: false  # not used in a cipher
   differential_branch_number: 2
@@ -5913,6 +6176,7 @@ OPTIMAL.S13:
   absolute_autocorrelation_uniformity: 8
   involution: false
   order: 11
+  inversion: 44
   fixed_point: [0, 1, 2, 4, 8]
   cipher: false  # not used in a cipher
   differential_branch_number: 2
@@ -5930,6 +6194,7 @@ OPTIMAL.S14:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 10
+  inversion: 43
   fixed_point: [0, 1, 2, 4, 8, 11]
   cipher: false  # not used in a cipher
   differential_branch_number: 2
@@ -5947,6 +6212,7 @@ OPTIMAL.S15:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 4
+  inversion: 45
   fixed_point: [0, 1, 2, 4, 8, 11]
   cipher: false  # not used in a cipher
   differential_branch_number: 2
@@ -5964,6 +6230,7 @@ OPTIMAL.S2:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 11
+  inversion: 40
   fixed_point: [0, 1, 2, 4, 8]
   cipher: false  # not used in a cipher
   differential_branch_number: 2
@@ -5981,6 +6248,7 @@ OPTIMAL.S3:
   absolute_autocorrelation_uniformity: 8
   involution: false
   order: 28
+  inversion: 37
   fixed_point: [0, 1, 2, 4, 8]
   cipher: false  # not used in a cipher
   differential_branch_number: 2
@@ -5998,6 +6266,7 @@ OPTIMAL.S4:
   absolute_autocorrelation_uniformity: 8
   involution: false
   order: 21
+  inversion: 42
   fixed_point: [0, 1, 2, 4, 8, 11]
   cipher: false  # not used in a cipher
   differential_branch_number: 2
@@ -6015,6 +6284,7 @@ OPTIMAL.S5:
   absolute_autocorrelation_uniformity: 8
   involution: false
   order: 12
+  inversion: 42
   fixed_point: [0, 1, 2, 4, 8]
   cipher: false  # not used in a cipher
   differential_branch_number: 2
@@ -6032,6 +6302,7 @@ OPTIMAL.S6:
   absolute_autocorrelation_uniformity: 8
   involution: false
   order: 28
+  inversion: 43
   fixed_point: [0, 1, 2, 4, 8]
   cipher: false  # not used in a cipher
   differential_branch_number: 2
@@ -6049,6 +6320,7 @@ OPTIMAL.S7:
   absolute_autocorrelation_uniformity: 8
   involution: false
   order: 12
+  inversion: 46
   fixed_point: [0, 1, 2, 4, 8, 11]
   cipher: false  # not used in a cipher
   differential_branch_number: 2
@@ -6066,6 +6338,7 @@ OPTIMAL.S8:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 11
+  inversion: 38
   fixed_point: [0, 1, 2, 4, 8]
   cipher: false  # not used in a cipher
   differential_branch_number: 2
@@ -6083,6 +6356,7 @@ OPTIMAL.S9:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 30
+  inversion: 37
   fixed_point: [0, 1, 2, 4, 8]
   cipher: false  # not used in a cipher
   differential_branch_number: 2
@@ -6100,6 +6374,7 @@ REC.0:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 12
+  inversion: 62
   fixed_point: []
   cipher: false  # not used in a cipher
   differential_branch_number: 2
@@ -6118,6 +6393,7 @@ SERPENTTYPE.S0:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 20
+  inversion: 42
   fixed_point: [0, 15]
   year: [1998]
   cipher: false  # not used in a cipher
@@ -6125,7 +6401,7 @@ SERPENTTYPE.S0:
   linear_branch_number: 2
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Serpent_type_S0.txt"
   origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN — a Platform for Evaluation, Implementation, and Generation of S-boxes; TOSC 2019; URL: https://eprint.iacr.org/2019/209"
-  note: "Serpent-type SBox (PEIGEN); distinct AEC from Serpent's SBox"
+  note: "Serpent-type SBox (PEIGEN); distinct AEC from Serpent's SBox The same table as PRESENT up to XOR of a constant into the input and the output, so one circuit serves either once the constants are folded into the layers around it. Neither specification says so; it was established by comparing the tables."
 
 SERPENTTYPE.S1:
   lookup_table: [0, 3, 5, 8, 6, 9, 10, 7, 11, 12, 14, 2, 1, 15, 13, 4]
@@ -6137,6 +6413,7 @@ SERPENTTYPE.S1:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 24
+  inversion: 38
   fixed_point: [0, 7]
   year: [1998]
   cipher: false  # not used in a cipher
@@ -6156,6 +6433,7 @@ SERPENTTYPE.S10:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 20
+  inversion: 44
   fixed_point: [0, 11]
   year: [1998]
   cipher: false  # not used in a cipher
@@ -6175,6 +6453,7 @@ SERPENTTYPE.S11:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 7
+  inversion: 44
   fixed_point: [0, 11]
   year: [1998]
   cipher: false  # not used in a cipher
@@ -6194,6 +6473,7 @@ SERPENTTYPE.S12:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 13
+  inversion: 48
   fixed_point: [0, 9, 10]
   year: [1998]
   cipher: false  # not used in a cipher
@@ -6213,6 +6493,7 @@ SERPENTTYPE.S13:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 84
+  inversion: 41
   fixed_point: [0, 9]
   year: [1998]
   cipher: false  # not used in a cipher
@@ -6232,6 +6513,7 @@ SERPENTTYPE.S14:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 28
+  inversion: 42
   fixed_point: [0, 11, 13]
   year: [1998]
   cipher: false  # not used in a cipher
@@ -6251,6 +6533,7 @@ SERPENTTYPE.S15:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 20
+  inversion: 51
   fixed_point: [0, 12]
   year: [1998]
   cipher: false  # not used in a cipher
@@ -6270,6 +6553,7 @@ SERPENTTYPE.S16:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 20
+  inversion: 54
   fixed_point: [0, 7]
   year: [1998]
   cipher: false  # not used in a cipher
@@ -6289,6 +6573,7 @@ SERPENTTYPE.S17:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 12
+  inversion: 44
   fixed_point: [0, 12]
   year: [1998]
   cipher: false  # not used in a cipher
@@ -6308,6 +6593,7 @@ SERPENTTYPE.S18:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 13
+  inversion: 52
   fixed_point: [0, 6, 9]
   year: [1998]
   cipher: false  # not used in a cipher
@@ -6327,6 +6613,7 @@ SERPENTTYPE.S19:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 45
+  inversion: 44
   fixed_point: [0, 15]
   year: [1998]
   cipher: false  # not used in a cipher
@@ -6346,6 +6633,7 @@ SERPENTTYPE.S2:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 15
+  inversion: 36
   fixed_point: [0]
   year: [1998]
   cipher: false  # not used in a cipher
@@ -6365,6 +6653,7 @@ SERPENTTYPE.S3:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 10
+  inversion: 47
   fixed_point: [0]
   year: [1998]
   cipher: false  # not used in a cipher
@@ -6372,7 +6661,7 @@ SERPENTTYPE.S3:
   linear_branch_number: 2
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Serpent_type_S3.txt"
   origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN — a Platform for Evaluation, Implementation, and Generation of S-boxes; TOSC 2019; URL: https://eprint.iacr.org/2019/209"
-  note: "Serpent-type SBox (PEIGEN); distinct AEC from Serpent's SBox The same look-up table is catalogued as GOLDEN.S2."
+  note: "Serpent-type SBox (PEIGEN); distinct AEC from Serpent's SBox The same look-up table is catalogued as GOLDEN.S2. GOLDEN.S2 is the same SBox under a second name and reads through to this entry; both are representatives rather than a cipher's own SBox, so the later key is merged here rather than kept beside it."
 
 SERPENTTYPE.S4:
   lookup_table: [0, 3, 5, 8, 6, 12, 11, 7, 9, 14, 10, 13, 15, 2, 1, 4]
@@ -6384,6 +6673,7 @@ SERPENTTYPE.S4:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 40
+  inversion: 47
   fixed_point: [0, 7, 10]
   year: [1998]
   cipher: false  # not used in a cipher
@@ -6391,7 +6681,7 @@ SERPENTTYPE.S4:
   linear_branch_number: 2
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Serpent_type_S4.txt"
   origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN — a Platform for Evaluation, Implementation, and Generation of S-boxes; TOSC 2019; URL: https://eprint.iacr.org/2019/209"
-  note: "Serpent-type SBox (PEIGEN); distinct AEC from Serpent's SBox The same look-up table is catalogued as GOLDEN.S1."
+  note: "Serpent-type SBox (PEIGEN); distinct AEC from Serpent's SBox The same look-up table is catalogued as GOLDEN.S1. GOLDEN.S1 is the same SBox under a second name and reads through to this entry; both are representatives rather than a cipher's own SBox, so the later key is merged here rather than kept beside it. The same table as YARARA up to XOR of a constant into the input and the output, so one circuit serves either once the constants are folded into the layers around it. Neither specification says so; it was established by comparing the tables."
 
 SERPENTTYPE.S5:
   lookup_table: [0, 3, 5, 8, 6, 12, 11, 7, 10, 4, 9, 14, 15, 1, 2, 13]
@@ -6403,6 +6693,7 @@ SERPENTTYPE.S5:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 14
+  inversion: 43
   fixed_point: [0, 7]
   year: [1998]
   cipher: false  # not used in a cipher
@@ -6410,7 +6701,7 @@ SERPENTTYPE.S5:
   linear_branch_number: 2
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Serpent_type_S5.txt"
   origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN — a Platform for Evaluation, Implementation, and Generation of S-boxes; TOSC 2019; URL: https://eprint.iacr.org/2019/209"
-  note: "Serpent-type SBox (PEIGEN); distinct AEC from Serpent's SBox The same look-up table is catalogued as GOLDEN.S3."
+  note: "Serpent-type SBox (PEIGEN); distinct AEC from Serpent's SBox The same look-up table is catalogued as GOLDEN.S3. GOLDEN.S3 is the same SBox under a second name and reads through to this entry; both are representatives rather than a cipher's own SBox, so the later key is merged here rather than kept beside it. It differs from SERPENTTYPE.S6 in two positions and nowhere else."
 
 SERPENTTYPE.S6:
   lookup_table: [0, 3, 5, 8, 6, 12, 11, 7, 10, 13, 9, 14, 15, 1, 2, 4]
@@ -6422,6 +6713,7 @@ SERPENTTYPE.S6:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 24
+  inversion: 46
   fixed_point: [0, 7]
   year: [1998]
   cipher: false  # not used in a cipher
@@ -6429,7 +6721,7 @@ SERPENTTYPE.S6:
   linear_branch_number: 2
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Serpent_type_S6.txt"
   origin: "Bao, Guo, Ling, Sasaki; SoK: PEIGEN — a Platform for Evaluation, Implementation, and Generation of S-boxes; TOSC 2019; URL: https://eprint.iacr.org/2019/209"
-  note: "Serpent-type SBox (PEIGEN); distinct AEC from Serpent's SBox"
+  note: "Serpent-type SBox (PEIGEN); distinct AEC from Serpent's SBox It differs from SERPENTTYPE.S5 in two positions and nowhere else."
 
 SERPENTTYPE.S7:
   lookup_table: [0, 3, 5, 8, 6, 12, 11, 7, 13, 10, 14, 4, 1, 15, 2, 9]
@@ -6441,6 +6733,7 @@ SERPENTTYPE.S7:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 33
+  inversion: 46
   fixed_point: [0, 7]
   year: [1998]
   cipher: false  # not used in a cipher
@@ -6460,6 +6753,7 @@ SERPENTTYPE.S8:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 18
+  inversion: 45
   fixed_point: [0]
   year: [1998]
   cipher: false  # not used in a cipher
@@ -6479,6 +6773,7 @@ SERPENTTYPE.S9:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 7
+  inversion: 52
   fixed_point: [0, 9]
   year: [1998]
   cipher: false  # not used in a cipher
@@ -6498,6 +6793,7 @@ UDCIKMP11:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 15
+  inversion: 60
   fixed_point: [0]
   year: [2011]
   cipher: false  # not used in a cipher
@@ -6517,6 +6813,7 @@ ZBRL.040:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 105
+  inversion: 56
   fixed_point: [0]
   cipher: false  # not used in a cipher
   differential_branch_number: 3
@@ -6535,6 +6832,7 @@ ZBRL.041:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 33
+  inversion: 70
   fixed_point: [0, 7]
   cipher: false  # not used in a cipher
   differential_branch_number: 3
@@ -6553,6 +6851,7 @@ ZBRL.130:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 15
+  inversion: 52
   fixed_point: [0]
   cipher: false  # not used in a cipher
   differential_branch_number: 2
@@ -6571,6 +6870,7 @@ ZBRL.131:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 24
+  inversion: 52
   fixed_point: [0, 6]
   cipher: false  # not used in a cipher
   differential_branch_number: 2
@@ -6589,6 +6889,7 @@ ZBRL.132:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 15
+  inversion: 60
   fixed_point: [0]
   cipher: false  # not used in a cipher
   differential_branch_number: 2
@@ -6607,6 +6908,7 @@ ZBRL.133:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 30
+  inversion: 56
   fixed_point: [0]
   cipher: false  # not used in a cipher
   differential_branch_number: 2
@@ -6625,6 +6927,7 @@ ZBRL.220:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 40
+  inversion: 62
   fixed_point: [0]
   cipher: false  # not used in a cipher
   differential_branch_number: 2
@@ -6643,6 +6946,7 @@ ZBRL.221:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 66
   fixed_point: [0]
   cipher: false  # not used in a cipher
   differential_branch_number: 2
@@ -6661,6 +6965,7 @@ ZBRL.222:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 33
+  inversion: 60
   fixed_point: [0, 5]
   cipher: false  # not used in a cipher
   differential_branch_number: 2
@@ -6679,6 +6984,7 @@ ZBRL.223:
   absolute_autocorrelation_uniformity: 16
   involution: false
   order: 6
+  inversion: 68
   fixed_point: [0, 7]
   cipher: false  # not used in a cipher
   differential_branch_number: 2

@@ -1,5 +1,5 @@
 ﻿# Non-bijective 4-bit SBoxes
-# Total: 1 SBox
+# Total: 3 SBoxes
 # Format: key, lut, output_bits, algebraic_degree, nonlinearity, differential_uniformity, cipher, origin, [note]
 # File name indicates input bit size (4 bits); `output_bits` must be explicitly present per entry
 
@@ -19,3 +19,32 @@ GAGE.Q:
   origin: "Gligoroski, Mihajloska, Otte; GAGE and InGAGE; NIST LWC Round 1 (2019); URL: https://csrc.nist.gov/projects/lightweight-cryptography/round-1-candidates"
   note: "Did not advance to Round 2 of LWC"
 
+CSCIPHER.F:
+  canonical_name: ["CS-Cipher", "F"]
+  output_bits: 4
+  lookup_table: [15, 13, 11, 11, 7, 5, 7, 7, 14, 13, 10, 11, 14, 13, 14, 15]
+  algebraic_degree: [2, 2, 2, 2]
+  nonlinearity: 4
+  absolute_autocorrelation_uniformity: 16
+  year: [1998]
+  cipher: true  # Used in a cipher
+  differential_branch_number: 1
+  linear_branch_number: 2
+  source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_CS_cipher_F.txt"
+  origin: "Stern, Vaudenay; CS-Cipher; FSE 1998"
+
+KUZNYECHIK.PHI:
+  canonical_name: ["Kuznyechik", "φ"]
+  output_bits: 4
+  lookup_table: [11, 2, 11, 8, 12, 4, 1, 12, 6, 3, 5, 8, 14, 3, 6, 11]
+  algebraic_degree: [4, 4, 4, 3]
+  nonlinearity: 2
+  absolute_linear_uniformity: 6
+  absolute_autocorrelation_uniformity: 16
+  fixed_point: []
+  year: [2015]
+  cipher: true  # Used in a cipher
+  differential_branch_number: 1
+  linear_branch_number: 2
+  source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_Kuznyechik_phi.txt"
+  origin: "Shishkin et al.; GOST R 34.12-2015 (Kuznyechik); RFC 7801"

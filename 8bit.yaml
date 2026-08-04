@@ -17,6 +17,7 @@ AES:
   absolute_autocorrelation_uniformity: 32
   involution: false
   order: 277182
+  inversion: 16753
   fixed_point: []
   year: [2001]
   cipher: true  # Used in a cipher
@@ -24,28 +25,8 @@ AES:
   linear_branch_number: 2
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes8/properties_AES.txt"
   origin: "Daemen, Rijmen; The Design of Rijndael; AES winner; FIPS 197 (2001); URL: https://doi.org/10.6028/NIST.FIPS.197-upd1"
-  note: "KU Leuven (Daemen, Rijmen); NIST AES standard (FIPS 197); most reused SBox in cryptography The compositional inverse of this SBox is catalogued as AES_Inv."
-  aliases: [RIJNDAEL, ARIA.S1, AEGIS, TIAOXIN, ROCCA, ROCCAS, SNOWV, HALFLOOP, KIASU, SIMPIRA, HARAKA, PHOLKOS]
-
-AES_Inv:
-  canonical_name: ["AES", "S⁻¹"]
-  lookup_table: [82, 9, 106, 213, 48, 54, 165, 56, 191, 64, 163, 158, 129, 243, 215, 251, 124, 227, 57, 130, 155, 47, 255, 135, 52, 142, 67, 68, 196, 222, 233, 203, 84, 123, 148, 50, 166, 194, 35, 61, 238, 76, 149, 11, 66, 250, 195, 78, 8, 46, 161, 102, 40, 217, 36, 178, 118, 91, 162, 73, 109, 139, 209, 37, 114, 248, 246, 100, 134, 104, 152, 22, 212, 164, 92, 204, 93, 101, 182, 146, 108, 112, 72, 80, 253, 237, 185, 218, 94, 21, 70, 87, 167, 141, 157, 132, 144, 216, 171, 0, 140, 188, 211, 10, 247, 228, 88, 5, 184, 179, 69, 6, 208, 44, 30, 143, 202, 63, 15, 2, 193, 175, 189, 3, 1, 19, 138, 107, 58, 145, 17, 65, 79, 103, 220, 234, 151, 242, 207, 206, 240, 180, 230, 115, 150, 172, 116, 34, 231, 173, 53, 133, 226, 249, 55, 232, 28, 117, 223, 110, 71, 241, 26, 113, 29, 41, 197, 137, 111, 183, 98, 14, 170, 24, 190, 27, 252, 86, 62, 75, 198, 210, 121, 32, 154, 219, 192, 254, 120, 205, 90, 244, 31, 221, 168, 51, 136, 7, 199, 49, 177, 18, 16, 89, 39, 128, 236, 95, 96, 81, 127, 169, 25, 181, 74, 13, 45, 229, 122, 159, 147, 201, 156, 239, 160, 224, 59, 77, 174, 42, 245, 176, 200, 235, 187, 60, 131, 83, 153, 97, 23, 43, 4, 126, 186, 119, 214, 38, 225, 105, 20, 99, 85, 33, 12, 125]
-  algebraic_degree: [7, 7, 7, 7, 7, 7, 7, 7]
-  nonlinearity: 112
-  differential_uniformity: 4
-  absolute_linear_uniformity: 16
-  boomerang_uniformity: 6
-  absolute_autocorrelation_uniformity: 32
-  involution: false
-  order: 277182
-  fixed_point: []
-  year: [2001]
-  cipher: true  # Used in a cipher
-  differential_branch_number: 2
-  linear_branch_number: 2
-  source: "URL: https://csrc.nist.gov/Projects/circuit-complexity/list-of-circuits"
-  origin: "Daemen, Rijmen; The Design of Rijndael; AES winner; FIPS 197 (2001); URL: https://doi.org/10.6028/NIST.FIPS.197-upd1"
-  note: "Inverse of the AES SBox. FIPS 197 tabulates it in its own right for InvSubBytes, which is what AES decryption applies, so it is catalogued as an entry rather than left implicit. The look-up table here was recovered by running the NIST Circuit Complexity straight-line programs over all inputs and agrees with the inverse of the AES entry. The compositional inverse of this SBox is catalogued as AES."
+  note: "KU Leuven (Daemen, Rijmen); NIST AES standard (FIPS 197); most reused SBox in cryptography Deoxys applies this SBox as its SubBytes and ZIP-AES carries the AES round function over unchanged; both are recorded as reuse rather than as new entries. MERIDIAN (2026) takes it as well, applying a rotation afterwards by an amount read from two neighbouring bytes, so the substitution it builds is data-dependent while the table itself is this one."
+  aliases: [AEGIS, ARIA.S1, DEOXYS, HALFLOOP, HARAKA, KIASU, PHOLKOS, RIJNDAEL, ROCCA, ROCCAS, SIMPIRA, SNOWV, TIAOXIN, ZIPAES]
 
 ANUBIS:
   canonical_name: ["Anubis"]
@@ -58,6 +39,7 @@ ANUBIS:
   absolute_autocorrelation_uniformity: 96
   involution: true
   order: 2
+  inversion: 16406
   fixed_point: []
   year: [2000]
   cipher: true  # Used in a cipher
@@ -78,6 +60,7 @@ ARIA.S2:
   absolute_autocorrelation_uniformity: 32
   involution: false
   order: 487872
+  inversion: 16043
   fixed_point: []
   year: [2003]
   cipher: true  # Used in a cipher
@@ -97,6 +80,7 @@ ARIA.S2_Inv:
   absolute_linear_uniformity: 16
   involution: false
   order: 487872
+  inversion: 16043
   fixed_point: []
   year: [2003]
   cipher: true  # Used in a cipher
@@ -117,6 +101,7 @@ BELT:
   absolute_autocorrelation_uniformity: 88
   involution: false
   order: 185640
+  inversion: 16946
   fixed_point: []
   year: [2011]
   cipher: true  # Used in a cipher
@@ -137,6 +122,7 @@ CAMELLIA:
   absolute_autocorrelation_uniformity: 32
   involution: false
   order: 2490
+  inversion: 15405
   fixed_point: []
   year: [2000]
   cipher: true  # Used in a cipher
@@ -157,6 +143,7 @@ CHIASMUS:
   absolute_autocorrelation_uniformity: 32
   involution: false
   order: 8258844
+  inversion: 16479
   fixed_point: []
   cipher: true  # Used in a cipher
   differential_branch_number: 2
@@ -176,6 +163,7 @@ CLEFIA.S0:
   absolute_autocorrelation_uniformity: 96
   involution: false
   order: 1074740
+  inversion: 16320
   fixed_point: []
   year: [2007]
   cipher: true  # Used in a cipher
@@ -196,6 +184,7 @@ CLEFIA.S1:
   absolute_autocorrelation_uniformity: 32
   involution: false
   order: 256
+  inversion: 16217
   fixed_point: []
   year: [2007]
   cipher: true  # Used in a cipher
@@ -216,6 +205,7 @@ CRYPTONv05:
   absolute_autocorrelation_uniformity: 144
   involution: false
   order: 55440
+  inversion: 15850
   fixed_point: [15]
   cipher: true  # Used in a cipher
   differential_branch_number: 2
@@ -233,6 +223,7 @@ CRYPTONv1.S0:
   absolute_linear_uniformity: 32
   involution: false
   order: 1240
+  inversion: 16320
   fixed_point: [117]
   cipher: true  # Used in a cipher
   differential_branch_number: 3
@@ -250,6 +241,7 @@ CRYPTONv1.S1:
   absolute_linear_uniformity: 32
   involution: false
   order: 92400
+  inversion: 16334
   fixed_point: []
   cipher: true  # Used in a cipher
   differential_branch_number: 3
@@ -267,6 +259,7 @@ CRYPTONv1.S2:
   absolute_linear_uniformity: 32
   involution: false
   order: 1240
+  inversion: 16320
   fixed_point: [117]
   cipher: true  # Used in a cipher
   differential_branch_number: 3
@@ -284,6 +277,7 @@ CRYPTONv1.S3:
   absolute_linear_uniformity: 32
   involution: false
   order: 92400
+  inversion: 16334
   fixed_point: []
   cipher: true  # Used in a cipher
   differential_branch_number: 3
@@ -303,6 +297,7 @@ CSA:
   absolute_autocorrelation_uniformity: 104
   involution: false
   order: 256
+  inversion: 15997
   fixed_point: []
   cipher: true  # Used in a cipher
   differential_branch_number: 2
@@ -322,6 +317,7 @@ CSCIPHER:
   absolute_autocorrelation_uniformity: 256
   involution: true
   order: 2
+  inversion: 13970
   fixed_point: [84, 86, 87, 117, 138, 146, 147, 155, 200, 204, 206, 208, 223, 241, 249, 253]
   cipher: true  # Used in a cipher
   differential_branch_number: 2
@@ -341,6 +337,7 @@ CSS:
   absolute_autocorrelation_uniformity: 256
   involution: false
   order: 4
+  inversion: 12704
   fixed_point: [139, 184, 204, 255]
   year: [1996]
   cipher: true  # Used in a cipher
@@ -361,6 +358,7 @@ DBLOCK:
   absolute_autocorrelation_uniformity: 32
   involution: false
   order: 69930
+  inversion: 15943
   fixed_point: []
   cipher: true  # Used in a cipher
   differential_branch_number: 2
@@ -380,6 +378,7 @@ E2:
   absolute_autocorrelation_uniformity: 104
   involution: false
   order: 17472
+  inversion: 16042
   fixed_point: []
   cipher: true  # Used in a cipher
   differential_branch_number: 2
@@ -399,6 +398,7 @@ ENOCORO:
   absolute_autocorrelation_uniformity: 128
   involution: false
   order: 857220
+  inversion: 16328
   fixed_point: []
   cipher: true  # Used in a cipher
   differential_branch_number: 3
@@ -418,6 +418,7 @@ FANTOMAS:
   absolute_autocorrelation_uniformity: 256
   involution: false
   order: 13086216
+  inversion: 16372
   fixed_point: []
   cipher: true  # Used in a cipher
   differential_branch_number: 2
@@ -437,6 +438,7 @@ FLY:
   absolute_autocorrelation_uniformity: 256
   involution: false
   order: 14280
+  inversion: 16304
   fixed_point: [0, 187]
   cipher: true  # Used in a cipher
   differential_branch_number: 3
@@ -455,6 +457,7 @@ FOX:
   absolute_autocorrelation_uniformity: 256
   involution: false
   order: 39480
+  inversion: 17056
   fixed_point: [155]
   cipher: true  # Used in a cipher
   differential_branch_number: 2
@@ -488,6 +491,7 @@ ICEBERG:
   absolute_autocorrelation_uniformity: 96
   involution: true
   order: 2
+  inversion: 16108
   fixed_point: []
   cipher: true  # Used in a cipher
   differential_branch_number: 2
@@ -507,6 +511,7 @@ ISCREAM:
   absolute_autocorrelation_uniformity: 256
   involution: true
   order: 2
+  inversion: 16432
   fixed_point: [0, 24, 38, 61, 69, 95, 103, 124, 132, 158, 162, 179, 201, 209, 235, 250]
   cipher: true  # Used in a cipher
   differential_branch_number: 2
@@ -526,6 +531,7 @@ KALYNA.PI0:
   absolute_autocorrelation_uniformity: 72
   involution: false
   order: 113730
+  inversion: 16538
   fixed_point: []
   year: [2015]  # Ukrainian National Public Cryptographic Competition (2007-2010); standard DSTU 7624:2014 (2015)
   cipher: true
@@ -546,6 +552,7 @@ KALYNA.PI1:
   absolute_autocorrelation_uniformity: 72
   involution: false
   order: 296416
+  inversion: 16234
   fixed_point: []
   year: [2015]  # Ukrainian National Public Cryptographic Competition (2007-2010); standard DSTU 7624:2014 (2015)
   cipher: true
@@ -566,6 +573,7 @@ KALYNA.PI2:
   absolute_autocorrelation_uniformity: 72
   involution: false
   order: 2320500
+  inversion: 17126
   fixed_point: []
   year: [2015]  # Ukrainian National Public Cryptographic Competition (2007-2010); standard DSTU 7624:2014 (2015)
   cipher: true
@@ -586,6 +594,7 @@ KALYNA.PI3:
   absolute_autocorrelation_uniformity: 72
   involution: false
   order: 158340
+  inversion: 14952
   fixed_point: []
   year: [2015]  # Ukrainian National Public Cryptographic Competition (2007-2010); standard DSTU 7624:2014 (2015)
   cipher: true
@@ -606,6 +615,7 @@ KHAZAD:
   absolute_autocorrelation_uniformity: 104
   involution: true
   order: 2
+  inversion: 17288
   fixed_point: []
   cipher: true  # Used in a cipher
   differential_branch_number: 2
@@ -638,6 +648,7 @@ KUZNYECHIK:
   absolute_autocorrelation_uniformity: 96
   involution: false
   order: 3159
+  inversion: 16252
   fixed_point: []
   year: [2015]
   cipher: true  # Used in a cipher
@@ -659,6 +670,7 @@ LILLIPUTAE:
   absolute_autocorrelation_uniformity: 256
   involution: false
   order: 1680
+  inversion: 14458
   fixed_point: []
   year: [2019]
   cipher: true  # Used in a cipher
@@ -678,6 +690,7 @@ MD2:
   absolute_autocorrelation_uniformity: 88
   involution: false
   order: 1182384
+  inversion: 16174
   fixed_point: []
   year: [1992]
   cipher: true  # Used in a cipher
@@ -698,6 +711,7 @@ NEWDES:
   absolute_autocorrelation_uniformity: 96
   involution: false
   order: 235657
+  inversion: 16282
   fixed_point: [198]
   cipher: true  # Used in a cipher
   differential_branch_number: 2
@@ -724,6 +738,7 @@ PIPO:
   absolute_autocorrelation_uniformity: 256
   involution: false
   order: 681226
+  inversion: 16328
   fixed_point: []
   year: [2020]
   cipher: true  # Used in a cipher
@@ -764,6 +779,7 @@ SAFER:
   absolute_autocorrelation_uniformity: 256
   involution: false
   order: 6888
+  inversion: 17127
   fixed_point: [27, 87, 92]
   cipher: true  # Used in a cipher
   differential_branch_number: 2
@@ -783,6 +799,7 @@ SCREAM:
   absolute_autocorrelation_uniformity: 256
   involution: false
   order: 672
+  inversion: 14208
   fixed_point: []
   cipher: true  # Used in a cipher
   differential_branch_number: 2
@@ -802,6 +819,7 @@ SEED.S0:
   absolute_autocorrelation_uniformity: 32
   involution: false
   order: 8094
+  inversion: 15891
   fixed_point: [23, 230]
   cipher: true  # Used in a cipher
   differential_branch_number: 2
@@ -821,6 +839,7 @@ SEED.S1:
   absolute_autocorrelation_uniformity: 32
   involution: false
   order: 964
+  inversion: 17101
   fixed_point: [28]
   cipher: true  # Used in a cipher
   differential_branch_number: 2
@@ -847,6 +866,7 @@ SKINNY.S8:
   absolute_autocorrelation_uniformity: 256
   involution: false
   order: 14280
+  inversion: 14712
   fixed_point: [255]
   year: [2016]
   cipher: true  # Used in a cipher
@@ -867,6 +887,7 @@ SKIPJACK:
   absolute_autocorrelation_uniformity: 96
   involution: false
   order: 400860
+  inversion: 17219
   fixed_point: []
   cipher: true  # Used in a cipher
   differential_branch_number: 2
@@ -894,6 +915,7 @@ SMS4:
   absolute_autocorrelation_uniformity: 32
   involution: false
   order: 2520
+  inversion: 16171
   fixed_point: [171]
   year: [2006, 2008, 2012] # Designed in 2006; translated and put on to IACR ePrint in 2008; renamed in 2012 as SM4
   cipher: true  # Used in a cipher
@@ -915,6 +937,7 @@ SNOW3G.SQ:
   absolute_autocorrelation_uniformity: 96
   involution: false
   order: 7560
+  inversion: 16390
   fixed_point: []
   cipher: true  # Used in a cipher
   differential_branch_number: 2
@@ -941,6 +964,7 @@ STREEBOG:
   absolute_autocorrelation_uniformity: 96
   involution: false
   order: 3159
+  inversion: 16252
   fixed_point: []
   year: [2012]
   reuse: [KUZNYECHIK]
@@ -976,6 +1000,7 @@ TURING:
   absolute_autocorrelation_uniformity: 96
   involution: false
   order: 42570
+  inversion: 16643
   fixed_point: []
   cipher: true  # Used in a cipher
   differential_branch_number: 2
@@ -995,6 +1020,7 @@ TWOFISH.P0:
   absolute_autocorrelation_uniformity: 128
   involution: false
   order: 15534090
+  inversion: 17462
   fixed_point: [4]
   cipher: true  # Used in a cipher
   differential_branch_number: 2
@@ -1014,6 +1040,7 @@ TWOFISH.P1:
   absolute_autocorrelation_uniformity: 112
   involution: false
   order: 18732
+  inversion: 17400
   fixed_point: [27, 246]
   cipher: true  # Used in a cipher
   differential_branch_number: 2
@@ -1033,6 +1060,7 @@ WHIRLPOOL:
   absolute_autocorrelation_uniformity: 96
   involution: false
   order: 113160
+  inversion: 16308
   fixed_point: []
   year: [2000]
   cipher: true  # Used in a cipher
@@ -1053,6 +1081,7 @@ ZORRO:
   absolute_autocorrelation_uniformity: 112
   involution: false
   order: 420
+  inversion: 16964
   fixed_point: []
   year: [2013]
   cipher: true  # Used in a cipher
@@ -1073,6 +1102,7 @@ ZUC.S0:
   absolute_autocorrelation_uniformity: 128
   involution: false
   order: 5775
+  inversion: 16000
   fixed_point: []
   cipher: true  # Used in a cipher
   differential_branch_number: 2
@@ -1092,6 +1122,7 @@ ZUC.S1:
   absolute_autocorrelation_uniformity: 32
   involution: false
   order: 118189456
+  inversion: 16197
   fixed_point: []
   cipher: true  # Used in a cipher
   differential_branch_number: 2
