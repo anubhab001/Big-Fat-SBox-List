@@ -302,7 +302,7 @@ class SBoxGroup:
         key = name.lower()
         if key in members:
             return members[key]
-        # Fallback: try a full lookup e.g. ARIA.S1
+        # Fallback: try a full lookup e.g. ARIA.S2
         gname = object.__getattribute__(self, '_gname')
         entry = _get_entry(f'{gname}.{name.upper()}')
         if entry is not None:
