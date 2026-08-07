@@ -951,7 +951,7 @@ SNOWV:
   alias: AES
   year: [2019]
   origin: "Ekdahl, Johansson, Maximov, Yang; SNOW-V: Highly Efficient Encryption and Authentication for Mobile Communications; FSE 2019"
-  note: "SNOW-V stream cipher uses AES round function. See also: SNOW_3G_SQ for the Sq function"
+  note: "SNOW-V stream cipher uses AES round function. See also: SNOW3G.SQ for the Sq function"
 
 STREEBOG:
   canonical_name: ["Streebog"]

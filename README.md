@@ -2,7 +2,7 @@
 
 Public collection of Substitution Boxes (SBoxes for short) used in cryptography
 
-Last update: 31 July 2026 <!-- TODO: This is to be updated in UTC with each (major) commit/push -->
+Last update: 7 August 2026 <!-- TODO: This is to be updated in UTC with each (major) commit/push -->
 
 ## Organisation
 
@@ -14,15 +14,15 @@ Last update: 31 July 2026 <!-- TODO: This is to be updated in UTC with each (maj
 
 ## Naming Convention
 
-- Entry keys use an all-uppercase Latin with/without dot convention (e.g., `PRESENT` as without dot; `MIDORI.SB0`, `JH.S0` as with dot), with no hyphen and no space. Note that the cipher name preceeds the dot and the SBox name is after dot, or if there is no specific name to its SBox then only the cipher's name or some identifier (like `DILLON`) is used.
+- Entry keys use an all-uppercase Latin with/without dot convention (e.g., `PRESENT` as without dot; `MIDORI.SB0`, `JH.S0` as with dot), with no hyphen and no space. Note that the cipher name precedes the dot and the SBox name is after dot, or if there is no specific name to its SBox then only the cipher's name or some identifier (like `DILLON`) is used.
 
 - `canonical_name` field records the exact name as it appears in the original paper to preserve information (related to casing, non-Latin characters, subscript, hyphen, space). 
 
-- Lowercase `v` indicates a version number and is not part of the cipher name (e.g., `PRINCEv2`).
+- A version number stays in the key and is folded into the capitals with the rest of it, so CRYPTON v1.0 is `CRYPTONV1` and CRYPTON v0.5 is `CRYPTONV05`. The original spelling of the version survives in `canonical_name`.
 
 - The underscore `_` is a permitted special character. Its principal use is the `_Inv` suffix, which indicates that the entry is the inverse of another SBox already included (e.g., `ARIA.S2_Inv`).
 
-- The all-uppercase rule may be relaxed where a version or variant designator would otherwise be lost. For example, the trailing letter in `SNOW V` or `ROCCA S` marks a specific version, so it is retained as a designator rather than being folded into an indistinct run of capitals. The exact form is always preserved in `canonical_name` (e.g., `["SNOW-V"]`, `["ROCCA-S"]`).
+- A trailing letter that marks a variant is kept in the key rather than dropped, since it is what tells one design from another: SNOW-V is `SNOWV` and Rocca-S is `ROCCAS`, each distinct from `SNOW3G.SQ` and `ROCCA`. The hyphen and the case of the original survive in `canonical_name`, as `["SNOW-V"]` and `["ROCCA-S"]`.
 
 
 - An SBox key is the bare cipher name when the cipher has one SBox, since a specification rarely names its substitution table anything but S. `AES` is the AES SBox. A key carries a second element only where a cipher has more than one table to tell apart, as with `ARIA.S2`, `SERPENTTYPE.S0` or the mini-boxes `KHAZAD.P` and `KHAZAD.Q` that the full Khazad SBox is built from, and where the layer belongs to a paper rather than a cipher the first element is the authors.
@@ -62,7 +62,7 @@ Some SBoxes turn up in more than one design, and the catalogue settles each case
 
 - Two catalogues of representative SBoxes that overlap are merged rather than kept side by side, since neither is a cipher's own SBox. `GOLDEN.S1`, `GOLDEN.S2` and `GOLDEN.S3` read through to `SERPENTTYPE.S4`, `SERPENTTYPE.S3` and `SERPENTTYPE.S5`, the earlier of each pair.
 
-An SBox is not given a second entry for its inverse. The inverse of a bijective SBox is recovered from the look-up table, and a decryption circuit is a matter of implementation rather than of a distinct SBox, so the AES inverse for instance is not catalogued. Two entries each catalogued in its own right can still happen to be inverses of one another, and the `note` of both says so. The pairs are `ARIA.S2` with `ARIA.S2_Inv`; the two pairs inside `CRYPTONv1`; the two inside `MCRYPTON`; `MCRYPTON.S2` with `MIBS`; and `REC.0` with `RECTANGLE`.
+An SBox is not given a second entry for its inverse. The inverse of a bijective SBox is recovered from the look-up table, and a decryption circuit is a matter of implementation rather than of a distinct SBox, so the AES inverse for instance is not catalogued. Two entries each catalogued in its own right can still happen to be inverses of one another, and the `note` of both says so. The pairs are `ARIA.S2` with `ARIA.S2_Inv`; the two pairs inside `CRYPTONV1`; the two inside `MCRYPTON`; `MCRYPTON.S2` with `MIBS`; and `REC.0` with `RECTANGLE`.
 
 Not every one of these relations is stated by the design concerned. Where it is not, it was established here by comparing the tables, and the reasoning is written into the `note` so that a reader can weigh it.
 
@@ -75,7 +75,7 @@ Each YAML entry has the following fields in order (mandatory fields marked with 
 | `canonical_name` | list | Name as written in the original paper (preserving case, non-Latin character, subscript, hyphen, space) |
 | `output_bits`<sup>†</sup> | int | Output bit size; compulsory for non-bijective SBoxes; skipped for bijective SBoxes |
 | `lookup_table`<sup>*</sup> | list | Look-up table (substitution values) |
-| `algebraic_degree`<sup>*</sup> | list | Algebraic degree of each coordinate function in order from the least-significant output bit (bit 0) to the most-significant (bit $n−1$). For an $n$-bit SBox there are $n$ integers in the list. The overall degree of the SBox is the maximum of these values. |
+| `algebraic_degree`<sup>*</sup> | list | Algebraic degree of each coordinate function in order from the least-significant output bit (bit 0) to the most-significant (bit $n - 1$). For an $n$-bit SBox there are $n$ integers in the list. The overall degree of the SBox is the maximum of these values. |
 | `nonlinearity`<sup>*</sup> | int | Non-linearity: Minimum Hamming distance from the set of all affine Boolean functions, taken over all non-zero linear combinations of output bits |
 | `differential_uniformity`<sup>*</sup> | int | Differential uniformity (DU): Maximum number of input pairs $(x, x')$ with $x \oplus x' = \Delta_{in}$ such that $S(x) \oplus S(x') = \Delta_{out}$, maximised over all non-zero $\Delta_{in}$ and all $\Delta_{out}$ |
 | `absolute_linear_uniformity`<sup>*</sup> | int | Absolute linear uniformity (ALU): Maximum absolute value of any entry in the linear approximation table (LAT), excluding row 0 (input mask = 0) and column 0 (output mask = 0) |
@@ -83,14 +83,14 @@ Each YAML entry has the following fields in order (mandatory fields marked with 
 | `absolute_autocorrelation_uniformity`<sup>*</sup> | int | Absolute autocorrelation uniformity (AAU): Maximum absolute value in the autocorrelation table (ACT); $\mathrm{ACT}[a,b] = \sum_x (-1)^{\langle b,\, S(x \oplus a) \oplus S(x)\rangle}$ for non-zero input difference $a$ and non-zero output mask $b$; also called absolute indicator |
 | `differential_branch_number`<sup>*</sup> | int | Differential branch number: Minimum weight $\mathrm{wt}(\Delta_{in}) + \mathrm{wt}(\Delta_{out})$ over all non-trivial DDT entries |
 | `linear_branch_number`<sup>*</sup> | int | Linear branch number: Minimum weight $\mathrm{wt}(a) + \mathrm{wt}(b)$ over all non-trivial LAT entries |
-| `involution`<sup>*</sup> | bool | Involutory SBox: True iff $S(S(x)) = x$  $\forall x$ |
-| `order`<sup>†</sup> | int | Least $k$ with $S$ applied $k$ times equal to the identity, that is, the least common multiple of the cycle lengths; compulsory for bijective SBoxes, skipped for non-bijective SBoxes. An involution has order $2$ |
-| `inversion`<sup>†</sup> | int | Number of pairs of positions the SBox puts out of order, that is of $i < j$ with $S[i] > S[j]$. It is the number of adjacent swaps needed to sort the table back to the identity, so it measures how far the SBox moves its inputs; it runs from $0$ for the identity to $n(n-1)/2$ for the reversal. Compulsory for bijective SBoxes, skipped for non-bijective ones. The parity of the permutation is this count modulo two, so it is not recorded separately: an even count is an even permutation, which is what decides the fifteen puzzle, whose position is reachable exactly when the permutation of the tiles, composed with the moves of the blank, is even |
-| `fixed_point`<sup>*</sup> | list | Fixed point:  Values where $S(x) = x$ (`[]` for no fixed point) |
+| `involution`<sup>*</sup> | bool | True when the SBox is its own inverse, that is, applying it twice returns every input unchanged |
+| `order`<sup>†</sup> | int | How many times the SBox has to be applied before every input comes back unchanged, which is the least common multiple of its cycle lengths; compulsory for bijective SBoxes, skipped for non-bijective SBoxes. An involution has order $2$ |
+| `inversion`<sup>†</sup> | int | Number of pairs of positions the SBox puts out of order, that is of $i < j$ with $S[i] > S[j]$. It is the number of adjacent swaps needed to sort the table back to the identity, so it measures how far the SBox moves its inputs; it runs from $0$ for the identity to $2^n (2^n - 1) / 2$ for the reversal of an $n$-bit table, which is $120$ at $4$ bits and $32640$ at $8$. Compulsory for bijective SBoxes, skipped for non-bijective ones. The parity of the permutation is this count modulo two, so it is not recorded separately: an even count is an even permutation, which is what decides the fifteen puzzle, whose position is reachable exactly when the permutation of the tiles, composed with the moves of the blank, is even |
+| `fixed_point`<sup>*</sup> | list | Inputs the SBox leaves where it found it, that is the values with $S(x) = x$ (`[]` for no fixed point) |
 | `year`<sup>*</sup> | list | Collection of significant publication years (competition submission, journal publication, standard approval) etc. |
-| `cipher`<sup>*</sup> | bool | True iff used in a cipher |
-| `source` | str | One or more URL(s) of code or related resources (mainly [PEIGEN SBox collection](https://github.com/peigen-sboxes/PEIGEN/tree/master/EvaluationResults/Sect5.1_CryptographicProperties), [Sage reference manual](https://github.com/sagemath/sage/blob/develop/src/sage/crypto/sboxes.py)) whence some information is mined |
-| `origin`<sup>*</sup> | str | Citation of the original publication |
+| `cipher`<sup>*</sup> | bool | True when the SBox is used in a cipher, rather than being a representative table from a paper on SBoxes |
+| `source` | str | Further provenance, where code or a related resource supplied part of what is recorded, typically given as a URL; mainly the [PEIGEN SBox collection](https://github.com/peigen-sboxes/PEIGEN/tree/master/EvaluationResults/Sect5.1_CryptographicProperties) and the [Sage reference manual](https://github.com/sagemath/sage/blob/develop/src/sage/crypto/sboxes.py) |
+| `origin`<sup>*</sup> | str | Provenance of the SBox itself: the original publication or specification the look-up table is taken from, given as a citation and usually a URL with it |
 | `aliases` | list | Ciphers that have rebranded this SBox under a new name |
 | `alias` | str | The cipher whose SBox this entry is an alias for; placed immediately below `canonical_name` |
 | `reuse` | tuple | Ciphers that use this same SBox; recorded on the earlier publication, whether or not the later design says where it came from |
@@ -111,15 +111,15 @@ Three fields handle inter-cipher SBox relationships:
 
 ### Notes
 
-1. Our convention, uppercase Latin characters with the dot and the underscore allowed, enforces uniformity and ASCII searchability, but it destroys the original typographic formatting used by the designers, such as mixed case (e.g., "Midori"), non-Latin characters (like Cyrillic "π"; Greek "σ"), subscript notation (e.g., "Sb₀"), hyphen (like "SHA-3") and space (like "SNOW 3G"). 
+1. Our convention, uppercase Latin characters with the dot and the underscore allowed, enforces uniformity and ASCII searchability, but it destroys the original typographic formatting used by the designers, such as mixed case (e.g., "Midori"), non-Latin characters (like Greek "π" and "σ"), subscript notation (e.g., "Sb₀"), hyphen (like "SHA-3") and space (like "SNOW 3G"). 
 
 2. `canonical_name`, which is applicable only when `cipher` is true and preserves the original formatting as intended by the cipher's designer(s) — is a list. For a cipher with a single SBox, it is a one-element list (e.g., `["GIFT"]`). When a cipher has multiple SBoxes distinguished by a subscript or letter (e.g., `S₀`, `π₁`), it is a two-element list `["CipherName", "SBoxName"]` where the first element is the cipher's canonical name and the second is the specific SBox sub-name (e.g., `["CLEFIA", "S₁"]`).
 
-3. `alias` (a secondary entry's field pointing to one source) and `aliases` (the main entry's list of ciphers that rebranded it) are not the singular and plural of the same concept. `reuse` is not linked with `alias` or `aliases` (both `alias` and `aliases` deal with cases where an SBox ) 
+3. `alias` and `aliases` are not the singular and plural of one concept. `alias` sits on a secondary entry and names the one entry it reads through to; `aliases` sits on the entry holding the table and lists every key that reads through to it. Both are about a design that renames an SBox it did not change. `reuse` is a separate matter, being a design that takes the SBox under the name it already had, which is why no entry is created for it.
 
 4. `year` field is a list of significant publication years (e.g., competition submission, journal publication, standard approval). Single-year entries still use list format: `year: [2019]`. Multi-year entries carry inline comments explaining each year (e.g., `year: [2014, 2023]  # CAESAR submission (2014); NIST LWC winner (2023)`). 
 
-5. The dot notation is not restricted to ciphers; non-cipher research entries may also use it (e.g., `APN.1` where APN is a class and 1 is an index).
+5. The dot notation is not restricted to ciphers; non-cipher research entries may also use it (e.g., `APN.S0`, where APN is a class and the second element is an index).
 
 6. In a secondary (alias) entry, the `alias` field is placed immediately below `canonical_name`, ahead of any `year`, `origin` or `note`.
 
@@ -134,7 +134,7 @@ With all files (including YAML data files) available in the working directory (o
 
 ```python
 import bigfatsbox
-print(bigfatsbox.last_update)    # Prints '24 April 2026 23:54 UTC'
+print(bigfatsbox.last_update)    # Prints the date in the README heading
 ```
 
 
@@ -185,7 +185,7 @@ from bigfatsbox import *
 Ciphers with multiple SBoxes are accessible as `SBoxGroup` objects:
 
 ```python
-aria = bigfatsbox.aria            # SBoxGroup('ARIA', members=['inv', 's2', 's2_inv', 'sq', 'sq_inv'])
+aria = bigfatsbox.aria            # SBoxGroup('ARIA', members=['s2', 's2_inv'])
 print(aria.s2)                   # SBoxEntry('ARIA.S2', origin='Kwon et al.; New Block Cipher: ARIA; ICISC 2003; URL: h...')
 print(aria.s2.lookup_table)      # Prints [...]
 for sb in aria:                   # Iterate all ARIA entries
@@ -204,7 +204,7 @@ The loader is lazy, meaning importing `bigfatsbox` does not load any YAML file i
 # Load all 4-bit SBoxes (reads only 4bit_cipher.yaml, 4bit_nocipher.yaml,
 # and nonbijective4bit.yaml)
 all_4bit = bigfatsbox.load_bits(4)   # Dict: uppercase key → SBoxEntry
-print(len(all_4bit))                 # Prints approx. 500 (all bijective + non-bijective 4-bit)
+print(len(all_4bit))                 # Prints 666 (bijective and non-bijective together)
 
 # Bit-size namespace (b3, b4, b5, b6, b7, b8, b9 are pre-wired)
 b4 = bigfatsbox.b4                   # Namespace for all 4-bit SBoxes
@@ -229,8 +229,8 @@ print(bigfatsbox.cmea.output_size)  # Prints 8  (non-bijective; from output_bits
 
 ```python
 # find() returns a dict: uppercase key to SBoxEntry
-matches = bigfatsbox.find('pre*')      # PRESENT, PRIDE, PRIDE_Inv, PRINCE, PRINCEv2, …
-matches = bigfatsbox.find('ARIA.*')    # ARIA.INV, ARIA.S2, ARIA.S2_Inv, ARIA.SQ, ARIA.SQ_Inv
+matches = bigfatsbox.find('pre*')      # PRESENT
+matches = bigfatsbox.find('ARIA.*')    # ARIA.S2, ARIA.S2_Inv
 matches = bigfatsbox.find('*_S0')      # All entries ending in _S0
 matches = bigfatsbox.find('AE.*')      # All non-cipher AE research SBoxes
 
