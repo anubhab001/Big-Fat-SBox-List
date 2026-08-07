@@ -25,6 +25,10 @@ Last update: 31 July 2026 <!-- TODO: This is to be updated in UTC with each (maj
 - The all-uppercase rule may be relaxed where a version or variant designator would otherwise be lost. For example, the trailing letter in `SNOW V` or `ROCCA S` marks a specific version, so it is retained as a designator rather than being folded into an indistinct run of capitals. The exact form is always preserved in `canonical_name` (e.g., `["SNOW-V"]`, `["ROCCA-S"]`).
 
 
+- An SBox key is the bare cipher name when the cipher has one SBox, since a specification rarely names its substitution table anything but S. `AES` is the AES SBox. A key carries a second element only where a cipher has more than one table to tell apart, as with `ARIA.S2`, `SERPENTTYPE.S0` or the mini-boxes `KHAZAD.P` and `KHAZAD.Q` that the full Khazad SBox is built from, and where the layer belongs to a paper rather than a cipher the first element is the authors.
+
+- This differs from the matrix catalogue on purpose. A linear layer usually has a name of its own in the specification, MixColumns or L or theta, so its key carries that name; an SBox usually has none, so its key does not invent one.
+
 ## Data Files
 
 ### Bijective SBoxes
