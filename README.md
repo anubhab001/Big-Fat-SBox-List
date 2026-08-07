@@ -31,26 +31,42 @@ Last update: 7 August 2026 <!-- TODO: This is to be updated in UTC with each (ma
 
 ## Data Files
 
+The count in each table is of SBoxes the file defines, that is of entries carrying a look-up table of their own. It does not count the alias keys that sit in the same file and read through to one of it, so the number of keys in a file is the larger of the two; the counts of every kind are gathered after the tables.
+
 ### Bijective SBoxes
 
-| File | # Entry | Bit Mapping | 
+| File | # SBox | Bit Mapping | 
 |:------|:-------:|-------------:|
 | [`3bit.yaml`](3bit.yaml) | 7 | 3 → 3 |
-| [`4bit_cipher.yaml`](4bit_cipher.yaml) | 309 | 4 → 4 |
-| [`4bit_nocipher.yaml`](4bit_nocipher.yaml) | 354 | 4 → 4 |
-| [`5bit.yaml`](5bit.yaml) | 16 | 5 → 5 |
+| [`4bit_cipher.yaml`](4bit_cipher.yaml) | 307 | 4 → 4 |
+| [`4bit_nocipher.yaml`](4bit_nocipher.yaml) | 351 | 4 → 4 |
+| [`5bit.yaml`](5bit.yaml) | 13 | 5 → 5 |
 | [`6bit.yaml`](6bit.yaml) | 5 | 6 → 6 |
 | [`7bit.yaml`](7bit.yaml) | 2 | 7 → 7 |
-| [`8bit.yaml`](8bit.yaml) | 65 | 8 → 8 |
+| [`8bit.yaml`](8bit.yaml) | 51 | 8 → 8 |
 | [`9bit.yaml`](9bit.yaml) | 1 | 9 → 9 |
 
 ### Non-Bijective SBoxes
 
-| File | # Entry | Bit Mapping |
+| File | # SBox | Bit Mapping |
 |:------|:-------:|-------------:|
 | [`nonbijective4bit.yaml`](nonbijective4bit.yaml) | 3 | 4 → 2, 4 → 4 |
 | [`nonbijective6bit.yaml`](nonbijective6bit.yaml) | 8 | 6 → 4 |
 | [`nonbijective8bit.yaml`](nonbijective8bit.yaml) | 3 | 8 → 8 |
+
+### Counts
+
+A design that takes an SBox from an earlier one is tracked whether or not it earns an entry, so there are more names in the catalogue than there are SBoxes in it.
+
+| Counted | How many | What it is |
+|:---|:-------:|:---|
+| SBoxes | 751 | Entries carrying a look-up table, which is what the two tables above add up to |
+| Distinct look-up tables | 746 | Five of the 751 are a table held twice, each entry standing in its own right; the pairs are named under Entries Holding One SBox |
+| Alias keys | 22 | A design that renamed an SBox it did not change, resolving to the entry that holds the table |
+| Reuse names | 24 | A design that took an SBox under the name it already had, recorded in a `reuse` list rather than as an entry of its own |
+| Names reaching an SBox | 797 | The three of it together, which is what a search of the catalogue can be expected to answer to |
+
+The loader counts keys rather than SBoxes, so `len(bigfatsbox.yaml.all_names())` returns 773, the 751 entries and the 22 aliases; the reuse names are not keys and it does not see them.
 
 ## Entries Holding One SBox
 
@@ -102,7 +118,7 @@ Each YAML entry has the following fields in order (mandatory fields marked with 
 
 Three fields handle inter-cipher SBox relationships:
 
-- **`reuse`** (list in main entry): Ciphers that explicitly use this SBox under its original name (i.e., without giving a new name). No separate entry is created for the reusing cipher. For example, `CRAFT` reuses the `MIDORI Sb0` SBox (`CRAFT` appears in `MIDORI.SB0`'s `reuse` list) without renaming it as the `CRAFT` SBox.
+- **`reuse`** (list in main entry): Ciphers that explicitly use this SBox under its original name (i.e., without giving a new name). Usually no separate entry is created for the reusing cipher: `CRAFT` reuses the `MIDORI.SB0` SBox and appears in that entry's `reuse` list without becoming an SBox of its own, which is the case for 24 names. Five pairs are held twice all the same, each entry standing in its own right because each was catalogued from its own specification before the two were found to agree; those are the pairs named under Entries Holding One SBox.
 
 - **`alias`** (field in a secondary entry, replacing `lut`): A cipher that takes another cipher's SBox and renames it as its own gets a standalone entry with `alias: SOURCE_CIPHER`. This entry can carry `year`, `canonical_name` and `note` (if available), but cannot carry `lut` (as `lut` is to be read from its `alias`).
 
