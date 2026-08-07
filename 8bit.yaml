@@ -25,7 +25,7 @@ AES:
   linear_branch_number: 2
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes8/properties_AES.txt"
   origin: "Daemen, Rijmen; The Design of Rijndael; AES winner; FIPS 197 (2001); URL: https://doi.org/10.6028/NIST.FIPS.197-upd1"
-  note: "KU Leuven (Daemen, Rijmen); NIST AES standard (FIPS 197); most reused SBox in cryptography Deoxys applies this SBox as its SubBytes and ZIP-AES carries the AES round function over unchanged; both are recorded as reuse rather than as new entries. MERIDIAN (2026) takes it as well, applying a rotation afterwards by an amount read from two neighbouring bytes, so the substitution it builds is data-dependent while the table itself is this one."
+  note: "KU Leuven (Daemen, Rijmen); NIST AES standard (FIPS 197); most reused SBox in cryptography Deoxys applies this SBox as its SubBytes and ZIP-AES carries the AES round function over unchanged; both are recorded as reuse rather than as new entries. MERIDIAN (2026) takes it as well, applying a rotation afterwards by an amount read from two neighbouring bytes, so the substitution it builds is data-dependent while the table itself is this one. Vistrutah (2025) runs pairs of AES rounds on the 128-bit slices of a 256-bit or 512-bit state and takes SubBytes from AES unchanged, its own contribution being the shuffle that mixes the slices."
   aliases: [AEGIS, ARIA.S1, DEOXYS, HALFLOOP, HARAKA, KIASU, PHOLKOS, RIJNDAEL, ROCCA, ROCCAS, SIMPIRA, SNOWV, TIAOXIN, ZIPAES]
 
 ANUBIS:
