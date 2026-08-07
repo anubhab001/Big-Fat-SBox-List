@@ -58,7 +58,7 @@ The count in each table is of SBoxes the file defines, that is of entries carryi
 
 A design that takes an SBox from an earlier one is tracked whether or not it earns an entry, so there are more names in the catalogue than there are SBoxes in it.
 
-| Counted | How many | What it is |
+| Counted | Count | Description |
 |:---|:-------:|:---|
 | SBoxes | 751 | Entries carrying a look-up table, which is what the two tables above add up to |
 | Distinct look-up tables | 746 | Five of the 751 are a table held twice, each entry standing in its own right; the pairs are named under Entries Holding One SBox |
