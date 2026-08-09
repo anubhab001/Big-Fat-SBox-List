@@ -63,8 +63,8 @@ A design that takes an SBox from an earlier one is tracked whether or not it ear
 | SBoxes | 751 | Entries carrying a look-up table, which is what the two tables above add up to |
 | Distinct look-up tables | 746 | Five of the 751 are a table held twice, each entry standing in its own right; the pairs are named under Entries Holding One SBox |
 | Alias keys | 22 | A design that renamed an SBox it did not change, resolving to the entry that holds the table |
-| Reuse names | 24 | A design that took an SBox under the name it already had, recorded in a `reuse` list rather than as an entry of its own |
-| Names reaching an SBox | 797 | The three of it together, which is what a search of the catalogue can be expected to answer to |
+| Reuse names | 25 | A design that took an SBox under the name it already had, recorded in a `reuse` list rather than as an entry of its own |
+| Names reaching an SBox | 798 | The three of it together, which is what a search of the catalogue can be expected to answer to |
 
 The loader counts keys rather than SBoxes, so `len(bigfatsbox.yaml.all_names())` returns 773, the 751 entries and the 22 aliases; the reuse names are not keys and it does not see them.
 

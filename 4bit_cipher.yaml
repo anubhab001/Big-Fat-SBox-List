@@ -2086,8 +2086,8 @@ PRESENT:
   linear_branch_number: 2
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_PRESENT.txt"
   origin: "Bogdanov et al.; PRESENT: An Ultra-Lightweight Block Cipher; CHES 2007; URL: https://doi.org/10.1007/978-3-540-74735-2_31"
-  reuse: [CILIPADI, LBCIOT, LED, ORANGE, PHOTON, PHOTONBEETLE, SLIM]
-  note: "The same table as SERPENTTYPE.S0 up to XOR of a constant into the input and the output, so one circuit serves either once the constants are folded into the layers around it. Neither specification says so; it was established by comparing the tables."
+  reuse: [CILIPADI, GFSPX, LBCIOT, LED, ORANGE, PHOTON, PHOTONBEETLE, SLIM]
+  note: "The same table as SERPENTTYPE.S0 up to XOR of a constant into the input and the output, so one circuit serves either once the constants are folded into the layers around it. Neither specification says so; it was established by comparing the tables. GFSPX (2026) takes this table for the SPN half of its round, which its paper states and which was confirmed by reading the table it prints; its permutation layer is the PRESENT pattern at 32 bits and is catalogued in the matrix list as GFSPX.P."
 
 PRIDE:
   canonical_name: ["PRIDE"]
