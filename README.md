@@ -2,7 +2,7 @@
 
 Public collection of Substitution Boxes (SBoxes for short) used in cryptography
 
-Last update: 7 August 2026 <!-- TODO: This is to be updated in UTC with each (major) commit/push -->
+Last update: 1 November 2026 <!-- TODO: This is to be updated in UTC with each (major) commit/push -->
 
 ## Organisation
 
@@ -37,22 +37,22 @@ The count in each table is of SBoxes the file defines, that is of entries carryi
 
 | File | # SBox | Bit Mapping | 
 |:------|:-------:|-------------:|
-| [`3bit.yaml`](3bit.yaml) | 7 | 3 → 3 |
-| [`4bit_cipher.yaml`](4bit_cipher.yaml) | 307 | 4 → 4 |
-| [`4bit_nocipher.yaml`](4bit_nocipher.yaml) | 351 | 4 → 4 |
-| [`5bit.yaml`](5bit.yaml) | 13 | 5 → 5 |
-| [`6bit.yaml`](6bit.yaml) | 5 | 6 → 6 |
-| [`7bit.yaml`](7bit.yaml) | 2 | 7 → 7 |
-| [`8bit.yaml`](8bit.yaml) | 51 | 8 → 8 |
-| [`9bit.yaml`](9bit.yaml) | 1 | 9 → 9 |
+| [`3bit.yaml`](3bit.yaml) | 7 | $3 \rightarrow 3$ |
+| [`4bit_cipher.yaml`](4bit_cipher.yaml) | 308 | $4 \rightarrow 4$ |
+| [`4bit_nocipher.yaml`](4bit_nocipher.yaml) | 351 | $4 \rightarrow 4$ |
+| [`5bit.yaml`](5bit.yaml) | 13 | $5 \rightarrow 5$ |
+| [`6bit.yaml`](6bit.yaml) | 5 | $6 \rightarrow 6$ |
+| [`7bit.yaml`](7bit.yaml) | 2 | $7 \rightarrow 7$ |
+| [`8bit.yaml`](8bit.yaml) | 52 | $8 \rightarrow 8$ |
+| [`9bit.yaml`](9bit.yaml) | 1 | $9 \rightarrow 9$ |
 
 ### Non-Bijective SBoxes
 
 | File | # SBox | Bit Mapping |
 |:------|:-------:|-------------:|
-| [`nonbijective4bit.yaml`](nonbijective4bit.yaml) | 3 | 4 → 2, 4 → 4 |
-| [`nonbijective6bit.yaml`](nonbijective6bit.yaml) | 8 | 6 → 4 |
-| [`nonbijective8bit.yaml`](nonbijective8bit.yaml) | 3 | 8 → 8 |
+| [`nonbijective4bit.yaml`](nonbijective4bit.yaml) | 3 | $4 \rightarrow 2$, $4 \rightarrow 4$ |
+| [`nonbijective6bit.yaml`](nonbijective6bit.yaml) | 8 | $6 \rightarrow 4$ |
+| [`nonbijective8bit.yaml`](nonbijective8bit.yaml) | 3 | $8 \rightarrow 8$ |
 
 ### Counts
 
@@ -60,13 +60,13 @@ A design that takes an SBox from an earlier one is tracked whether or not it ear
 
 | Counted | Count | Description |
 |:---|:-------:|:---|
-| SBoxes | 751 | Entries carrying a look-up table, which is what the two tables above add up to |
-| Distinct look-up tables | 746 | Five of the 751 are a table held twice, each entry standing in its own right; the pairs are named under Entries Holding One SBox |
+| SBoxes | 753 | Entries carrying a look-up table, which is what the two tables above add up to |
+| Distinct look-up tables | 748 | Five of the 753 are a table held twice, each entry standing in its own right; the pairs are named under Entries Holding One SBox |
 | Alias keys | 22 | A design that renamed an SBox it did not change, resolving to the entry that holds the table |
 | Reuse names | 25 | A design that took an SBox under the name it already had, recorded in a `reuse` list rather than as an entry of its own |
-| Names reaching an SBox | 798 | The three of it together, which is what a search of the catalogue can be expected to answer to |
+| Names reaching an SBox | 800 | The three of it together, which is what a search of the catalogue can be expected to answer to |
 
-The loader counts keys rather than SBoxes, so `len(bigfatsbox.yaml.all_names())` returns 773, the 751 entries and the 22 aliases; the reuse names are not keys and it does not see them.
+The loader counts keys rather than SBoxes, so `len(bigfatsbox.yaml.all_names())` returns 775, the 753 entries and the 22 aliases; the reuse names are not keys and it does not see them.
 
 ## Entries Holding One SBox
 

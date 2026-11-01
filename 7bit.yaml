@@ -3,18 +3,33 @@
 # Format: key (our all-uppercase-Latin-underscore name), canonical_name, lut, algebraic_degree, nonlinearity, differential_uniformity, involution, fixed_point, absolute_linear_uniformity, year, cipher, origin, [aliases], [reuse], [note], [trivium]
 
 MISTY.S7:
+  # CORRECTED on 2026-10-14. The table held here until that date agreed with the
+  # S7TABLE of RFC 2994 on inputs 0 to 35 and was a different permutation on the
+  # other 92 entries, the first divergence being at input 36, where the old table
+  # gave 69 and the specification gives 123. Both tables are permutations of
+  # 0..127, so neither bijectivity nor a size check could expose the fault; what
+  # exposed it was the algebraic degree, since MISTY1 S7 is cubic by design and
+  # the old table measured degree 6. Every property recorded against the old
+  # table was its own and not the specification's: degree 6 for 3, nonlinearity
+  # 42 for 56, differential uniformity 10 for 2, absolute linear uniformity 22
+  # for 8, boomerang uniformity 16 for 2, absolute autocorrelation uniformity 64
+  # for 16, one fixed point at 68 for one at 99, order 11424 for 6404580 and
+  # 3888 inversions for 3696. The entry is now the RFC 2994 Section 2.3 table
+  # with every property recomputed from it. The source line below gave PEIGEN's
+  # properties_MISTY.txt, which is where the old table came from, so a reader
+  # comparing against PEIGEN should expect the old values there.
   canonical_name: ["MISTY", "S₇"]
-  lookup_table: [27, 50, 51, 90, 59, 16, 23, 84, 91, 26, 114, 115, 107, 44, 102, 73, 31, 36, 19, 108, 55, 46, 63, 74, 93, 15, 64, 86, 37, 81, 28, 4, 11, 70, 32, 13, 69, 42, 43, 78, 22, 10, 97, 111, 53, 33, 52, 3, 100, 71, 109, 62, 105, 75, 126, 127, 98, 83, 125, 95, 18, 87, 124, 57, 96, 48, 56, 76, 68, 39, 80, 85, 17, 49, 2, 77, 72, 47, 9, 82, 25, 60, 67, 20, 35, 61, 12, 106, 118, 99, 117, 119, 79, 65, 7, 112, 54, 24, 38, 5, 6, 41, 92, 121, 120, 104, 101, 14, 8, 29, 30, 1, 40, 21, 116, 113, 58, 45, 66, 123, 122, 34, 103, 94, 88, 0, 110, 89]
-  algebraic_degree: [6, 6, 6, 6, 6, 6, 6]
-  nonlinearity: 42
-  differential_uniformity: 10
-  absolute_linear_uniformity: 22
-  boomerang_uniformity: 16
-  absolute_autocorrelation_uniformity: 64
+  lookup_table: [27, 50, 51, 90, 59, 16, 23, 84, 91, 26, 114, 115, 107, 44, 102, 73, 31, 36, 19, 108, 55, 46, 63, 74, 93, 15, 64, 86, 37, 81, 28, 4, 11, 70, 32, 13, 123, 53, 68, 66, 43, 30, 65, 20, 75, 121, 21, 111, 14, 85, 9, 54, 116, 12, 103, 83, 40, 10, 126, 56, 2, 7, 96, 41, 25, 18, 101, 47, 48, 57, 8, 104, 95, 120, 42, 76, 100, 69, 117, 61, 89, 72, 3, 87, 124, 79, 98, 60, 29, 33, 94, 39, 106, 112, 77, 58, 1, 109, 110, 99, 24, 119, 35, 5, 38, 118, 0, 49, 45, 122, 127, 97, 80, 34, 17, 6, 71, 22, 82, 78, 113, 62, 105, 67, 52, 92, 88, 125]
+  algebraic_degree: [3, 3, 3, 3, 3, 3, 3]
+  nonlinearity: 56
+  differential_uniformity: 2
+  absolute_linear_uniformity: 8
+  boomerang_uniformity: 2
+  absolute_autocorrelation_uniformity: 16
   involution: false
-  order: 11424
-  inversion: 3888
-  fixed_point: [68]
+  order: 6404580
+  inversion: 3696
+  fixed_point: [99]
   year: [1997]
   cipher: true # Used in a cipher
   differential_branch_number: 2

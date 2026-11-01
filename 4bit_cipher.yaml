@@ -1571,6 +1571,27 @@ LBLOCK.9:
   source: "URL: https://github.com/peigen-sboxes/PEIGEN/blob/master/EvaluationResults/Sect5.1_CryptographicProperties/Sboxes4/properties_LBlock_9.txt"
   origin: "Wu, Zhang; LBlock: A Lightweight Block Cipher; ACNS 2011"
 
+LOONG:
+  canonical_name: ["Loong"]
+  lookup_table: [12, 10, 13, 3, 14, 11, 15, 7, 9, 8, 1, 5, 0, 2, 4, 6]
+  algebraic_degree: [3, 2, 3, 3]
+  nonlinearity: 4
+  differential_uniformity: 4
+  absolute_linear_uniformity: 4
+  boomerang_uniformity: 10
+  absolute_autocorrelation_uniformity: 16
+  involution: true
+  order: 2
+  inversion: 87
+  fixed_point: [3, 7]
+  year: [2019]
+  cipher: true  # Used in a cipher
+  differential_branch_number: 2
+  linear_branch_number: 2
+  source: "Table 1 of the design paper"
+  origin: "Liu, Li, Wu, Xie, Li; Loong: A Family of Involutional Lightweight Block Cipher Based on SPN Structure; IEEE Access 7 (2019) 136023-136035; URL: https://doi.org/10.1109/ACCESS.2019.2940330"
+  note: "The SBox of the Loong family (Loong-64, Loong-80, Loong-128), applied twice per round. It is MIDORI.SB0 with the outputs at inputs 8 and 9 exchanged, which the designers made to bring the fixed points from four to two while keeping the involution. Cryptanalysed in 'Practical weak-key attack against full-round Loong, an involutional lightweight block cipher' (URL: https://www.researchgate.net/publication/399922067)"
+
 LUCIFER.S0:
   canonical_name: ["LUCIFER", "S₀"]
   lookup_table: [12, 15, 7, 10, 14, 13, 11, 0, 2, 6, 3, 1, 9, 4, 5, 8]
