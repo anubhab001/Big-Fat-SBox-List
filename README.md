@@ -2,7 +2,7 @@
 
 Public collection of Substitution Boxes (SBoxes for short) used in cryptography
 
-Last update: 10 November 2026 <!-- TODO: This is to be updated in UTC with each (major) commit/push -->
+Last update: 11 November 2026 <!-- TODO: This is to be updated in UTC with each (major) commit/push -->
 
 ## Organisation
 

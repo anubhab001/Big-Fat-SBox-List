@@ -441,7 +441,6 @@ DEFAULT.CORE:
   differential_branch_number: 2
   linear_branch_number: 2
   origin: "Baksi; Classical and Physical Security of Symmetric Key Cryptographic Algorithms; PhD Thesis; NTU (2021); URL: https://dr.ntu.edu.sg/entities/publication/01f70b57-a0dd-470c-8bdb-bec80bc2b40f"
-  note: "Adopted in Tang, Gong, Guo, Dong; ASIACRYPT 2025 (DCA/DFA protection)"
 
 DEFAULT.LAYER:
   canonical_name: ["Default-Layer"]
@@ -461,7 +460,6 @@ DEFAULT.LAYER:
   differential_branch_number: 3
   linear_branch_number: 3
   origin: "Baksi; Classical and Physical Security of Symmetric Key Cryptographic Algorithms; PhD Thesis; NTU (2021); URL: https://dr.ntu.edu.sg/entities/publication/01f70b57-a0dd-470c-8bdb-bec80bc2b40f"
-  note: "Adopted in Tang, Gong, Guo, Dong; ASIACRYPT 2025 (DCA/DFA protection)"
 
 ELEPHANT:
   canonical_name: ["Elephant"]
@@ -1589,7 +1587,7 @@ LOONG:
   differential_branch_number: 2
   linear_branch_number: 2
   origin: "Liu, Li, Wu, Xie, Li; Loong: A Family of Involutional Lightweight Block Cipher Based on SPN Structure; IEEE Access 7 (2019) 136023-136035; URL: https://doi.org/10.1109/ACCESS.2019.2940330"
-  note: "The SBox of the Loong family (Loong-64, Loong-80, Loong-128), applied twice per round. It is MIDORI.SB0 with the outputs at inputs 8 and 9 exchanged, which the designers made to bring the fixed points from four to two while keeping the involution. Cryptanalysed in 'Practical weak-key attack against full-round Loong, an involutional lightweight block cipher' (URL: https://www.researchgate.net/publication/399922067)"
+  note: "The SBox of the Loong family (Loong-64, Loong-80, Loong-128), applied twice per round. It is MIDORI.SB0 with the outputs at inputs 8 and 9 exchanged, which the designers made to bring the fixed points from four to two while keeping the involution. Cryptanalysed by Guo, Wang, Yang, Hu; Practical weak-key attack against full-round Loong: an involutional lightweight block cipher; Cybersecurity 9 (2026), article 107; URL: https://doi.org/10.1186/s42400-025-00471-5"
 
 LUCIFER.S0:
   canonical_name: ["LUCIFER", "S₀"]
