@@ -970,6 +970,7 @@ SODARK:
   cipher: true  # Used in a cipher
   differential_branch_number: 2
   linear_branch_number: 2
+  source: "Dansarie; Cryptanalysis of the SoDark Family of Cipher Algorithms; Naval Postgraduate School (2017); URL: https://calhoun.nps.edu/handle/10945/56118"
   origin: "United States Department of Defense; MIL-STD-188-141; second and third generation automatic link establishment for high frequency radio"
   note: "SoDark is a 24-bit block cipher with a 56-bit key and a 64-bit tweak; the SBox is its only nonlinear operation, and no selection criterion for it has been published"
 

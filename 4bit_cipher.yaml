@@ -440,7 +440,7 @@ DEFAULT.CORE:
   cipher: true  # Used in a cipher
   differential_branch_number: 2
   linear_branch_number: 2
-  origin: "Baksi; Classical and Physical Security of Symmetric Key Cryptographic Algorithms; PhD Thesis; NTU (2021); URL: https://dr.ntu.edu.sg/entities/publication/01f70b57-a0dd-470c-8bdb-bec80bc2b40f; Also: Baksi, Springer (2022); URL: https://link.springer.com/book/10.1007/978-981-16-6522-6"
+  origin: "Baksi; Classical and Physical Security of Symmetric Key Cryptographic Algorithms; PhD Thesis; NTU (2021); URL: https://dr.ntu.edu.sg/entities/publication/01f70b57-a0dd-470c-8bdb-bec80bc2b40f"
   note: "Adopted in Tang, Gong, Guo, Dong; ASIACRYPT 2025 (DCA/DFA protection)"
 
 DEFAULT.LAYER:
@@ -460,7 +460,7 @@ DEFAULT.LAYER:
   cipher: true  # Used in a cipher
   differential_branch_number: 3
   linear_branch_number: 3
-  origin: "Baksi; Classical and Physical Security of Symmetric Key Cryptographic Algorithms; PhD Thesis; NTU (2021); URL: https://dr.ntu.edu.sg/entities/publication/01f70b57-a0dd-470c-8bdb-bec80bc2b40f; Also: Baksi, Springer (2022); URL: https://link.springer.com/book/10.1007/978-981-16-6522-6"
+  origin: "Baksi; Classical and Physical Security of Symmetric Key Cryptographic Algorithms; PhD Thesis; NTU (2021); URL: https://dr.ntu.edu.sg/entities/publication/01f70b57-a0dd-470c-8bdb-bec80bc2b40f"
   note: "Adopted in Tang, Gong, Guo, Dong; ASIACRYPT 2025 (DCA/DFA protection)"
 
 ELEPHANT:

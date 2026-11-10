@@ -2,7 +2,7 @@
 
 Public collection of Substitution Boxes (SBoxes for short) used in cryptography
 
-Last update: 7 November 2026 <!-- TODO: This is to be updated in UTC with each (major) commit/push -->
+Last update: 10 November 2026 <!-- TODO: This is to be updated in UTC with each (major) commit/push -->
 
 ## Organisation
 
@@ -140,6 +140,8 @@ Three fields handle inter-cipher SBox relationships:
 6. In a secondary (alias) entry, the `alias` field is placed immediately below `canonical_name`, ahead of any `year`, `origin` or `note`.
 
 7. Each URL is prefixed with `URL: `. Multiple URLs are separated by `; `.
+
+8. `SODARK` carries 2017, the year of the thesis its table is taken from (see its `source`), not a year of MIL-STD-188-141.
 
 ## Python / Sage Loader
 
